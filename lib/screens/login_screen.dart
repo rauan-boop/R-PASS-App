@@ -73,21 +73,6 @@ class _LoginScreenState extends State<LoginScreen> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: [
-                        Text(
-                          'Blacklist: AutoRent',
-                          style: GoogleFonts.manrope(
-                            fontSize: 20,
-                            fontWeight: FontWeight.w800,
-                            color: AppColors.ink,
-                          ),
-                        ),
-                        const SizedBox(height: 4),
-                        Text(
-                          'Единая база для автопрокатов',
-                          style: GoogleFonts.manrope(
-                              fontSize: 14, color: AppColors.muted),
-                        ),
-                        const SizedBox(height: 20),
                         TextField(
                           controller: _phone,
                           keyboardType: TextInputType.phone,

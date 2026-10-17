@@ -80,6 +80,16 @@ class RPassBrand extends StatelessWidget {
             letterSpacing: 0.2,
           ),
         ),
+        const SizedBox(height: 6),
+        Text(
+          'Единая база для автопрокатов',
+          textAlign: TextAlign.center,
+          style: GoogleFonts.manrope(
+            fontSize: 13,
+            fontStyle: FontStyle.italic,
+            color: AppColors.muted,
+          ),
+        ),
       ],
     );
   }
