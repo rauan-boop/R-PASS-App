@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 import '../components/brand/brand_widgets.dart';
 import '../config/app_colors.dart';
 import '../widgets/common.dart';
+import 'shell_screen.dart';
 import 'sms_screen.dart';
 
 /// Formats digits as "(777) 123-45-67".
@@ -53,6 +54,13 @@ class _LoginScreenState extends State<LoginScreen> {
     );
   }
 
+  void _demoLogin() {
+    Navigator.of(context).pushAndRemoveUntil(
+      MaterialPageRoute(builder: (_) => const ShellScreen()),
+      (_) => false,
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -88,6 +96,12 @@ class _LoginScreenState extends State<LoginScreen> {
                         FilledButton(
                           onPressed: _valid ? _submit : null,
                           child: const Text('Получить код'),
+                        ),
+                        const SizedBox(height: 12),
+                        OutlinedButton.icon(
+                          onPressed: _demoLogin,
+                          icon: const Icon(Icons.bolt_rounded),
+                          label: const Text('Тестовый вход'),
                         ),
                       ],
                     ),
