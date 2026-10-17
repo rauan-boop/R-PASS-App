@@ -139,8 +139,7 @@ class _SupportWidgetState extends State<SupportWidget> {
                                                     .bodyMedium
                                                     .fontStyle,
                                           ),
-                                          color:
-                                              FlutterFlowTheme.of(context).info,
+                                          color: AppColors.ink,
                                           letterSpacing: 0.0,
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
@@ -254,8 +253,7 @@ class _SupportWidgetState extends State<SupportWidget> {
                             ),
                             fillColor: Color(0x00FFFFFF),
                             elevation: 2.0,
-                            borderColor:
-                                FlutterFlowTheme.of(context).secondaryText,
+                            borderColor: FlutterFlowTheme.of(context).secondaryText,
                             borderWidth: 0.0,
                             borderRadius: 8.0,
                             margin: EdgeInsetsDirectional.fromSTEB(

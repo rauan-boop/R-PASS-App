@@ -1,4 +1,5 @@
 import '/backend/api_requests/api_calls.dart';
+import '/components/brand/brand_widgets.dart';
 import '/config/app_colors.dart';
 import '/config/app_config.dart';
 import '/backend/supabase/supabase.dart';
@@ -296,7 +297,7 @@ class _CompanymanagerWidgetState extends State<CompanymanagerWidget> {
                                         decoration: BoxDecoration(
                                           shape: BoxShape.circle,
                                         ),
-                                        child: Image.network(
+                                        child: Image.network(errorBuilder: rpassImageFallback,
                                           valueOrDefault<String>(
                                             companymanagerProfilesRowList
                                                 .where((e) =>

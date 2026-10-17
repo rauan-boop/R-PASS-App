@@ -208,8 +208,7 @@ class _SaveCompanyWidgetState extends State<SaveCompanyWidget> {
                                                     .bodyMedium
                                                     .fontStyle,
                                           ),
-                                          color:
-                                              FlutterFlowTheme.of(context).info,
+                                          color: AppColors.ink,
                                           fontSize: 14.0,
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.normal,
@@ -302,8 +301,7 @@ class _SaveCompanyWidgetState extends State<SaveCompanyWidget> {
                                                     .bodyMedium
                                                     .fontStyle,
                                           ),
-                                          color:
-                                              FlutterFlowTheme.of(context).info,
+                                          color: AppColors.ink,
                                           fontSize: 14.0,
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.normal,
@@ -396,8 +394,7 @@ class _SaveCompanyWidgetState extends State<SaveCompanyWidget> {
                                                     .bodyMedium
                                                     .fontStyle,
                                           ),
-                                          color:
-                                              FlutterFlowTheme.of(context).info,
+                                          color: AppColors.ink,
                                           fontSize: 14.0,
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.normal,
@@ -500,8 +497,7 @@ class _SaveCompanyWidgetState extends State<SaveCompanyWidget> {
                                                     .bodyMedium
                                                     .fontStyle,
                                           ),
-                                          color:
-                                              FlutterFlowTheme.of(context).info,
+                                          color: AppColors.ink,
                                           fontSize: 14.0,
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.normal,
@@ -595,8 +591,7 @@ class _SaveCompanyWidgetState extends State<SaveCompanyWidget> {
                                                     .bodyMedium
                                                     .fontStyle,
                                           ),
-                                          color:
-                                              FlutterFlowTheme.of(context).info,
+                                          color: AppColors.ink,
                                           fontSize: 14.0,
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.normal,

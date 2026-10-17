@@ -1,5 +1,6 @@
 import '/backend/supabase/supabase.dart';
 import '/config/app_config.dart';
+import '/components/brand/brand_widgets.dart';
 import '/config/app_colors.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -199,7 +200,7 @@ class _PodtverzhdenieWidgetState extends State<PodtverzhdenieWidget> {
                             50.0, 20.0, 50.0, 0.0),
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(14.0),
-                          child: Image.network(
+                          child: Image.network(errorBuilder: rpassImageFallback,
                             '${AppConfig.flutterFlowAssetsBaseUrl}/yt6cfeammuxs/delete_gmail_how_to.BHgKZ4K8_Z2jIHRv_%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.png',
                             width: double.infinity,
                             height: 353.9,

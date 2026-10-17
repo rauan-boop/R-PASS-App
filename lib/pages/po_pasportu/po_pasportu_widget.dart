@@ -1,4 +1,5 @@
 import '/auth/supabase_auth/auth_util.dart';
+import '/components/brand/brand_widgets.dart';
 import '/config/app_colors.dart';
 import '/backend/supabase/supabase.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -297,16 +298,14 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                     ),
                                     errorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
-                                        color:
-                                            FlutterFlowTheme.of(context).error,
+                                        color: FlutterFlowTheme.of(context).error,
                                         width: 1.0,
                                       ),
                                       borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     focusedErrorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
-                                        color:
-                                            FlutterFlowTheme.of(context).error,
+                                        color: FlutterFlowTheme.of(context).error,
                                         width: 1.0,
                                       ),
                                       borderRadius: BorderRadius.circular(14.0),
@@ -327,8 +326,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                                   .bodyMedium
                                                   .fontStyle,
                                         ),
-                                        color:
-                                            FlutterFlowTheme.of(context).info,
+                                        color: AppColors.ink,
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .bodyMedium
@@ -451,16 +449,14 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                     ),
                                     errorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
-                                        color:
-                                            FlutterFlowTheme.of(context).error,
+                                        color: FlutterFlowTheme.of(context).error,
                                         width: 1.0,
                                       ),
                                       borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     focusedErrorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
-                                        color:
-                                            FlutterFlowTheme.of(context).error,
+                                        color: FlutterFlowTheme.of(context).error,
                                         width: 1.0,
                                       ),
                                       borderRadius: BorderRadius.circular(14.0),
@@ -481,8 +477,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                                   .bodyMedium
                                                   .fontStyle,
                                         ),
-                                        color:
-                                            FlutterFlowTheme.of(context).info,
+                                        color: AppColors.ink,
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .bodyMedium
@@ -604,16 +599,14 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                     ),
                                     errorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
-                                        color:
-                                            FlutterFlowTheme.of(context).error,
+                                        color: FlutterFlowTheme.of(context).error,
                                         width: 1.0,
                                       ),
                                       borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     focusedErrorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
-                                        color:
-                                            FlutterFlowTheme.of(context).error,
+                                        color: FlutterFlowTheme.of(context).error,
                                         width: 1.0,
                                       ),
                                       borderRadius: BorderRadius.circular(14.0),
@@ -634,8 +627,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                                   .bodyMedium
                                                   .fontStyle,
                                         ),
-                                        color:
-                                            FlutterFlowTheme.of(context).info,
+                                        color: AppColors.ink,
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .bodyMedium
@@ -758,16 +750,14 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                     ),
                                     errorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
-                                        color:
-                                            FlutterFlowTheme.of(context).error,
+                                        color: FlutterFlowTheme.of(context).error,
                                         width: 1.0,
                                       ),
                                       borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     focusedErrorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
-                                        color:
-                                            FlutterFlowTheme.of(context).error,
+                                        color: FlutterFlowTheme.of(context).error,
                                         width: 1.0,
                                       ),
                                       borderRadius: BorderRadius.circular(14.0),
@@ -788,8 +778,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                                   .bodyMedium
                                                   .fontStyle,
                                         ),
-                                        color:
-                                            FlutterFlowTheme.of(context).info,
+                                        color: AppColors.ink,
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .bodyMedium
@@ -911,16 +900,14 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                     ),
                                     errorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
-                                        color:
-                                            FlutterFlowTheme.of(context).error,
+                                        color: FlutterFlowTheme.of(context).error,
                                         width: 1.0,
                                       ),
                                       borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     focusedErrorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
-                                        color:
-                                            FlutterFlowTheme.of(context).error,
+                                        color: FlutterFlowTheme.of(context).error,
                                         width: 1.0,
                                       ),
                                       borderRadius: BorderRadius.circular(14.0),
@@ -941,8 +928,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                                   .bodyMedium
                                                   .fontStyle,
                                         ),
-                                        color:
-                                            FlutterFlowTheme.of(context).info,
+                                        color: AppColors.ink,
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .bodyMedium
@@ -1019,8 +1005,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                                     .bodyMedium
                                                     .fontStyle,
                                           ),
-                                          color:
-                                              FlutterFlowTheme.of(context).info,
+                                          color: AppColors.ink,
                                           letterSpacing: 0.0,
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
@@ -1118,8 +1103,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                       iconPadding:
                                           EdgeInsetsDirectional.fromSTEB(
                                               0.0, 0.0, 0.0, 0.0),
-                                      color:
-                                          FlutterFlowTheme.of(context).primary,
+                                      color: FlutterFlowTheme.of(context).primary,
                                       textStyle: FlutterFlowTheme.of(context)
                                           .titleSmall
                                           .override(
@@ -1258,16 +1242,14 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                     ),
                                     errorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
-                                        color:
-                                            FlutterFlowTheme.of(context).error,
+                                        color: FlutterFlowTheme.of(context).error,
                                         width: 1.0,
                                       ),
                                       borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     focusedErrorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
-                                        color:
-                                            FlutterFlowTheme.of(context).error,
+                                        color: FlutterFlowTheme.of(context).error,
                                         width: 1.0,
                                       ),
                                       borderRadius: BorderRadius.circular(14.0),
@@ -1288,8 +1270,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                                   .bodyMedium
                                                   .fontStyle,
                                         ),
-                                        color:
-                                            FlutterFlowTheme.of(context).info,
+                                        color: AppColors.ink,
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .bodyMedium
@@ -1412,16 +1393,14 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                     ),
                                     errorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
-                                        color:
-                                            FlutterFlowTheme.of(context).error,
+                                        color: FlutterFlowTheme.of(context).error,
                                         width: 1.0,
                                       ),
                                       borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     focusedErrorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
-                                        color:
-                                            FlutterFlowTheme.of(context).error,
+                                        color: FlutterFlowTheme.of(context).error,
                                         width: 1.0,
                                       ),
                                       borderRadius: BorderRadius.circular(14.0),
@@ -1442,8 +1421,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                                   .bodyMedium
                                                   .fontStyle,
                                         ),
-                                        color:
-                                            FlutterFlowTheme.of(context).info,
+                                        color: AppColors.ink,
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .bodyMedium
@@ -1566,16 +1544,14 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                     ),
                                     errorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
-                                        color:
-                                            FlutterFlowTheme.of(context).error,
+                                        color: FlutterFlowTheme.of(context).error,
                                         width: 1.0,
                                       ),
                                       borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     focusedErrorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
-                                        color:
-                                            FlutterFlowTheme.of(context).error,
+                                        color: FlutterFlowTheme.of(context).error,
                                         width: 1.0,
                                       ),
                                       borderRadius: BorderRadius.circular(14.0),
@@ -1596,8 +1572,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                                   .bodyMedium
                                                   .fontStyle,
                                         ),
-                                        color:
-                                            FlutterFlowTheme.of(context).info,
+                                        color: AppColors.ink,
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .bodyMedium
@@ -1719,16 +1694,14 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                     ),
                                     errorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
-                                        color:
-                                            FlutterFlowTheme.of(context).error,
+                                        color: FlutterFlowTheme.of(context).error,
                                         width: 1.0,
                                       ),
                                       borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     focusedErrorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
-                                        color:
-                                            FlutterFlowTheme.of(context).error,
+                                        color: FlutterFlowTheme.of(context).error,
                                         width: 1.0,
                                       ),
                                       borderRadius: BorderRadius.circular(14.0),
@@ -1749,8 +1722,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                                   .bodyMedium
                                                   .fontStyle,
                                         ),
-                                        color:
-                                            FlutterFlowTheme.of(context).info,
+                                        color: AppColors.ink,
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .bodyMedium
@@ -1941,7 +1913,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                           child: ClipRRect(
                                             borderRadius:
                                                 BorderRadius.circular(14.0),
-                                            child: Image.network(
+                                            child: Image.network(errorBuilder: rpassImageFallback,
                                               photoItemItem,
                                               width: 200.0,
                                               height: 200.0,

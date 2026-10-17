@@ -1,4 +1,5 @@
 import '/backend/api_requests/api_calls.dart';
+import '/components/brand/brand_widgets.dart';
 import '/config/app_colors.dart';
 import '/config/app_config.dart';
 import '/backend/supabase/supabase.dart';
@@ -234,7 +235,7 @@ class _CompaniInfWidgetState extends State<CompaniInfWidget> {
                                         decoration: BoxDecoration(
                                           shape: BoxShape.circle,
                                         ),
-                                        child: Image.network(
+                                        child: Image.network(errorBuilder: rpassImageFallback,
                                           valueOrDefault<String>(
                                             companiInfProfilesRowList
                                                 .where((e) =>
@@ -779,8 +780,7 @@ class _CompaniInfWidgetState extends State<CompaniInfWidget> {
                                                   safeSetState(() {});
                                                   await showModalBottomSheet(
                                                     isScrollControlled: true,
-                                                    backgroundColor:
-                                                        Colors.transparent,
+                                                    backgroundColor: Colors.transparent,
                                                     enableDrag: false,
                                                     context: context,
                                                     builder: (context) {
@@ -862,8 +862,7 @@ class _CompaniInfWidgetState extends State<CompaniInfWidget> {
                                                   safeSetState(() {});
                                                   await showModalBottomSheet(
                                                     isScrollControlled: true,
-                                                    backgroundColor:
-                                                        Colors.transparent,
+                                                    backgroundColor: Colors.transparent,
                                                     enableDrag: false,
                                                     context: context,
                                                     builder: (context) {

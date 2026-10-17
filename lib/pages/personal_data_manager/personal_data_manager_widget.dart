@@ -861,14 +861,11 @@ class _PersonalDataManagerWidgetState extends State<PersonalDataManagerWidget> {
 
                               return ClipRRect(
                                 borderRadius: BorderRadius.circular(14.0),
-                                child: Image.network(
-                                  FFAppState().Soglasie == true
-                                      ? '${AppConfig.flutterFlowAssetsBaseUrl}/k8ndqvcji8vm/zelenaja-galochka.png'
-                                      : '${AppConfig.flutterFlowAssetsBaseUrl}/85mbibayxl25/pngtree-red-cross-brush-effect-vector-png-image_7321788.png',
-                                  width: 35.0,
-                                  height: 35.0,
-                                  fit: BoxFit.cover,
-                                ),
+                                child: Icon(
+FFAppState().Soglasie == true ? Icons.check_circle_rounded : Icons.cancel_rounded,
+color: FFAppState().Soglasie == true ? AppColors.success : AppColors.error,
+size: 35.0,
+),
                               );
                             },
                           ),
@@ -993,14 +990,11 @@ class _PersonalDataManagerWidgetState extends State<PersonalDataManagerWidget> {
 
                               return ClipRRect(
                                 borderRadius: BorderRadius.circular(14.0),
-                                child: Image.network(
-                                  FFAppState().soglashenie == true
-                                      ? '${AppConfig.flutterFlowAssetsBaseUrl}/k8ndqvcji8vm/zelenaja-galochka.png'
-                                      : '${AppConfig.flutterFlowAssetsBaseUrl}/85mbibayxl25/pngtree-red-cross-brush-effect-vector-png-image_7321788.png',
-                                  width: 35.0,
-                                  height: 35.0,
-                                  fit: BoxFit.cover,
-                                ),
+                                child: Icon(
+FFAppState().soglashenie == true ? Icons.check_circle_rounded : Icons.cancel_rounded,
+color: FFAppState().soglashenie == true ? AppColors.success : AppColors.error,
+size: 35.0,
+),
                               );
                             },
                           ),

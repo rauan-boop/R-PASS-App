@@ -1,6 +1,7 @@
 import '/auth/supabase_auth/auth_util.dart';
 import '/config/app_config.dart';
 import '/config/app_colors.dart';
+import '/components/brand/brand_widgets.dart';
 import '/backend/supabase/supabase.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -91,40 +92,20 @@ class _LogInWidgetState extends State<LogInWidget> {
                   : null;
 
               return SingleChildScrollView(
-                child: Column(
+                child: Center(child: ConstrainedBox(constraints: const BoxConstraints(maxWidth: 440), child: Column(
                   mainAxisSize: MainAxisSize.max,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    Padding(
-                      padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 100.0, 0.0, 0.0),
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(14.0),
-                        child: Image.network(
-                          '${AppConfig.flutterFlowAssetsBaseUrl}/od6nnixh2ykb/Gemini_Generated_Image_jrkqbpjrkqbpjrkq_%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.png',
-                          width: 309.67,
-                          height: 259.2,
-                          fit: BoxFit.contain,
-                        ),
-                      ),
+                    const Padding(
+                      padding: EdgeInsetsDirectional.fromSTEB(0.0, 56.0, 0.0, 8.0),
+                      child: RPassBrand(logoSize: 104, fontSize: 34),
                     ),
                     Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(
-                          10.0, 10.0, 10.0, 50.0),
-                      child: Row(
-                        mainAxisSize: MainAxisSize.max,
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          ClipRRect(
-                            borderRadius: BorderRadius.circular(14.0),
-                            child: Image.network(
-                              '${AppConfig.flutterFlowAssetsBaseUrl}/dao9njjrrcy8/%D0%BD%D0%B0%D0%B4%D0%BF%D0%B8%D1%81%D1%8C.png',
-                              width: 262.5,
-                              height: 60.0,
-                              fit: BoxFit.cover,
-                            ),
-                          ),
-                        ],
+                      padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 8.0),
+                      child: Text(
+                        'Проверка клиентов и чёрный список',
+                        textAlign: TextAlign.center,
+                        style: GoogleFonts.manrope(color: AppColors.muted, fontSize: 15.0, fontWeight: FontWeight.w500),
                       ),
                     ),
                     Padding(
@@ -306,7 +287,7 @@ class _LogInWidgetState extends State<LogInWidget> {
                         ),
                       ),
                     ),
-                    FFButtonWidget(
+                    Padding(padding: const EdgeInsets.fromLTRB(16, 8, 16, 32), child: FFButtonWidget(
                       onPressed: () async {
                         _model.loginSuccess = await actions.loginWithUsername(
                           _model.emailTextController.text,
@@ -448,8 +429,7 @@ class _LogInWidgetState extends State<LogInWidget> {
                                 textAlign: TextAlign.center,
                               ),
                               duration: Duration(milliseconds: 4000),
-                              backgroundColor:
-                                  FlutterFlowTheme.of(context).secondary,
+                              backgroundColor: FlutterFlowTheme.of(context).secondary,
                             ),
                           );
                         }
@@ -458,8 +438,8 @@ class _LogInWidgetState extends State<LogInWidget> {
                       },
                       text: 'Войти',
                       options: FFButtonOptions(
-                        width: 300.0,
-                        height: 40.0,
+                        width: double.infinity,
+                        height: 54.0,
                         padding: EdgeInsetsDirectional.fromSTEB(
                             16.0, 0.0, 16.0, 0.0),
                         iconPadding:
@@ -488,9 +468,9 @@ class _LogInWidgetState extends State<LogInWidget> {
                         elevation: 0.0,
                         borderRadius: BorderRadius.circular(14.0),
                       ),
-                    ),
+                    )),
                   ],
-                ),
+                ))),
               );
             },
           ),

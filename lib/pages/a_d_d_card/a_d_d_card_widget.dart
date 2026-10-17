@@ -1,4 +1,5 @@
 import '/flutter_flow/flutter_flow_icon_button.dart';
+import '/components/brand/brand_widgets.dart';
 import '/config/app_config.dart';
 import '/config/app_colors.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -228,7 +229,7 @@ class _ADDCardWidgetState extends State<ADDCardWidget> {
                 padding: EdgeInsetsDirectional.fromSTEB(20.0, 20.0, 20.0, 0.0),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(14.0),
-                  child: Image.network(
+                  child: Image.network(errorBuilder: rpassImageFallback,
                     '${AppConfig.flutterFlowAssetsBaseUrl}/8h3p8d676eu5/1_%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.png',
                     width: double.infinity,
                     height: 375.6,

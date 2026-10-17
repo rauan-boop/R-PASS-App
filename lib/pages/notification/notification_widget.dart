@@ -1,4 +1,5 @@
 import '/flutter_flow/flutter_flow_icon_button.dart';
+import '/components/brand/brand_widgets.dart';
 import '/config/app_config.dart';
 import '/config/app_colors.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -171,7 +172,7 @@ class _NotificationWidgetState extends State<NotificationWidget> {
                                       child: ClipRRect(
                                         borderRadius:
                                             BorderRadius.circular(10.0),
-                                        child: Image.network(
+                                        child: Image.network(errorBuilder: rpassImageFallback,
                                           '${AppConfig.flutterFlowAssetsBaseUrl}/1z887tjlhzbz/i_(1).webp',
                                           width: 44.0,
                                           height: 44.0,

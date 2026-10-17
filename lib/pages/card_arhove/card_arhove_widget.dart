@@ -1,4 +1,5 @@
 import '/backend/supabase/supabase.dart';
+import '/components/brand/brand_widgets.dart';
 import '/config/app_colors.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -850,8 +851,7 @@ class _CardArhoveWidgetState extends State<CardArhoveWidget> {
                                                   .bodyMedium
                                                   .fontStyle,
                                         ),
-                                        color:
-                                            FlutterFlowTheme.of(context).info,
+                                        color: AppColors.ink,
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .bodyMedium
@@ -876,8 +876,7 @@ class _CardArhoveWidgetState extends State<CardArhoveWidget> {
                                                   .bodyMedium
                                                   .fontStyle,
                                         ),
-                                        color:
-                                            FlutterFlowTheme.of(context).info,
+                                        color: AppColors.ink,
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .bodyMedium
@@ -1049,7 +1048,7 @@ class _CardArhoveWidgetState extends State<CardArhoveWidget> {
                                       child: ClipRRect(
                                         borderRadius:
                                             BorderRadius.circular(14.0),
-                                        child: Image.network(
+                                        child: Image.network(errorBuilder: rpassImageFallback,
                                           photooutItem.toString(),
                                           width: 200.0,
                                           height: 200.0,

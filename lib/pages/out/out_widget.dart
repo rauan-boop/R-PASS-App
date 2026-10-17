@@ -1,5 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/config/app_colors.dart';
+import '/components/brand/brand_widgets.dart';
 import '/config/app_config.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
@@ -63,27 +64,7 @@ class _OutWidgetState extends State<OutWidget> {
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                ClipRRect(
-                  borderRadius: BorderRadius.circular(14.0),
-                  child: Image.network(
-                    '${AppConfig.flutterFlowAssetsBaseUrl}/8pprxupa2ir0/R-PASS_logo.png',
-                    width: 200.0,
-                    height: 200.0,
-                    fit: BoxFit.cover,
-                  ),
-                ),
-                Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(14.0),
-                    child: Image.network(
-                      '${AppConfig.flutterFlowAssetsBaseUrl}/dao9njjrrcy8/%D0%BD%D0%B0%D0%B4%D0%BF%D0%B8%D1%81%D1%8C.png',
-                      width: 200.0,
-                      height: 50.46,
-                      fit: BoxFit.cover,
-                    ),
-                  ),
-                ),
+                const RPassBrand(logoSize: 104, fontSize: 34),
                 Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                   child: Text(
@@ -96,8 +77,7 @@ class _OutWidgetState extends State<OutWidget> {
                                 .bodyMedium
                                 .fontStyle,
                           ),
-                          color:
-                              FlutterFlowTheme.of(context).secondaryBackground,
+                          color: AppColors.ink,
                           fontSize: 22.0,
                           letterSpacing: 0.0,
                           fontWeight: FontWeight.w500,

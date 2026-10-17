@@ -272,8 +272,7 @@ class _GlavnayaWidgetState extends State<GlavnayaWidget> {
                                                     .bodyMedium
                                                     .fontStyle,
                                           ),
-                                          color:
-                                              FlutterFlowTheme.of(context).info,
+                                          color: AppColors.ink,
                                           letterSpacing: 0.0,
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
@@ -1321,8 +1320,7 @@ class _GlavnayaWidgetState extends State<GlavnayaWidget> {
                                                   .bodyMedium
                                                   .fontStyle,
                                         ),
-                                        color:
-                                            FlutterFlowTheme.of(context).info,
+                                        color: AppColors.ink,
                                         fontSize: 16.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.w500,
@@ -1608,8 +1606,7 @@ class _GlavnayaWidgetState extends State<GlavnayaWidget> {
                                                     .bodyMedium
                                                     .fontStyle,
                                           ),
-                                          color:
-                                              FlutterFlowTheme.of(context).info,
+                                          color: AppColors.ink,
                                           fontSize: 16.0,
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.w500,

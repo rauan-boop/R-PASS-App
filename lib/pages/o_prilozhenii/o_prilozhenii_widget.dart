@@ -1,6 +1,7 @@
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/config/app_config.dart';
 import '/config/app_colors.dart';
+import '/components/brand/brand_widgets.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
@@ -106,24 +107,7 @@ class _OPrilozheniiWidgetState extends State<OPrilozheniiWidget> {
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
                   children: [
-                    ClipRRect(
-                      borderRadius: BorderRadius.circular(14.0),
-                      child: Image.network(
-                        '${AppConfig.flutterFlowAssetsBaseUrl}/8pprxupa2ir0/R-PASS_logo.png',
-                        width: 200.0,
-                        height: 200.0,
-                        fit: BoxFit.cover,
-                      ),
-                    ),
-                    ClipRRect(
-                      borderRadius: BorderRadius.circular(14.0),
-                      child: Image.network(
-                        '${AppConfig.flutterFlowAssetsBaseUrl}/dao9njjrrcy8/%D0%BD%D0%B0%D0%B4%D0%BF%D0%B8%D1%81%D1%8C.png',
-                        width: 200.0,
-                        height: 68.75,
-                        fit: BoxFit.cover,
-                      ),
-                    ),
+                const RPassBrand(logoSize: 104, fontSize: 34),
                     Padding(
                       padding:
                           EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),

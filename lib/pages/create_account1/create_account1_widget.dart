@@ -215,8 +215,7 @@ class _CreateAccount1WidgetState extends State<CreateAccount1Widget> {
                                                     .bodyMedium
                                                     .fontStyle,
                                           ),
-                                          color:
-                                              FlutterFlowTheme.of(context).info,
+                                          color: AppColors.ink,
                                           fontSize: 14.0,
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.normal,
@@ -318,8 +317,7 @@ class _CreateAccount1WidgetState extends State<CreateAccount1Widget> {
                                                     .bodyMedium
                                                     .fontStyle,
                                           ),
-                                          color:
-                                              FlutterFlowTheme.of(context).info,
+                                          color: AppColors.ink,
                                           fontSize: 14.0,
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.normal,
@@ -421,8 +419,7 @@ class _CreateAccount1WidgetState extends State<CreateAccount1Widget> {
                                                     .bodyMedium
                                                     .fontStyle,
                                           ),
-                                          color:
-                                              FlutterFlowTheme.of(context).info,
+                                          color: AppColors.ink,
                                           fontSize: 14.0,
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.normal,

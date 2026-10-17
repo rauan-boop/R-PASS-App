@@ -1,4 +1,5 @@
 import '/auth/supabase_auth/auth_util.dart';
+import '/components/brand/brand_widgets.dart';
 import '/config/app_colors.dart';
 import '/config/app_config.dart';
 import '/backend/api_requests/api_calls.dart';
@@ -139,7 +140,7 @@ class _DataWidgetState extends State<DataWidget> {
                                           decoration: BoxDecoration(
                                             shape: BoxShape.circle,
                                           ),
-                                          child: Image.network(
+                                          child: Image.network(errorBuilder: rpassImageFallback,
                                             valueOrDefault<String>(
                                               containerProfilesRow?.pfoto,
                                               '${AppConfig.flutterFlowAssetsBaseUrl}/1z887tjlhzbz/i_(1).webp',
@@ -285,8 +286,7 @@ class _DataWidgetState extends State<DataWidget> {
                                   ),
                                   Divider(
                                     thickness: 2.0,
-                                    color:
-                                        FlutterFlowTheme.of(context).alternate,
+                                    color: FlutterFlowTheme.of(context).alternate,
                                   ),
                                   Align(
                                     alignment: AlignmentDirectional(1.0, 0.0),
@@ -1248,8 +1248,7 @@ class _DataWidgetState extends State<DataWidget> {
                                                     .bodyMedium
                                                     .fontStyle,
                                           ),
-                                          color:
-                                              FlutterFlowTheme.of(context).info,
+                                          color: AppColors.ink,
                                           letterSpacing: 0.0,
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
@@ -1280,8 +1279,7 @@ class _DataWidgetState extends State<DataWidget> {
                                                     .bodyMedium
                                                     .fontStyle,
                                           ),
-                                          color:
-                                              FlutterFlowTheme.of(context).info,
+                                          color: AppColors.ink,
                                           letterSpacing: 0.0,
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
@@ -1575,7 +1573,7 @@ class _DataWidgetState extends State<DataWidget> {
                                         decoration: BoxDecoration(
                                           shape: BoxShape.circle,
                                         ),
-                                        child: Image.network(
+                                        child: Image.network(errorBuilder: rpassImageFallback,
                                           valueOrDefault<String>(
                                             columnProfilesRow?.pfoto,
                                             '${AppConfig.flutterFlowAssetsBaseUrl}/1z887tjlhzbz/i_(1).webp',
@@ -1680,8 +1678,7 @@ class _DataWidgetState extends State<DataWidget> {
                                       },
                                       child: Icon(
                                         Icons.add_a_photo,
-                                        color:
-                                            FlutterFlowTheme.of(context).info,
+                                        color: AppColors.ink,
                                         size: 30.0,
                                       ),
                                     ),
@@ -2348,7 +2345,7 @@ class _DataWidgetState extends State<DataWidget> {
                                                             shape:
                                                                 BoxShape.circle,
                                                           ),
-                                                          child: Image.network(
+                                                          child: Image.network(errorBuilder: rpassImageFallback,
                                                             valueOrDefault<
                                                                 String>(
                                                               listViewProfilesRow
@@ -2410,8 +2407,7 @@ class _DataWidgetState extends State<DataWidget> {
                                                                               fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
                                                                               fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                             ),
-                                                                            color:
-                                                                                FlutterFlowTheme.of(context).info,
+                                                                            color: AppColors.ink,
                                                                             letterSpacing:
                                                                                 0.0,
                                                                             fontWeight:
@@ -2444,8 +2440,7 @@ class _DataWidgetState extends State<DataWidget> {
                                                                               fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
                                                                               fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                             ),
-                                                                            color:
-                                                                                FlutterFlowTheme.of(context).info,
+                                                                            color: AppColors.ink,
                                                                             letterSpacing:
                                                                                 0.0,
                                                                             fontWeight:
@@ -2541,8 +2536,7 @@ class _DataWidgetState extends State<DataWidget> {
                                                                               fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
                                                                               fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                             ),
-                                                                            color:
-                                                                                FlutterFlowTheme.of(context).info,
+                                                                            color: AppColors.ink,
                                                                             letterSpacing:
                                                                                 0.0,
                                                                             fontWeight:
@@ -2575,8 +2569,7 @@ class _DataWidgetState extends State<DataWidget> {
                                                                               fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
                                                                               fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                             ),
-                                                                            color:
-                                                                                FlutterFlowTheme.of(context).info,
+                                                                            color: AppColors.ink,
                                                                             letterSpacing:
                                                                                 0.0,
                                                                             fontWeight:
