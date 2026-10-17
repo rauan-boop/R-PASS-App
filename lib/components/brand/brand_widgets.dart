@@ -2,7 +2,7 @@ import '/config/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-/// Rounded gradient badge with a shield, used instead of the remote logo.
+/// App logo from bundled assets.
 class RPassLogo extends StatelessWidget {
   const RPassLogo({super.key, this.size = 96});
 
@@ -14,22 +14,19 @@ class RPassLogo extends StatelessWidget {
       width: size,
       height: size,
       decoration: BoxDecoration(
-        gradient: const LinearGradient(
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-          colors: [Color(0xFF14B8A6), AppColors.primaryDark],
-        ),
-        borderRadius: BorderRadius.circular(size * 0.3),
+        borderRadius: BorderRadius.circular(size * 0.22),
         boxShadow: [
           BoxShadow(
-            color: AppColors.primary.withOpacity(0.35),
-            blurRadius: size * 0.3,
-            offset: Offset(0, size * 0.1),
+            color: AppColors.ink.withOpacity(0.25),
+            blurRadius: size * 0.25,
+            offset: Offset(0, size * 0.08),
           ),
         ],
       ),
-      child: Icon(Icons.verified_user_rounded,
-          color: Colors.white, size: size * 0.55),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(size * 0.22),
+        child: Image.asset('assets/images/R-PASS_logo.png', fit: BoxFit.cover),
+      ),
     );
   }
 }
@@ -72,6 +69,8 @@ class RPassBrand extends StatelessWidget {
         RPassLogo(size: logoSize),
         const SizedBox(height: 16),
         RPassWordmark(fontSize: fontSize),
+        const SizedBox(height: 6),
+        Text(\n          '(RONAT Partner Authentication & Security System)',\n          textAlign: TextAlign.center,\n          style: GoogleFonts.manrope(\n            fontSize: 12.5,\n            fontWeight: FontWeight.w600,\n            color: AppColors.muted,\n            letterSpacing: 0.2,\n          ),\n        ),
       ],
     );
   }
