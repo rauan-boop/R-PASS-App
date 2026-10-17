@@ -9,6 +9,8 @@ import 'package:flutter/material.dart';
 // DO NOT REMOVE OR MODIFY THE CODE ABOVE!
 
 import 'package:supabase_flutter/supabase_flutter.dart';
+import '/auth/supabase_auth/supabase_user_provider.dart';
+import '/config/app_config.dart';
 
 Future<bool> loginWithUsername(
   String username,
@@ -16,6 +18,11 @@ Future<bool> loginWithUsername(
 ) async {
   // Этот код будет выполнен при вызове действия
   String? userEmail; // Используем String? для null safety
+
+  if (AppConfig.demoMode) {
+    demoSignIn();
+    return true;
+  }
 
   // 1. Определяем, email это или username
   if (username.contains('@')) {

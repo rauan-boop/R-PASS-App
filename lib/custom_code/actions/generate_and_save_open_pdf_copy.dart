@@ -31,6 +31,7 @@ Future<bool> generateAndSaveOpenPdfCopy(
   String ipAddress,
   String deviceModel,
 ) async {
+  if (AppConfig.demoMode) return true;
   try {
     debugPrint("Шаг 1: Проверка аутентификации пользователя.");
     final userId = Supabase.instance.client.auth.currentUser?.id;

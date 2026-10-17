@@ -11,11 +11,13 @@ import 'package:flutter/material.dart';
 import 'dart:io';
 import 'package:path/path.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
+import '/config/app_config.dart';
 
 Future<List<String>> uploadPhotos(
   List<String>? imagePaths,
   String? recordId,
 ) async {
+  if (AppConfig.demoMode) return [];
   if (imagePaths == null ||
       imagePaths.isEmpty ||
       recordId == null ||

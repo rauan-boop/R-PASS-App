@@ -32,6 +32,7 @@ Future<String?> generateAndSaveOpenSoglashenie(
   String ipAddress,
   String deviceModel,
 ) async {
+  if (AppConfig.demoMode) return 'demo-document.pdf';
   try {
     debugPrint("Шаг 1: Проверка аутентификации пользователя.");
     final userId = Supabase.instance.client.auth.currentUser?.id;

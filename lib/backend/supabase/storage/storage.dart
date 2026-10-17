@@ -1,3 +1,4 @@
+import '/config/app_config.dart';
 import '/flutter_flow/upload_data.dart';
 import '../supabase.dart';
 
@@ -18,6 +19,7 @@ Future<String> uploadSupabaseStorageFile({
   required String bucketName,
   required SelectedFile selectedFile,
 }) async {
+  if (AppConfig.demoMode) return '';
   final storageBucket = SupaFlow.client.storage.from(bucketName);
   await storageBucket.uploadBinary(
     selectedFile.storagePath,
@@ -28,6 +30,7 @@ Future<String> uploadSupabaseStorageFile({
 }
 
 Future deleteSupabaseFileFromPublicUrl(String publicUrl) async {
+  if (AppConfig.demoMode) return;
   final storagePath = SupaFlow.client.storage.pathFromPublicUrl(publicUrl);
   if (storagePath == null) {
     return;

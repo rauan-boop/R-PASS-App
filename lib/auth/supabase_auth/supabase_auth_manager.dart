@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import '/auth/auth_manager.dart';
 import '/backend/supabase/supabase.dart';
+import '/config/app_config.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'email_auth.dart';
 
@@ -13,6 +14,10 @@ export '/auth/base_auth_user_provider.dart';
 class SupabaseAuthManager extends AuthManager with EmailSignInManager {
   @override
   Future signOut() {
+    if (AppConfig.demoMode) {
+      demoSignOut();
+      return Future.value();
+    }
     return SupaFlow.client.auth.signOut();
   }
 
@@ -84,6 +89,12 @@ class SupabaseAuthManager extends AuthManager with EmailSignInManager {
     required BuildContext context,
     String? redirectTo,
   }) async {
+    if (AppConfig.demoMode) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Демо-режим: письмо не отправляется')),
+      );
+      return null;
+    }
     try {
       await SupaFlow.client.auth
           .resetPasswordForEmail(email, redirectTo: redirectTo);
@@ -127,6 +138,10 @@ class SupabaseAuthManager extends AuthManager with EmailSignInManager {
     BuildContext context,
     Future<User?> Function() signInFunc,
   ) async {
+    if (AppConfig.demoMode) {
+      demoSignIn();
+      return currentUser;
+    }
     try {
       final user = await signInFunc();
       final authUser = user == null ? null : RPassSupabaseUser(user);

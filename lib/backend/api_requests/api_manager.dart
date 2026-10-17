@@ -12,6 +12,8 @@ import 'package:equatable/equatable.dart';
 import 'package:http_parser/http_parser.dart';
 import 'package:mime_type/mime_type.dart';
 
+import '/config/app_config.dart';
+import '/config/demo_data.dart';
 import '/flutter_flow/uploaded_file.dart';
 
 import 'get_streamed_response.dart';
@@ -475,6 +477,9 @@ class ApiManager {
     ApiCallOptions? options,
     http.Client? client,
   }) async {
+    if (AppConfig.demoMode) {
+      return ApiCallResponse(DemoData.apiBody(callName), const {}, 200);
+    }
     final callOptions = options ??
         ApiCallOptions(
           callName: callName,

@@ -15,11 +15,14 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 import 'dart:io';
 import 'package:path/path.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
+import '/config/app_config.dart';
 
 Future<List<String>> uploadImagePaths(
   List<String>? imagePaths,
   String? recordId,
 ) async {
+  if (AppConfig.demoMode) return [];
+
   // --- ОТЛАДОЧНЫЕ СООБЩЕНИЯ ---
   print('--- ЗАПУСК ФУНКЦИИ uploadImagePaths ---');
   print('Получен recordId: ${recordId ?? "null"}');

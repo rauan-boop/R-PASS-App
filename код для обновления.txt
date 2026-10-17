@@ -1,0 +1,11 @@
+git clone https://github.com/rauan-boop/R-PASS-App.git r-pass
+cd r-pass
+cp .env.example .env
+nano .env
+docker compose up -d --build
+
+
+для обновления 
+cd r-pass
+git pull origin main
+docker compose up -d --build

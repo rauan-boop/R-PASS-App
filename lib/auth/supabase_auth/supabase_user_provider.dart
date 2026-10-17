@@ -1,6 +1,10 @@
+import 'dart:async';
+
 import 'package:rxdart/rxdart.dart';
 
 import '/backend/supabase/supabase.dart';
+import '/config/app_config.dart';
+import '/config/demo_data.dart';
 import '../base_auth_user_provider.dart';
 
 export '../base_auth_user_provider.dart';
@@ -23,6 +27,7 @@ class RPassSupabaseUser extends BaseAuthUser {
 
   @override
   Future? updateEmail(String email) async {
+    if (AppConfig.demoMode) return;
     final response =
         await SupaFlow.client.auth.updateUser(UserAttributes(email: email));
     if (response.user != null) {
@@ -32,6 +37,7 @@ class RPassSupabaseUser extends BaseAuthUser {
 
   @override
   Future? updatePassword(String newPassword) async {
+    if (AppConfig.demoMode) return;
     final response = await SupaFlow.client.auth.updateUser(
       UserAttributes(password: newPassword),
     );
@@ -56,10 +62,39 @@ class RPassSupabaseUser extends BaseAuthUser {
 
   @override
   Future refreshUser() async {
+    if (AppConfig.demoMode) return;
     await SupaFlow.client.auth
         .refreshSession()
         .then((_) => user = SupaFlow.client.auth.currentUser);
   }
+}
+
+final _demoAuthController = StreamController<BaseAuthUser>.broadcast();
+
+User _demoUser() => User(
+      id: DemoData.userId,
+      appMetadata: const {},
+      userMetadata: const {},
+      aud: 'authenticated',
+      createdAt: DateTime.now().toIso8601String(),
+      email: DemoData.userEmail,
+      emailConfirmedAt: DateTime.now().toIso8601String(),
+    );
+
+void demoSignIn() {
+  currentUser = RPassSupabaseUser(_demoUser());
+  _demoAuthController.add(currentUser!);
+}
+
+void demoSignOut() {
+  currentUser = RPassSupabaseUser(null);
+  _demoAuthController.add(currentUser!);
+}
+
+Stream<BaseAuthUser> _demoUserStream() async* {
+  currentUser = RPassSupabaseUser(null);
+  yield currentUser!;
+  yield* _demoAuthController.stream;
 }
 
 /// Generates a stream of the authenticated user.
@@ -67,6 +102,7 @@ class RPassSupabaseUser extends BaseAuthUser {
 /// user is already authenticated. So we add a default null user to the stream,
 /// if we need to interact with the [currentUser] before logging in.
 Stream<BaseAuthUser> rPassSupabaseUserStream() {
+  if (AppConfig.demoMode) return _demoUserStream();
   final supabaseAuthStream = SupaFlow.client.auth.onAuthStateChange.debounce(
       (authState) => authState.event == AuthChangeEvent.tokenRefreshed
           ? TimerStream(authState, Duration(seconds: 1))

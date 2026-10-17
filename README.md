@@ -2,7 +2,24 @@
 
 R-PASS is a Flutter Web client for the shared R-CORE Supabase environment.
 The production image contains only the compiled web application and Nginx; it
-does **not** start a database, Supabase, or Firebase service.
+does **not** start a database or Supabase service.
+
+## Demo mode (default)
+
+With `DEMO_MODE=true` (the default in `.env.example`) the app is a pure visual
+demo: it uses built-in mock data (companies, managers, blacklist records),
+needs **no** Supabase, accepts any login/password and saves nothing. Quick
+start:
+
+```bash
+cp .env.example .env
+docker compose up -d --build
+# open http://<server>:8080 and log in with any credentials
+```
+
+To switch to the real backend set `DEMO_MODE=false`, fill in `SUPABASE_URL`
+and `SUPABASE_ANON_KEY`, and rebuild. The rest of this guide describes that
+real deployment.
 
 ## Prerequisites
 
@@ -11,7 +28,6 @@ does **not** start a database, Supabase, or Firebase service.
   Supabase endpoint.
 - A Supabase **anon/publishable** key for the R-CORE project. Never put a
   `service_role` or other secret key in this application.
-- Firebase Web configuration if Firebase Performance must remain enabled.
 
 ## First deployment
 
@@ -29,18 +45,16 @@ does **not** start a database, Supabase, or Firebase service.
    chmod 600 .env
    ```
 
-3. Edit `.env` and set `SUPABASE_URL` to the shared R-CORE URL (without a
-   trailing slash) and `SUPABASE_ANON_KEY` to its browser anon/publishable
-   key. Fill in every Firebase Web field because the application initializes
-   Firebase on startup. Set `R_PASS_PORT` to an unused server port, for
+3. Edit `.env`: set `DEMO_MODE=false`, `SUPABASE_URL` to the shared R-CORE URL
+   (without a trailing slash) and `SUPABASE_ANON_KEY` to its browser
+   anon/publishable key. Set `R_PASS_PORT` to an unused server port, for
    example `8080`. Set the public FlutterFlow asset URL and the support,
    WhatsApp, and IP service URLs as appropriate for the installation.
 
    Docker passes these values to `flutter build web` as Dart defines. This is
    required because a Flutter Web application is static: changing `.env`
-   requires rebuilding the image. The anon/publishable key and Firebase Web
-   configuration are visible in the browser bundle by design; access control
-   must be enforced by Supabase RLS.
+   requires rebuilding the image. The anon/publishable key is visible in the
+   browser bundle by design; access control must be enforced by Supabase RLS.
 
 4. Apply [the tenant RLS migration](supabase/migrations/20261017_rpass_tenant_rls.sql)
    to the shared R-CORE Supabase project using the SQL Editor or the

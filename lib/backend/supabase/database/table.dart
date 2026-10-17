@@ -1,3 +1,5 @@
+import '/config/app_config.dart';
+import '/config/demo_data.dart';
 import 'database.dart';
 
 abstract class SupabaseTable<T extends SupabaseDataRow> {
@@ -6,10 +8,19 @@ abstract class SupabaseTable<T extends SupabaseDataRow> {
 
   PostgrestFilterBuilder _select() => SupaFlow.client.from(tableName).select();
 
+  // Demo mode ignores filters and serves canned rows; writes are no-ops.
+  List<T> _demoRows([int? limit]) {
+    final rows = DemoData.rows(tableName)
+        .map((r) => createRow(Map<String, dynamic>.from(r)))
+        .toList();
+    return limit != null && rows.length > limit ? rows.sublist(0, limit) : rows;
+  }
+
   Future<List<T>> queryRows({
     required PostgrestTransformBuilder Function(PostgrestFilterBuilder) queryFn,
     int? limit,
   }) {
+    if (AppConfig.demoMode) return Future.value(_demoRows(limit));
     final select = _select();
     var query = queryFn(select);
     query = limit != null ? query.limit(limit) : query;
@@ -18,21 +29,28 @@ abstract class SupabaseTable<T extends SupabaseDataRow> {
 
   Future<List<T>> querySingleRow({
     required PostgrestTransformBuilder Function(PostgrestFilterBuilder) queryFn,
-  }) =>
-      queryFn(_select())
-          .limit(1)
-          .select()
-          .maybeSingle()
-          .catchError((e) => print('Error querying row: $e'))
-          .then((r) => [if (r != null) createRow(r)]);
+  }) {
+    if (AppConfig.demoMode) return Future.value(_demoRows(1));
+    return queryFn(_select())
+        .limit(1)
+        .select()
+        .maybeSingle()
+        .catchError((e) => print('Error querying row: $e'))
+        .then((r) => [if (r != null) createRow(r)]);
+  }
 
-  Future<T> insert(Map<String, dynamic> data) => SupaFlow.client
-      .from(tableName)
-      .insert(data)
-      .select()
-      .limit(1)
-      .single()
-      .then(createRow);
+  Future<T> insert(Map<String, dynamic> data) {
+    if (AppConfig.demoMode) {
+      return Future.value(createRow(DemoData.inserted(data)));
+    }
+    return SupaFlow.client
+        .from(tableName)
+        .insert(data)
+        .select()
+        .limit(1)
+        .single()
+        .then(createRow);
+  }
 
   Future<List<T>> update({
     required Map<String, dynamic> data,
@@ -40,6 +58,7 @@ abstract class SupabaseTable<T extends SupabaseDataRow> {
         matchingRows,
     bool returnRows = false,
   }) async {
+    if (AppConfig.demoMode) return [];
     final update = matchingRows(SupaFlow.client.from(tableName).update(data));
     if (!returnRows) {
       await update;
@@ -53,6 +72,7 @@ abstract class SupabaseTable<T extends SupabaseDataRow> {
         matchingRows,
     bool returnRows = false,
   }) async {
+    if (AppConfig.demoMode) return [];
     final delete = matchingRows(SupaFlow.client.from(tableName).delete());
     if (!returnRows) {
       await delete;

@@ -7,6 +7,7 @@ import '/flutter_flow/custom_functions.dart'; // Imports custom functions
 import 'package:flutter/material.dart';
 // Begin custom action code
 // DO NOT REMOVE OR MODIFY THE CODE ABOVE!
+import '/config/app_config.dart';
 
 // Imports for PDF generation, Supabase, and other utilities
 import 'package:pdf/pdf.dart';
@@ -23,6 +24,7 @@ Future<String?> generateAndSavePdf(
   String iin,
   String fileName,
 ) async {
+  if (AppConfig.demoMode) return 'demo-document.pdf';
   // 1. Проверяем, что пользователь аутентифицирован
   final userId = Supabase.instance.client.auth.currentUser?.id;
   if (userId == null) {
