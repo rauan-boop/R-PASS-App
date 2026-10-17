@@ -70,7 +70,16 @@ class RPassBrand extends StatelessWidget {
         const SizedBox(height: 16),
         RPassWordmark(fontSize: fontSize),
         const SizedBox(height: 6),
-        Text(\n          '(RONAT Partner Authentication & Security System)',\n          textAlign: TextAlign.center,\n          style: GoogleFonts.manrope(\n            fontSize: 12.5,\n            fontWeight: FontWeight.w600,\n            color: AppColors.muted,\n            letterSpacing: 0.2,\n          ),\n        ),
+        Text(
+          '(RONAT Partner Authentication & Security System)',
+          textAlign: TextAlign.center,
+          style: GoogleFonts.manrope(
+            fontSize: 12.5,
+            fontWeight: FontWeight.w600,
+            color: AppColors.muted,
+            letterSpacing: 0.2,
+          ),
+        ),
       ],
     );
   }
