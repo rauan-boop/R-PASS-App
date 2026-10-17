@@ -1,4 +1,5 @@
 import '/backend/supabase/supabase.dart';
+import '/config/app_colors.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -50,9 +51,9 @@ class _ManagerArhiveWidgetState extends State<ManagerArhiveWidget> {
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: Colors.black,
+        backgroundColor: AppColors.bg,
         appBar: AppBar(
-          backgroundColor: Color(0xFF060606),
+          backgroundColor: AppColors.bg,
           automaticallyImplyLeading: false,
           leading: FlutterFlowIconButton(
             borderColor: Colors.transparent,
@@ -61,7 +62,7 @@ class _ManagerArhiveWidgetState extends State<ManagerArhiveWidget> {
             buttonSize: 60.0,
             icon: Icon(
               Icons.arrow_back_rounded,
-              color: Colors.white,
+              color: AppColors.ink,
               size: 30.0,
             ),
             onPressed: () async {
@@ -71,13 +72,13 @@ class _ManagerArhiveWidgetState extends State<ManagerArhiveWidget> {
           title: Text(
             'Менеджеры в архиве',
             style: FlutterFlowTheme.of(context).headlineMedium.override(
-                  font: GoogleFonts.interTight(
+                  font: GoogleFonts.manrope(
                     fontWeight:
                         FlutterFlowTheme.of(context).headlineMedium.fontWeight,
                     fontStyle:
                         FlutterFlowTheme.of(context).headlineMedium.fontStyle,
                   ),
-                  color: Colors.white,
+                  color: AppColors.ink,
                   fontSize: 22.0,
                   letterSpacing: 0.0,
                   fontWeight:
@@ -101,8 +102,9 @@ class _ManagerArhiveWidgetState extends State<ManagerArhiveWidget> {
                   width: double.infinity,
                   height: MediaQuery.sizeOf(context).height * 1.0,
                   decoration: BoxDecoration(
-                    color: Color(0xFF242323),
-                    borderRadius: BorderRadius.circular(16.0),
+                    color: AppColors.surface,
+                    boxShadow: [AppColors.cardShadow],
+                    borderRadius: BorderRadius.circular(20.0),
                   ),
                   child: FutureBuilder<List<ProfilesRow>>(
                     future: ProfilesTable().queryRows(
@@ -122,7 +124,7 @@ class _ManagerArhiveWidgetState extends State<ManagerArhiveWidget> {
                             width: 80.0,
                             height: 80.0,
                             child: SpinKitCircle(
-                              color: Color(0xFF5D5C62),
+                              color: AppColors.primary,
                               size: 80.0,
                             ),
                           ),
@@ -144,10 +146,10 @@ class _ManagerArhiveWidgetState extends State<ManagerArhiveWidget> {
                                 0.0, 5.0, 0.0, 0.0),
                             child: Card(
                               clipBehavior: Clip.antiAliasWithSaveLayer,
-                              color: Color(0xFF545454),
+                              color: AppColors.surface,
                               elevation: 3.0,
                               shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(8.0),
+                                borderRadius: BorderRadius.circular(14.0),
                               ),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
@@ -170,7 +172,7 @@ class _ManagerArhiveWidgetState extends State<ManagerArhiveWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  font: GoogleFonts.inter(
+                                                  font: GoogleFonts.manrope(
                                                     fontWeight:
                                                         FlutterFlowTheme.of(
                                                                 context)
@@ -207,7 +209,7 @@ class _ManagerArhiveWidgetState extends State<ManagerArhiveWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                font: GoogleFonts.inter(
+                                                font: GoogleFonts.manrope(
                                                   fontWeight:
                                                       FlutterFlowTheme.of(
                                                               context)
@@ -249,7 +251,7 @@ class _ManagerArhiveWidgetState extends State<ManagerArhiveWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                font: GoogleFonts.inter(
+                                                font: GoogleFonts.manrope(
                                                   fontWeight:
                                                       FlutterFlowTheme.of(
                                                               context)
@@ -283,7 +285,7 @@ class _ManagerArhiveWidgetState extends State<ManagerArhiveWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                font: GoogleFonts.inter(
+                                                font: GoogleFonts.manrope(
                                                   fontWeight:
                                                       FlutterFlowTheme.of(
                                                               context)
@@ -326,7 +328,7 @@ class _ManagerArhiveWidgetState extends State<ManagerArhiveWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                font: GoogleFonts.inter(
+                                                font: GoogleFonts.manrope(
                                                   fontWeight:
                                                       FlutterFlowTheme.of(
                                                               context)

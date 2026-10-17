@@ -1,4 +1,5 @@
 import '/backend/supabase/supabase.dart';
+import '/config/app_colors.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
@@ -50,7 +51,8 @@ class _DeletManagerWidgetState extends State<DeletManagerWidget> {
       width: MediaQuery.sizeOf(context).width * 0.7,
       height: 150.96,
       decoration: BoxDecoration(
-        color: Color(0xFF7E7C7C),
+        color: AppColors.surface,
+        boxShadow: [AppColors.cardShadow],
         borderRadius: BorderRadius.only(
           bottomLeft: Radius.circular(0.0),
           bottomRight: Radius.circular(0.0),
@@ -66,13 +68,13 @@ class _DeletManagerWidgetState extends State<DeletManagerWidget> {
             child: Text(
               'Подтвердить удаление',
               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                    font: GoogleFonts.inter(
+                    font: GoogleFonts.manrope(
                       fontWeight:
                           FlutterFlowTheme.of(context).bodyMedium.fontWeight,
                       fontStyle:
                           FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                     ),
-                    color: FlutterFlowTheme.of(context).secondaryBackground,
+                    color: AppColors.ink,
                     letterSpacing: 0.0,
                     fontWeight:
                         FlutterFlowTheme.of(context).bodyMedium.fontWeight,
@@ -111,7 +113,7 @@ class _DeletManagerWidgetState extends State<DeletManagerWidget> {
                         EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                     color: Color(0xFFEF3940),
                     textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                          font: GoogleFonts.interTight(
+                          font: GoogleFonts.manrope(
                             fontWeight: FlutterFlowTheme.of(context)
                                 .titleSmall
                                 .fontWeight,
@@ -128,7 +130,7 @@ class _DeletManagerWidgetState extends State<DeletManagerWidget> {
                               FlutterFlowTheme.of(context).titleSmall.fontStyle,
                         ),
                     elevation: 0.0,
-                    borderRadius: BorderRadius.circular(8.0),
+                    borderRadius: BorderRadius.circular(14.0),
                   ),
                 ),
                 FFButtonWidget(
@@ -145,7 +147,7 @@ class _DeletManagerWidgetState extends State<DeletManagerWidget> {
                         EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                     color: FlutterFlowTheme.of(context).primary,
                     textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                          font: GoogleFonts.interTight(
+                          font: GoogleFonts.manrope(
                             fontWeight: FlutterFlowTheme.of(context)
                                 .titleSmall
                                 .fontWeight,
@@ -162,7 +164,7 @@ class _DeletManagerWidgetState extends State<DeletManagerWidget> {
                               FlutterFlowTheme.of(context).titleSmall.fontStyle,
                         ),
                     elevation: 0.0,
-                    borderRadius: BorderRadius.circular(8.0),
+                    borderRadius: BorderRadius.circular(14.0),
                   ),
                 ),
               ],

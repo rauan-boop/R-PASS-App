@@ -1,4 +1,5 @@
 import '/flutter_flow/flutter_flow_drop_down.dart';
+import '/config/app_colors.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -58,7 +59,7 @@ class _SupportWidgetState extends State<SupportWidget> {
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: Colors.black,
+        backgroundColor: AppColors.bg,
         appBar: AppBar(
           backgroundColor: Colors.transparent,
           automaticallyImplyLeading: false,
@@ -69,7 +70,7 @@ class _SupportWidgetState extends State<SupportWidget> {
             buttonSize: 60.0,
             icon: Icon(
               Icons.arrow_back_rounded,
-              color: Colors.white,
+              color: AppColors.ink,
               size: 30.0,
             ),
             onPressed: () async {
@@ -79,13 +80,13 @@ class _SupportWidgetState extends State<SupportWidget> {
           title: Text(
             'Support',
             style: FlutterFlowTheme.of(context).headlineMedium.override(
-                  font: GoogleFonts.interTight(
+                  font: GoogleFonts.manrope(
                     fontWeight:
                         FlutterFlowTheme.of(context).headlineMedium.fontWeight,
                     fontStyle:
                         FlutterFlowTheme.of(context).headlineMedium.fontStyle,
                   ),
-                  color: Colors.white,
+                  color: AppColors.ink,
                   fontSize: 22.0,
                   letterSpacing: 0.0,
                   fontWeight:
@@ -128,7 +129,7 @@ class _SupportWidgetState extends State<SupportWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.manrope(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .bodyMedium
@@ -158,7 +159,7 @@ class _SupportWidgetState extends State<SupportWidget> {
                                   TextSpan(
                                     text: FFAppState().polzCompany,
                                     style: TextStyle(
-                                      color: FlutterFlowTheme.of(context).info,
+                                      color: AppColors.ink,
                                     ),
                                   ),
                                   TextSpan(
@@ -168,7 +169,7 @@ class _SupportWidgetState extends State<SupportWidget> {
                                   TextSpan(
                                     text: FFAppState().polzSurname,
                                     style: TextStyle(
-                                      color: FlutterFlowTheme.of(context).info,
+                                      color: AppColors.ink,
                                     ),
                                   ),
                                   TextSpan(
@@ -178,7 +179,7 @@ class _SupportWidgetState extends State<SupportWidget> {
                                   TextSpan(
                                     text: FFAppState().polzName,
                                     style: TextStyle(
-                                      color: FlutterFlowTheme.of(context).info,
+                                      color: AppColors.ink,
                                     ),
                                   ),
                                   TextSpan(
@@ -189,7 +190,7 @@ class _SupportWidgetState extends State<SupportWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
-                                      font: GoogleFonts.inter(
+                                      font: GoogleFonts.manrope(
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .fontWeight,
@@ -226,7 +227,7 @@ class _SupportWidgetState extends State<SupportWidget> {
                             textStyle: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  font: GoogleFonts.inter(
+                                  font: GoogleFonts.manrope(
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .fontWeight,
@@ -280,7 +281,7 @@ class _SupportWidgetState extends State<SupportWidget> {
                                 labelStyle: FlutterFlowTheme.of(context)
                                     .labelMedium
                                     .override(
-                                      font: GoogleFonts.inter(
+                                      font: GoogleFonts.manrope(
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .labelMedium
                                             .fontWeight,
@@ -288,7 +289,7 @@ class _SupportWidgetState extends State<SupportWidget> {
                                             .labelMedium
                                             .fontStyle,
                                       ),
-                                      color: FlutterFlowTheme.of(context).info,
+                                      color: AppColors.ink,
                                       letterSpacing: 0.0,
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .labelMedium
@@ -301,7 +302,7 @@ class _SupportWidgetState extends State<SupportWidget> {
                                 hintStyle: FlutterFlowTheme.of(context)
                                     .labelMedium
                                     .override(
-                                      font: GoogleFonts.inter(
+                                      font: GoogleFonts.manrope(
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .labelMedium
                                             .fontWeight,
@@ -325,28 +326,28 @@ class _SupportWidgetState extends State<SupportWidget> {
                                         .secondaryText,
                                     width: 1.0,
                                   ),
-                                  borderRadius: BorderRadius.circular(8.0),
+                                  borderRadius: BorderRadius.circular(14.0),
                                 ),
                                 focusedBorder: OutlineInputBorder(
                                   borderSide: BorderSide(
                                     color: Color(0x00000000),
                                     width: 1.0,
                                   ),
-                                  borderRadius: BorderRadius.circular(8.0),
+                                  borderRadius: BorderRadius.circular(14.0),
                                 ),
                                 errorBorder: OutlineInputBorder(
                                   borderSide: BorderSide(
                                     color: FlutterFlowTheme.of(context).error,
                                     width: 1.0,
                                   ),
-                                  borderRadius: BorderRadius.circular(8.0),
+                                  borderRadius: BorderRadius.circular(14.0),
                                 ),
                                 focusedErrorBorder: OutlineInputBorder(
                                   borderSide: BorderSide(
                                     color: FlutterFlowTheme.of(context).error,
                                     width: 1.0,
                                   ),
-                                  borderRadius: BorderRadius.circular(8.0),
+                                  borderRadius: BorderRadius.circular(14.0),
                                 ),
                                 filled: true,
                                 fillColor: Color(0x00FFFFFF),
@@ -354,7 +355,7 @@ class _SupportWidgetState extends State<SupportWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    font: GoogleFonts.inter(
+                                    font: GoogleFonts.manrope(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .fontWeight,
@@ -362,7 +363,7 @@ class _SupportWidgetState extends State<SupportWidget> {
                                           .bodyMedium
                                           .fontStyle,
                                     ),
-                                    color: FlutterFlowTheme.of(context).info,
+                                    color: AppColors.ink,
                                     letterSpacing: 0.0,
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .bodyMedium
@@ -409,7 +410,7 @@ class _SupportWidgetState extends State<SupportWidget> {
                               textStyle: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
-                                    font: GoogleFonts.interTight(
+                                    font: GoogleFonts.manrope(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .titleSmall
                                           .fontWeight,
@@ -427,7 +428,7 @@ class _SupportWidgetState extends State<SupportWidget> {
                                         .fontStyle,
                                   ),
                               elevation: 0.0,
-                              borderRadius: BorderRadius.circular(8.0),
+                              borderRadius: BorderRadius.circular(14.0),
                             ),
                           ),
                         ),

@@ -1,4 +1,5 @@
 import '/auth/supabase_auth/auth_util.dart';
+import '/config/app_colors.dart';
 import '/config/app_config.dart';
 import '/backend/api_requests/api_calls.dart';
 import '/backend/supabase/supabase.dart';
@@ -65,7 +66,7 @@ class _DataWidgetState extends State<DataWidget> {
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: Color(0xFF020202),
+        backgroundColor: AppColors.bg,
         drawer: Container(
           width: MediaQuery.sizeOf(context).width * 0.85,
           child: Drawer(
@@ -74,7 +75,8 @@ class _DataWidgetState extends State<DataWidget> {
               width: double.infinity,
               height: double.infinity,
               decoration: BoxDecoration(
-                color: Color(0xFF1C1B1B),
+                color: AppColors.surface,
+                boxShadow: [AppColors.cardShadow],
               ),
               child: Padding(
                 padding: EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 5.0, 0.0),
@@ -98,7 +100,7 @@ class _DataWidgetState extends State<DataWidget> {
                                 width: 80.0,
                                 height: 80.0,
                                 child: SpinKitCircle(
-                                  color: Color(0xFF5D5C62),
+                                  color: AppColors.primary,
                                   size: 80.0,
                                 ),
                               ),
@@ -116,7 +118,8 @@ class _DataWidgetState extends State<DataWidget> {
                             width: double.infinity,
                             height: 503.37,
                             decoration: BoxDecoration(
-                              color: Color(0xFF1C1B1B),
+                              color: AppColors.surface,
+                              boxShadow: [AppColors.cardShadow],
                             ),
                             child: SingleChildScrollView(
                               child: Column(
@@ -166,7 +169,7 @@ class _DataWidgetState extends State<DataWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        font: GoogleFonts.inter(
+                                                        font: GoogleFonts.manrope(
                                                           fontWeight:
                                                               FlutterFlowTheme.of(
                                                                       context)
@@ -205,7 +208,7 @@ class _DataWidgetState extends State<DataWidget> {
                                                         context)
                                                     .bodyMedium
                                                     .override(
-                                                      font: GoogleFonts.inter(
+                                                      font: GoogleFonts.manrope(
                                                         fontWeight:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -244,7 +247,7 @@ class _DataWidgetState extends State<DataWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        font: GoogleFonts.inter(
+                                                        font: GoogleFonts.manrope(
                                                           fontWeight:
                                                               FlutterFlowTheme.of(
                                                                       context)
@@ -298,7 +301,7 @@ class _DataWidgetState extends State<DataWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
-                                              font: GoogleFonts.inter(
+                                              font: GoogleFonts.manrope(
                                                 fontWeight:
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
@@ -348,7 +351,7 @@ class _DataWidgetState extends State<DataWidget> {
                                                   context)
                                               .titleSmall
                                               .override(
-                                                font: GoogleFonts.interTight(
+                                                font: GoogleFonts.manrope(
                                                   fontWeight:
                                                       FlutterFlowTheme.of(
                                                               context)
@@ -375,10 +378,10 @@ class _DataWidgetState extends State<DataWidget> {
                                               ),
                                           elevation: 0.0,
                                           borderSide: BorderSide(
-                                            color: Color(0xFF828385),
+                                            color: AppColors.border,
                                           ),
                                           borderRadius:
-                                              BorderRadius.circular(8.0),
+                                              BorderRadius.circular(14.0),
                                         ),
                                       ),
                                     ),
@@ -410,7 +413,7 @@ class _DataWidgetState extends State<DataWidget> {
                                                   context)
                                               .titleSmall
                                               .override(
-                                                font: GoogleFonts.interTight(
+                                                font: GoogleFonts.manrope(
                                                   fontWeight:
                                                       FlutterFlowTheme.of(
                                                               context)
@@ -437,10 +440,10 @@ class _DataWidgetState extends State<DataWidget> {
                                               ),
                                           elevation: 0.0,
                                           borderSide: BorderSide(
-                                            color: Color(0xFF828385),
+                                            color: AppColors.border,
                                           ),
                                           borderRadius:
-                                              BorderRadius.circular(8.0),
+                                              BorderRadius.circular(14.0),
                                         ),
                                       ),
                                     ),
@@ -492,7 +495,7 @@ class _DataWidgetState extends State<DataWidget> {
                                         decoration: BoxDecoration(
                                           color: Color(0xFF57636C),
                                           borderRadius:
-                                              BorderRadius.circular(8.0),
+                                              BorderRadius.circular(14.0),
                                         ),
                                         child: Padding(
                                           padding:
@@ -509,7 +512,7 @@ class _DataWidgetState extends State<DataWidget> {
                                                         context)
                                                     .bodyMedium
                                                     .override(
-                                                      font: GoogleFonts.inter(
+                                                      font: GoogleFonts.manrope(
                                                         fontWeight:
                                                             FontWeight.w600,
                                                         fontStyle:
@@ -565,7 +568,7 @@ class _DataWidgetState extends State<DataWidget> {
                                           decoration: BoxDecoration(
                                             color: Color(0xFF57636C),
                                             borderRadius:
-                                                BorderRadius.circular(8.0),
+                                                BorderRadius.circular(14.0),
                                           ),
                                           child: Padding(
                                             padding:
@@ -583,7 +586,7 @@ class _DataWidgetState extends State<DataWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        font: GoogleFonts.inter(
+                                                        font: GoogleFonts.manrope(
                                                           fontWeight:
                                                               FontWeight.w600,
                                                           fontStyle:
@@ -639,7 +642,7 @@ class _DataWidgetState extends State<DataWidget> {
                                           decoration: BoxDecoration(
                                             color: Color(0xFF57636C),
                                             borderRadius:
-                                                BorderRadius.circular(8.0),
+                                                BorderRadius.circular(14.0),
                                           ),
                                           child: Padding(
                                             padding:
@@ -657,7 +660,7 @@ class _DataWidgetState extends State<DataWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        font: GoogleFonts.inter(
+                                                        font: GoogleFonts.manrope(
                                                           fontWeight:
                                                               FontWeight.w600,
                                                           fontStyle:
@@ -713,7 +716,7 @@ class _DataWidgetState extends State<DataWidget> {
                                           decoration: BoxDecoration(
                                             color: Color(0xFF57636C),
                                             borderRadius:
-                                                BorderRadius.circular(8.0),
+                                                BorderRadius.circular(14.0),
                                           ),
                                           child: Padding(
                                             padding:
@@ -731,7 +734,7 @@ class _DataWidgetState extends State<DataWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        font: GoogleFonts.inter(
+                                                        font: GoogleFonts.manrope(
                                                           fontWeight:
                                                               FontWeight.w600,
                                                           fontStyle:
@@ -786,7 +789,7 @@ class _DataWidgetState extends State<DataWidget> {
                                         decoration: BoxDecoration(
                                           color: Color(0xFF57636C),
                                           borderRadius:
-                                              BorderRadius.circular(8.0),
+                                              BorderRadius.circular(14.0),
                                         ),
                                         child: Padding(
                                           padding:
@@ -803,7 +806,7 @@ class _DataWidgetState extends State<DataWidget> {
                                                         context)
                                                     .bodyMedium
                                                     .override(
-                                                      font: GoogleFonts.inter(
+                                                      font: GoogleFonts.manrope(
                                                         fontWeight:
                                                             FontWeight.w600,
                                                         fontStyle:
@@ -858,7 +861,7 @@ class _DataWidgetState extends State<DataWidget> {
                                         decoration: BoxDecoration(
                                           color: Color(0xFF57636C),
                                           borderRadius:
-                                              BorderRadius.circular(8.0),
+                                              BorderRadius.circular(14.0),
                                         ),
                                         child: Padding(
                                           padding:
@@ -875,7 +878,7 @@ class _DataWidgetState extends State<DataWidget> {
                                                         context)
                                                     .bodyMedium
                                                     .override(
-                                                      font: GoogleFonts.inter(
+                                                      font: GoogleFonts.manrope(
                                                         fontWeight:
                                                             FontWeight.w600,
                                                         fontStyle:
@@ -930,7 +933,7 @@ class _DataWidgetState extends State<DataWidget> {
                                         decoration: BoxDecoration(
                                           color: Color(0xFF57636C),
                                           borderRadius:
-                                              BorderRadius.circular(8.0),
+                                              BorderRadius.circular(14.0),
                                         ),
                                         child: Padding(
                                           padding:
@@ -947,7 +950,7 @@ class _DataWidgetState extends State<DataWidget> {
                                                         context)
                                                     .bodyMedium
                                                     .override(
-                                                      font: GoogleFonts.inter(
+                                                      font: GoogleFonts.manrope(
                                                         fontWeight:
                                                             FontWeight.w600,
                                                         fontStyle:
@@ -1002,7 +1005,7 @@ class _DataWidgetState extends State<DataWidget> {
                                         decoration: BoxDecoration(
                                           color: Color(0xFF57636C),
                                           borderRadius:
-                                              BorderRadius.circular(8.0),
+                                              BorderRadius.circular(14.0),
                                         ),
                                         child: Padding(
                                           padding:
@@ -1019,7 +1022,7 @@ class _DataWidgetState extends State<DataWidget> {
                                                         context)
                                                     .bodyMedium
                                                     .override(
-                                                      font: GoogleFonts.inter(
+                                                      font: GoogleFonts.manrope(
                                                         fontWeight:
                                                             FontWeight.w600,
                                                         fontStyle:
@@ -1074,7 +1077,7 @@ class _DataWidgetState extends State<DataWidget> {
                                         decoration: BoxDecoration(
                                           color: Color(0xFF57636C),
                                           borderRadius:
-                                              BorderRadius.circular(8.0),
+                                              BorderRadius.circular(14.0),
                                         ),
                                         child: Padding(
                                           padding:
@@ -1091,7 +1094,7 @@ class _DataWidgetState extends State<DataWidget> {
                                                         context)
                                                     .bodyMedium
                                                     .override(
-                                                      font: GoogleFonts.inter(
+                                                      font: GoogleFonts.manrope(
                                                         fontWeight:
                                                             FontWeight.w600,
                                                         fontStyle:
@@ -1146,7 +1149,7 @@ class _DataWidgetState extends State<DataWidget> {
                                         decoration: BoxDecoration(
                                           color: Color(0xFF57636C),
                                           borderRadius:
-                                              BorderRadius.circular(8.0),
+                                              BorderRadius.circular(14.0),
                                         ),
                                         child: Padding(
                                           padding:
@@ -1163,7 +1166,7 @@ class _DataWidgetState extends State<DataWidget> {
                                                         context)
                                                     .bodyMedium
                                                     .override(
-                                                      font: GoogleFonts.inter(
+                                                      font: GoogleFonts.manrope(
                                                         fontWeight:
                                                             FontWeight.w600,
                                                         fontStyle:
@@ -1213,7 +1216,8 @@ class _DataWidgetState extends State<DataWidget> {
                           width: double.infinity,
                           height: 146.51,
                           decoration: BoxDecoration(
-                            color: Color(0xFF1C1B1B),
+                            color: AppColors.surface,
+                            boxShadow: [AppColors.cardShadow],
                           ),
                           child: Padding(
                             padding: EdgeInsetsDirectional.fromSTEB(
@@ -1234,7 +1238,7 @@ class _DataWidgetState extends State<DataWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.manrope(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .bodyMedium
@@ -1266,7 +1270,7 @@ class _DataWidgetState extends State<DataWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.manrope(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .bodyMedium
@@ -1322,7 +1326,7 @@ class _DataWidgetState extends State<DataWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
-                                              font: GoogleFonts.inter(
+                                              font: GoogleFonts.manrope(
                                                 fontWeight: FontWeight.w600,
                                                 fontStyle:
                                                     FlutterFlowTheme.of(context)
@@ -1403,7 +1407,7 @@ class _DataWidgetState extends State<DataWidget> {
                                         textStyle: FlutterFlowTheme.of(context)
                                             .titleSmall
                                             .override(
-                                              font: GoogleFonts.interTight(
+                                              font: GoogleFonts.manrope(
                                                 fontWeight:
                                                     FlutterFlowTheme.of(context)
                                                         .titleSmall
@@ -1426,7 +1430,7 @@ class _DataWidgetState extends State<DataWidget> {
                                             ),
                                         elevation: 0.0,
                                         borderRadius:
-                                            BorderRadius.circular(8.0),
+                                            BorderRadius.circular(14.0),
                                       ),
                                     ),
                                   ),
@@ -1444,7 +1448,7 @@ class _DataWidgetState extends State<DataWidget> {
           ),
         ),
         appBar: AppBar(
-          backgroundColor: Colors.black,
+          backgroundColor: AppColors.bg,
           automaticallyImplyLeading: false,
           title: Padding(
             padding: EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 0.0),
@@ -1452,12 +1456,12 @@ class _DataWidgetState extends State<DataWidget> {
               'Данные \nпользователя',
               textAlign: TextAlign.center,
               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                    font: GoogleFonts.inter(
+                    font: GoogleFonts.manrope(
                       fontWeight: FontWeight.w600,
                       fontStyle:
                           FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                     ),
-                    color: FlutterFlowTheme.of(context).info,
+                    color: AppColors.ink,
                     fontSize: 25.0,
                     letterSpacing: 0.0,
                     fontWeight: FontWeight.w600,
@@ -1479,7 +1483,7 @@ class _DataWidgetState extends State<DataWidget> {
                 },
                 child: Icon(
                   Icons.settings_rounded,
-                  color: FlutterFlowTheme.of(context).info,
+                  color: AppColors.ink,
                   size: 30.0,
                 ),
               ),
@@ -1499,7 +1503,7 @@ class _DataWidgetState extends State<DataWidget> {
                   width: double.infinity,
                   height: double.infinity,
                   decoration: BoxDecoration(
-                    color: Colors.black,
+                    color: AppColors.bg,
                   ),
                   child: Align(
                     alignment: AlignmentDirectional(0.0, -1.0),
@@ -1521,7 +1525,7 @@ class _DataWidgetState extends State<DataWidget> {
                                 width: 80.0,
                                 height: 80.0,
                                 child: SpinKitCircle(
-                                  color: Color(0xFF5D5C62),
+                                  color: AppColors.primary,
                                   size: 80.0,
                                 ),
                               ),
@@ -1555,7 +1559,7 @@ class _DataWidgetState extends State<DataWidget> {
                                             width: 80.0,
                                             height: 80.0,
                                             child: SpinKitCircle(
-                                              color: Color(0xFF5D5C62),
+                                              color: AppColors.primary,
                                               size: 80.0,
                                             ),
                                           ),
@@ -1705,7 +1709,7 @@ class _DataWidgetState extends State<DataWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  font: GoogleFonts.inter(
+                                                  font: GoogleFonts.manrope(
                                                     fontWeight:
                                                         FlutterFlowTheme.of(
                                                                 context)
@@ -1751,7 +1755,7 @@ class _DataWidgetState extends State<DataWidget> {
                                                   .titleSmall
                                                   .override(
                                                     font:
-                                                        GoogleFonts.interTight(
+                                                        GoogleFonts.manrope(
                                                       fontWeight:
                                                           FlutterFlowTheme.of(
                                                                   context)
@@ -1780,7 +1784,7 @@ class _DataWidgetState extends State<DataWidget> {
                                                   ),
                                               elevation: 0.0,
                                               borderRadius:
-                                                  BorderRadius.circular(8.0),
+                                                  BorderRadius.circular(14.0),
                                             ),
                                           ),
                                         ],
@@ -1801,7 +1805,7 @@ class _DataWidgetState extends State<DataWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
-                                            font: GoogleFonts.inter(
+                                            font: GoogleFonts.manrope(
                                               fontWeight: FontWeight.w500,
                                               fontStyle:
                                                   FlutterFlowTheme.of(context)
@@ -1834,7 +1838,7 @@ class _DataWidgetState extends State<DataWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
-                                            font: GoogleFonts.inter(
+                                            font: GoogleFonts.manrope(
                                               fontWeight: FontWeight.w500,
                                               fontStyle:
                                                   FlutterFlowTheme.of(context)
@@ -1867,7 +1871,7 @@ class _DataWidgetState extends State<DataWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
-                                            font: GoogleFonts.inter(
+                                            font: GoogleFonts.manrope(
                                               fontWeight:
                                                   FlutterFlowTheme.of(context)
                                                       .bodyMedium
@@ -1894,7 +1898,7 @@ class _DataWidgetState extends State<DataWidget> {
                                 ),
                                 Divider(
                                   thickness: 2.0,
-                                  color: Color(0xFF898A8D),
+                                  color: AppColors.border,
                                 ),
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
@@ -1909,7 +1913,7 @@ class _DataWidgetState extends State<DataWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
-                                              font: GoogleFonts.inter(
+                                              font: GoogleFonts.manrope(
                                                 fontWeight:
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
@@ -1941,7 +1945,7 @@ class _DataWidgetState extends State<DataWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
-                                              font: GoogleFonts.inter(
+                                              font: GoogleFonts.manrope(
                                                 fontWeight:
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
@@ -1981,7 +1985,7 @@ class _DataWidgetState extends State<DataWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
-                                              font: GoogleFonts.inter(
+                                              font: GoogleFonts.manrope(
                                                 fontWeight:
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
@@ -2013,7 +2017,7 @@ class _DataWidgetState extends State<DataWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
-                                              font: GoogleFonts.inter(
+                                              font: GoogleFonts.manrope(
                                                 fontWeight:
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
@@ -2053,7 +2057,7 @@ class _DataWidgetState extends State<DataWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
-                                              font: GoogleFonts.inter(
+                                              font: GoogleFonts.manrope(
                                                 fontWeight:
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
@@ -2085,7 +2089,7 @@ class _DataWidgetState extends State<DataWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
-                                              font: GoogleFonts.inter(
+                                              font: GoogleFonts.manrope(
                                                 fontWeight:
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
@@ -2125,7 +2129,7 @@ class _DataWidgetState extends State<DataWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
-                                              font: GoogleFonts.inter(
+                                              font: GoogleFonts.manrope(
                                                 fontWeight:
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
@@ -2157,7 +2161,7 @@ class _DataWidgetState extends State<DataWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
-                                              font: GoogleFonts.inter(
+                                              font: GoogleFonts.manrope(
                                                 fontWeight:
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
@@ -2186,7 +2190,7 @@ class _DataWidgetState extends State<DataWidget> {
                                 ),
                                 Divider(
                                   thickness: 2.0,
-                                  color: Color(0xFF898A8D),
+                                  color: AppColors.border,
                                 ),
                                 if (FFAppState().polzRoll != 'manager')
                                   Padding(
@@ -2202,7 +2206,7 @@ class _DataWidgetState extends State<DataWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                font: GoogleFonts.inter(
+                                                font: GoogleFonts.manrope(
                                                   fontWeight:
                                                       FlutterFlowTheme.of(
                                                               context)
@@ -2236,7 +2240,8 @@ class _DataWidgetState extends State<DataWidget> {
                                     width: double.infinity,
                                     height: 358.3,
                                     decoration: BoxDecoration(
-                                      color: Color(0xFF242323),
+                                      color: AppColors.surface,
+                                      boxShadow: [AppColors.cardShadow],
                                       borderRadius: BorderRadius.only(
                                         bottomLeft: Radius.circular(0.0),
                                         bottomRight: Radius.circular(0.0),
@@ -2269,7 +2274,7 @@ class _DataWidgetState extends State<DataWidget> {
                                               width: 80.0,
                                               height: 80.0,
                                               child: SpinKitCircle(
-                                                color: Color(0xFF5D5C62),
+                                                color: AppColors.primary,
                                                 size: 80.0,
                                               ),
                                             ),
@@ -2314,7 +2319,7 @@ class _DataWidgetState extends State<DataWidget> {
                                                 child: Card(
                                                   clipBehavior: Clip
                                                       .antiAliasWithSaveLayer,
-                                                  color: Color(0xFF7C7B7B),
+                                                  color: AppColors.border,
                                                   elevation: 0.0,
                                                   shape: RoundedRectangleBorder(
                                                     borderRadius:
@@ -2401,7 +2406,7 @@ class _DataWidgetState extends State<DataWidget> {
                                                                           .bodyMedium
                                                                           .override(
                                                                             font:
-                                                                                GoogleFonts.inter(
+                                                                                GoogleFonts.manrope(
                                                                               fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
                                                                               fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                             ),
@@ -2435,7 +2440,7 @@ class _DataWidgetState extends State<DataWidget> {
                                                                           .bodyMedium
                                                                           .override(
                                                                             font:
-                                                                                GoogleFonts.inter(
+                                                                                GoogleFonts.manrope(
                                                                               fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
                                                                               fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                             ),
@@ -2490,11 +2495,11 @@ class _DataWidgetState extends State<DataWidget> {
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .override(
-                                                                              font: GoogleFonts.inter(
+                                                                              font: GoogleFonts.manrope(
                                                                                 fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
                                                                                 fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                               ),
-                                                                              color: FlutterFlowTheme.of(context).info,
+                                                                              color: AppColors.ink,
                                                                               letterSpacing: 0.0,
                                                                               fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
                                                                               fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
@@ -2532,7 +2537,7 @@ class _DataWidgetState extends State<DataWidget> {
                                                                           .bodyMedium
                                                                           .override(
                                                                             font:
-                                                                                GoogleFonts.inter(
+                                                                                GoogleFonts.manrope(
                                                                               fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
                                                                               fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                             ),
@@ -2566,7 +2571,7 @@ class _DataWidgetState extends State<DataWidget> {
                                                                           .bodyMedium
                                                                           .override(
                                                                             font:
-                                                                                GoogleFonts.inter(
+                                                                                GoogleFonts.manrope(
                                                                               fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
                                                                               fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                             ),
@@ -2610,7 +2615,7 @@ class _DataWidgetState extends State<DataWidget> {
                 width: MediaQuery.sizeOf(context).width * 1.0,
                 height: 50.0,
                 decoration: BoxDecoration(
-                  color: Colors.black,
+                  color: AppColors.bg,
                 ),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
@@ -2626,7 +2631,7 @@ class _DataWidgetState extends State<DataWidget> {
                       },
                       child: Icon(
                         Icons.dashboard_outlined,
-                        color: FlutterFlowTheme.of(context).secondaryBackground,
+                        color: AppColors.ink,
                         size: 30.0,
                       ),
                     ),
@@ -2640,13 +2645,13 @@ class _DataWidgetState extends State<DataWidget> {
                       },
                       child: Icon(
                         Icons.checklist_sharp,
-                        color: FlutterFlowTheme.of(context).secondaryBackground,
+                        color: AppColors.ink,
                         size: 30.0,
                       ),
                     ),
                     Icon(
                       Icons.manage_accounts,
-                      color: Color(0xFF4A35CC),
+                      color: AppColors.primaryDark,
                       size: 40.0,
                     ),
                   ],

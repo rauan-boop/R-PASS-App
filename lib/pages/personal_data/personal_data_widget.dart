@@ -1,5 +1,6 @@
 import '/auth/supabase_auth/auth_util.dart';
 import '/config/app_config.dart';
+import '/config/app_colors.dart';
 import '/backend/supabase/supabase.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -68,9 +69,9 @@ class _PersonalDataWidgetState extends State<PersonalDataWidget> {
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: Colors.black,
+        backgroundColor: AppColors.bg,
         appBar: AppBar(
-          backgroundColor: Colors.black,
+          backgroundColor: AppColors.bg,
           automaticallyImplyLeading: false,
           leading: FlutterFlowIconButton(
             borderColor: Colors.transparent,
@@ -79,7 +80,7 @@ class _PersonalDataWidgetState extends State<PersonalDataWidget> {
             buttonSize: 60.0,
             icon: Icon(
               Icons.arrow_back_rounded,
-              color: FlutterFlowTheme.of(context).info,
+              color: AppColors.ink,
               size: 30.0,
             ),
             onPressed: () async {
@@ -110,7 +111,7 @@ class _PersonalDataWidgetState extends State<PersonalDataWidget> {
                         style: FlutterFlowTheme.of(context)
                             .headlineMedium
                             .override(
-                              font: GoogleFonts.interTight(
+                              font: GoogleFonts.manrope(
                                 fontWeight: FlutterFlowTheme.of(context)
                                     .headlineMedium
                                     .fontWeight,
@@ -118,7 +119,7 @@ class _PersonalDataWidgetState extends State<PersonalDataWidget> {
                                     .headlineMedium
                                     .fontStyle,
                               ),
-                              color: FlutterFlowTheme.of(context).info,
+                              color: AppColors.ink,
                               letterSpacing: 0.0,
                               fontWeight: FlutterFlowTheme.of(context)
                                   .headlineMedium
@@ -153,7 +154,7 @@ class _PersonalDataWidgetState extends State<PersonalDataWidget> {
                           isDense: true,
                           labelStyle:
                               FlutterFlowTheme.of(context).labelMedium.override(
-                                    font: GoogleFonts.inter(
+                                    font: GoogleFonts.manrope(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .labelMedium
                                           .fontWeight,
@@ -172,7 +173,7 @@ class _PersonalDataWidgetState extends State<PersonalDataWidget> {
                           hintText: 'фамилия',
                           hintStyle:
                               FlutterFlowTheme.of(context).labelMedium.override(
-                                    font: GoogleFonts.inter(
+                                    font: GoogleFonts.manrope(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .labelMedium
                                           .fontWeight,
@@ -180,7 +181,7 @@ class _PersonalDataWidgetState extends State<PersonalDataWidget> {
                                           .labelMedium
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFFA5A5A5),
+                                    color: AppColors.hint,
                                     letterSpacing: 0.0,
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .labelMedium
@@ -191,37 +192,37 @@ class _PersonalDataWidgetState extends State<PersonalDataWidget> {
                                   ),
                           enabledBorder: OutlineInputBorder(
                             borderSide: BorderSide(
-                              color: Color(0xFFA5A2A2),
+                              color: AppColors.border,
                               width: 1.0,
                             ),
-                            borderRadius: BorderRadius.circular(8.0),
+                            borderRadius: BorderRadius.circular(14.0),
                           ),
                           focusedBorder: OutlineInputBorder(
                             borderSide: BorderSide(
                               color: Color(0x00000000),
                               width: 1.0,
                             ),
-                            borderRadius: BorderRadius.circular(8.0),
+                            borderRadius: BorderRadius.circular(14.0),
                           ),
                           errorBorder: OutlineInputBorder(
                             borderSide: BorderSide(
                               color: FlutterFlowTheme.of(context).error,
                               width: 1.0,
                             ),
-                            borderRadius: BorderRadius.circular(8.0),
+                            borderRadius: BorderRadius.circular(14.0),
                           ),
                           focusedErrorBorder: OutlineInputBorder(
                             borderSide: BorderSide(
                               color: FlutterFlowTheme.of(context).error,
                               width: 1.0,
                             ),
-                            borderRadius: BorderRadius.circular(8.0),
+                            borderRadius: BorderRadius.circular(14.0),
                           ),
                           filled: true,
-                          fillColor: Color(0xFF434343),
+                          fillColor: AppColors.surface,
                         ),
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              font: GoogleFonts.inter(
+                              font: GoogleFonts.manrope(
                                 fontWeight: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .fontWeight,
@@ -229,7 +230,7 @@ class _PersonalDataWidgetState extends State<PersonalDataWidget> {
                                     .bodyMedium
                                     .fontStyle,
                               ),
-                              color: FlutterFlowTheme.of(context).info,
+                              color: AppColors.ink,
                               letterSpacing: 0.0,
                               fontWeight: FlutterFlowTheme.of(context)
                                   .bodyMedium
@@ -253,7 +254,7 @@ class _PersonalDataWidgetState extends State<PersonalDataWidget> {
                       child: Text(
                         'заполняется на кирилице',
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              font: GoogleFonts.inter(
+                              font: GoogleFonts.manrope(
                                 fontWeight: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .fontWeight,
@@ -261,7 +262,7 @@ class _PersonalDataWidgetState extends State<PersonalDataWidget> {
                                     .bodyMedium
                                     .fontStyle,
                               ),
-                              color: Color(0xFF525252),
+                              color: AppColors.ink,
                               fontSize: 12.0,
                               letterSpacing: 0.0,
                               fontWeight: FlutterFlowTheme.of(context)
@@ -297,7 +298,7 @@ class _PersonalDataWidgetState extends State<PersonalDataWidget> {
                           isDense: true,
                           labelStyle:
                               FlutterFlowTheme.of(context).labelMedium.override(
-                                    font: GoogleFonts.inter(
+                                    font: GoogleFonts.manrope(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .labelMedium
                                           .fontWeight,
@@ -316,7 +317,7 @@ class _PersonalDataWidgetState extends State<PersonalDataWidget> {
                           hintText: 'имя',
                           hintStyle:
                               FlutterFlowTheme.of(context).labelMedium.override(
-                                    font: GoogleFonts.inter(
+                                    font: GoogleFonts.manrope(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .labelMedium
                                           .fontWeight,
@@ -324,7 +325,7 @@ class _PersonalDataWidgetState extends State<PersonalDataWidget> {
                                           .labelMedium
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFFA5A5A5),
+                                    color: AppColors.hint,
                                     letterSpacing: 0.0,
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .labelMedium
@@ -335,37 +336,37 @@ class _PersonalDataWidgetState extends State<PersonalDataWidget> {
                                   ),
                           enabledBorder: OutlineInputBorder(
                             borderSide: BorderSide(
-                              color: Color(0xFFA5A2A2),
+                              color: AppColors.border,
                               width: 1.0,
                             ),
-                            borderRadius: BorderRadius.circular(8.0),
+                            borderRadius: BorderRadius.circular(14.0),
                           ),
                           focusedBorder: OutlineInputBorder(
                             borderSide: BorderSide(
                               color: Color(0x00000000),
                               width: 1.0,
                             ),
-                            borderRadius: BorderRadius.circular(8.0),
+                            borderRadius: BorderRadius.circular(14.0),
                           ),
                           errorBorder: OutlineInputBorder(
                             borderSide: BorderSide(
                               color: FlutterFlowTheme.of(context).error,
                               width: 1.0,
                             ),
-                            borderRadius: BorderRadius.circular(8.0),
+                            borderRadius: BorderRadius.circular(14.0),
                           ),
                           focusedErrorBorder: OutlineInputBorder(
                             borderSide: BorderSide(
                               color: FlutterFlowTheme.of(context).error,
                               width: 1.0,
                             ),
-                            borderRadius: BorderRadius.circular(8.0),
+                            borderRadius: BorderRadius.circular(14.0),
                           ),
                           filled: true,
-                          fillColor: Color(0xFF434343),
+                          fillColor: AppColors.surface,
                         ),
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              font: GoogleFonts.inter(
+                              font: GoogleFonts.manrope(
                                 fontWeight: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .fontWeight,
@@ -373,7 +374,7 @@ class _PersonalDataWidgetState extends State<PersonalDataWidget> {
                                     .bodyMedium
                                     .fontStyle,
                               ),
-                              color: FlutterFlowTheme.of(context).info,
+                              color: AppColors.ink,
                               letterSpacing: 0.0,
                               fontWeight: FlutterFlowTheme.of(context)
                                   .bodyMedium
@@ -397,7 +398,7 @@ class _PersonalDataWidgetState extends State<PersonalDataWidget> {
                       child: Text(
                         'заполняется на кирилице',
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              font: GoogleFonts.inter(
+                              font: GoogleFonts.manrope(
                                 fontWeight: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .fontWeight,
@@ -405,7 +406,7 @@ class _PersonalDataWidgetState extends State<PersonalDataWidget> {
                                     .bodyMedium
                                     .fontStyle,
                               ),
-                              color: Color(0xFF525252),
+                              color: AppColors.ink,
                               fontSize: 12.0,
                               letterSpacing: 0.0,
                               fontWeight: FlutterFlowTheme.of(context)
@@ -441,7 +442,7 @@ class _PersonalDataWidgetState extends State<PersonalDataWidget> {
                           isDense: true,
                           labelStyle:
                               FlutterFlowTheme.of(context).labelMedium.override(
-                                    font: GoogleFonts.inter(
+                                    font: GoogleFonts.manrope(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .labelMedium
                                           .fontWeight,
@@ -460,7 +461,7 @@ class _PersonalDataWidgetState extends State<PersonalDataWidget> {
                           hintText: 'отчество (если нет поставьте \" - \")',
                           hintStyle:
                               FlutterFlowTheme.of(context).labelMedium.override(
-                                    font: GoogleFonts.inter(
+                                    font: GoogleFonts.manrope(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .labelMedium
                                           .fontWeight,
@@ -468,7 +469,7 @@ class _PersonalDataWidgetState extends State<PersonalDataWidget> {
                                           .labelMedium
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFFA5A5A5),
+                                    color: AppColors.hint,
                                     letterSpacing: 0.0,
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .labelMedium
@@ -479,37 +480,37 @@ class _PersonalDataWidgetState extends State<PersonalDataWidget> {
                                   ),
                           enabledBorder: OutlineInputBorder(
                             borderSide: BorderSide(
-                              color: Color(0xFFA5A2A2),
+                              color: AppColors.border,
                               width: 1.0,
                             ),
-                            borderRadius: BorderRadius.circular(8.0),
+                            borderRadius: BorderRadius.circular(14.0),
                           ),
                           focusedBorder: OutlineInputBorder(
                             borderSide: BorderSide(
                               color: Color(0x00000000),
                               width: 1.0,
                             ),
-                            borderRadius: BorderRadius.circular(8.0),
+                            borderRadius: BorderRadius.circular(14.0),
                           ),
                           errorBorder: OutlineInputBorder(
                             borderSide: BorderSide(
                               color: FlutterFlowTheme.of(context).error,
                               width: 1.0,
                             ),
-                            borderRadius: BorderRadius.circular(8.0),
+                            borderRadius: BorderRadius.circular(14.0),
                           ),
                           focusedErrorBorder: OutlineInputBorder(
                             borderSide: BorderSide(
                               color: FlutterFlowTheme.of(context).error,
                               width: 1.0,
                             ),
-                            borderRadius: BorderRadius.circular(8.0),
+                            borderRadius: BorderRadius.circular(14.0),
                           ),
                           filled: true,
-                          fillColor: Color(0xFF434343),
+                          fillColor: AppColors.surface,
                         ),
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              font: GoogleFonts.inter(
+                              font: GoogleFonts.manrope(
                                 fontWeight: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .fontWeight,
@@ -517,7 +518,7 @@ class _PersonalDataWidgetState extends State<PersonalDataWidget> {
                                     .bodyMedium
                                     .fontStyle,
                               ),
-                              color: FlutterFlowTheme.of(context).info,
+                              color: AppColors.ink,
                               letterSpacing: 0.0,
                               fontWeight: FlutterFlowTheme.of(context)
                                   .bodyMedium
@@ -541,7 +542,7 @@ class _PersonalDataWidgetState extends State<PersonalDataWidget> {
                       child: Text(
                         'заполняется на кирилице',
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              font: GoogleFonts.inter(
+                              font: GoogleFonts.manrope(
                                 fontWeight: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .fontWeight,
@@ -549,7 +550,7 @@ class _PersonalDataWidgetState extends State<PersonalDataWidget> {
                                     .bodyMedium
                                     .fontStyle,
                               ),
-                              color: Color(0xFF525252),
+                              color: AppColors.ink,
                               fontSize: 12.0,
                               letterSpacing: 0.0,
                               fontWeight: FlutterFlowTheme.of(context)
@@ -585,7 +586,7 @@ class _PersonalDataWidgetState extends State<PersonalDataWidget> {
                           isDense: true,
                           labelStyle:
                               FlutterFlowTheme.of(context).labelMedium.override(
-                                    font: GoogleFonts.inter(
+                                    font: GoogleFonts.manrope(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .labelMedium
                                           .fontWeight,
@@ -604,7 +605,7 @@ class _PersonalDataWidgetState extends State<PersonalDataWidget> {
                           hintText: 'ИИН',
                           hintStyle:
                               FlutterFlowTheme.of(context).labelMedium.override(
-                                    font: GoogleFonts.inter(
+                                    font: GoogleFonts.manrope(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .labelMedium
                                           .fontWeight,
@@ -612,7 +613,7 @@ class _PersonalDataWidgetState extends State<PersonalDataWidget> {
                                           .labelMedium
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFFA5A5A5),
+                                    color: AppColors.hint,
                                     letterSpacing: 0.0,
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .labelMedium
@@ -623,37 +624,37 @@ class _PersonalDataWidgetState extends State<PersonalDataWidget> {
                                   ),
                           enabledBorder: OutlineInputBorder(
                             borderSide: BorderSide(
-                              color: Color(0xFFA5A2A2),
+                              color: AppColors.border,
                               width: 1.0,
                             ),
-                            borderRadius: BorderRadius.circular(8.0),
+                            borderRadius: BorderRadius.circular(14.0),
                           ),
                           focusedBorder: OutlineInputBorder(
                             borderSide: BorderSide(
                               color: Color(0x00000000),
                               width: 1.0,
                             ),
-                            borderRadius: BorderRadius.circular(8.0),
+                            borderRadius: BorderRadius.circular(14.0),
                           ),
                           errorBorder: OutlineInputBorder(
                             borderSide: BorderSide(
                               color: FlutterFlowTheme.of(context).error,
                               width: 1.0,
                             ),
-                            borderRadius: BorderRadius.circular(8.0),
+                            borderRadius: BorderRadius.circular(14.0),
                           ),
                           focusedErrorBorder: OutlineInputBorder(
                             borderSide: BorderSide(
                               color: FlutterFlowTheme.of(context).error,
                               width: 1.0,
                             ),
-                            borderRadius: BorderRadius.circular(8.0),
+                            borderRadius: BorderRadius.circular(14.0),
                           ),
                           filled: true,
-                          fillColor: Color(0xFF434343),
+                          fillColor: AppColors.surface,
                         ),
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              font: GoogleFonts.inter(
+                              font: GoogleFonts.manrope(
                                 fontWeight: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .fontWeight,
@@ -661,7 +662,7 @@ class _PersonalDataWidgetState extends State<PersonalDataWidget> {
                                     .bodyMedium
                                     .fontStyle,
                               ),
-                              color: FlutterFlowTheme.of(context).info,
+                              color: AppColors.ink,
                               letterSpacing: 0.0,
                               fontWeight: FlutterFlowTheme.of(context)
                                   .bodyMedium
@@ -685,7 +686,7 @@ class _PersonalDataWidgetState extends State<PersonalDataWidget> {
                       child: Text(
                         'используется для решения юридических вопросов',
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              font: GoogleFonts.inter(
+                              font: GoogleFonts.manrope(
                                 fontWeight: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .fontWeight,
@@ -693,7 +694,7 @@ class _PersonalDataWidgetState extends State<PersonalDataWidget> {
                                     .bodyMedium
                                     .fontStyle,
                               ),
-                              color: Color(0xFF525252),
+                              color: AppColors.ink,
                               fontSize: 12.0,
                               letterSpacing: 0.0,
                               fontWeight: FlutterFlowTheme.of(context)
@@ -730,7 +731,7 @@ class _PersonalDataWidgetState extends State<PersonalDataWidget> {
                                     width: 80.0,
                                     height: 80.0,
                                     child: SpinKitCircle(
-                                      color: Color(0xFF5D5C62),
+                                      color: AppColors.primary,
                                       size: 80.0,
                                     ),
                                   ),
@@ -745,7 +746,7 @@ class _PersonalDataWidgetState extends State<PersonalDataWidget> {
                                       : null;
 
                               return ClipRRect(
-                                borderRadius: BorderRadius.circular(8.0),
+                                borderRadius: BorderRadius.circular(14.0),
                                 child: Image.network(
                                   FFAppState().Soglasie == true
                                       ? '${AppConfig.flutterFlowAssetsBaseUrl}/k8ndqvcji8vm/zelenaja-galochka.png'
@@ -770,7 +771,7 @@ class _PersonalDataWidgetState extends State<PersonalDataWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
-                                      font: GoogleFonts.inter(
+                                      font: GoogleFonts.manrope(
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .fontWeight,
@@ -778,7 +779,7 @@ class _PersonalDataWidgetState extends State<PersonalDataWidget> {
                                             .bodyMedium
                                             .fontStyle,
                                       ),
-                                      color: FlutterFlowTheme.of(context).info,
+                                      color: AppColors.ink,
                                       fontSize: 12.0,
                                       letterSpacing: 0.0,
                                       fontWeight: FlutterFlowTheme.of(context)
@@ -805,7 +806,7 @@ class _PersonalDataWidgetState extends State<PersonalDataWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.manrope(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .bodyMedium
@@ -862,7 +863,7 @@ class _PersonalDataWidgetState extends State<PersonalDataWidget> {
                                     width: 80.0,
                                     height: 80.0,
                                     child: SpinKitCircle(
-                                      color: Color(0xFF5D5C62),
+                                      color: AppColors.primary,
                                       size: 80.0,
                                     ),
                                   ),
@@ -877,7 +878,7 @@ class _PersonalDataWidgetState extends State<PersonalDataWidget> {
                                       : null;
 
                               return ClipRRect(
-                                borderRadius: BorderRadius.circular(8.0),
+                                borderRadius: BorderRadius.circular(14.0),
                                 child: Image.network(
                                   FFAppState().soglashenie == true
                                       ? '${AppConfig.flutterFlowAssetsBaseUrl}/k8ndqvcji8vm/zelenaja-galochka.png'
@@ -902,7 +903,7 @@ class _PersonalDataWidgetState extends State<PersonalDataWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
-                                      font: GoogleFonts.inter(
+                                      font: GoogleFonts.manrope(
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .fontWeight,
@@ -910,7 +911,7 @@ class _PersonalDataWidgetState extends State<PersonalDataWidget> {
                                             .bodyMedium
                                             .fontStyle,
                                       ),
-                                      color: FlutterFlowTheme.of(context).info,
+                                      color: AppColors.ink,
                                       fontSize: 12.0,
                                       letterSpacing: 0.0,
                                       fontWeight: FlutterFlowTheme.of(context)
@@ -928,7 +929,7 @@ class _PersonalDataWidgetState extends State<PersonalDataWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        font: GoogleFonts.inter(
+                                        font: GoogleFonts.manrope(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .bodyMedium
@@ -939,7 +940,7 @@ class _PersonalDataWidgetState extends State<PersonalDataWidget> {
                                                   .fontStyle,
                                         ),
                                         color:
-                                            FlutterFlowTheme.of(context).info,
+                                            AppColors.ink,
                                         fontSize: 12.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)
@@ -968,7 +969,7 @@ class _PersonalDataWidgetState extends State<PersonalDataWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.manrope(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .bodyMedium
@@ -1062,7 +1063,7 @@ class _PersonalDataWidgetState extends State<PersonalDataWidget> {
                           color: FlutterFlowTheme.of(context).primary,
                           textStyle:
                               FlutterFlowTheme.of(context).titleSmall.override(
-                                    font: GoogleFonts.interTight(
+                                    font: GoogleFonts.manrope(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .titleSmall
                                           .fontWeight,
@@ -1080,7 +1081,7 @@ class _PersonalDataWidgetState extends State<PersonalDataWidget> {
                                         .fontStyle,
                                   ),
                           elevation: 0.0,
-                          borderRadius: BorderRadius.circular(8.0),
+                          borderRadius: BorderRadius.circular(14.0),
                         ),
                       ),
                     ),
@@ -1101,10 +1102,10 @@ class _PersonalDataWidgetState extends State<PersonalDataWidget> {
                               16.0, 0.0, 16.0, 0.0),
                           iconPadding: EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
-                          color: Color(0xFF838287),
+                          color: AppColors.primary,
                           textStyle:
                               FlutterFlowTheme.of(context).titleSmall.override(
-                                    font: GoogleFonts.interTight(
+                                    font: GoogleFonts.manrope(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .titleSmall
                                           .fontWeight,
@@ -1122,7 +1123,7 @@ class _PersonalDataWidgetState extends State<PersonalDataWidget> {
                                         .fontStyle,
                                   ),
                           elevation: 0.0,
-                          borderRadius: BorderRadius.circular(8.0),
+                          borderRadius: BorderRadius.circular(14.0),
                         ),
                       ),
                     ),

@@ -1,5 +1,6 @@
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/config/app_config.dart';
+import '/config/app_colors.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
@@ -51,9 +52,9 @@ class _NotificationWidgetState extends State<NotificationWidget> {
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: Color(0xFF090909),
+        backgroundColor: AppColors.ink,
         appBar: AppBar(
-          backgroundColor: Colors.black,
+          backgroundColor: AppColors.bg,
           automaticallyImplyLeading: false,
           leading: FlutterFlowIconButton(
             borderColor: Colors.transparent,
@@ -62,7 +63,7 @@ class _NotificationWidgetState extends State<NotificationWidget> {
             buttonSize: 60.0,
             icon: Icon(
               Icons.arrow_back_rounded,
-              color: Colors.white,
+              color: AppColors.ink,
               size: 30.0,
             ),
             onPressed: () async {
@@ -72,13 +73,13 @@ class _NotificationWidgetState extends State<NotificationWidget> {
           title: Text(
             'Notifications',
             style: FlutterFlowTheme.of(context).headlineLarge.override(
-                  font: GoogleFonts.interTight(
+                  font: GoogleFonts.manrope(
                     fontWeight:
                         FlutterFlowTheme.of(context).headlineLarge.fontWeight,
                     fontStyle:
                         FlutterFlowTheme.of(context).headlineLarge.fontStyle,
                   ),
-                  color: FlutterFlowTheme.of(context).secondaryBackground,
+                  color: AppColors.ink,
                   letterSpacing: 0.0,
                   fontWeight:
                       FlutterFlowTheme.of(context).headlineLarge.fontWeight,
@@ -118,7 +119,7 @@ class _NotificationWidgetState extends State<NotificationWidget> {
               child: Container(
                 width: double.infinity,
                 decoration: BoxDecoration(
-                  color: Color(0xFF616565),
+                  color: AppColors.surface,
                   boxShadow: [
                     BoxShadow(
                       blurRadius: 3.0,
@@ -129,7 +130,7 @@ class _NotificationWidgetState extends State<NotificationWidget> {
                       ),
                     )
                   ],
-                  borderRadius: BorderRadius.circular(12.0),
+                  borderRadius: BorderRadius.circular(14.0),
                   border: Border.all(
                     color: FlutterFlowTheme.of(context).alternate,
                     width: 1.0,
@@ -159,7 +160,7 @@ class _NotificationWidgetState extends State<NotificationWidget> {
                                     decoration: BoxDecoration(
                                       color: FlutterFlowTheme.of(context)
                                           .secondaryBackground,
-                                      borderRadius: BorderRadius.circular(12.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                       border: Border.all(
                                         color: FlutterFlowTheme.of(context)
                                             .alternate,
@@ -194,7 +195,7 @@ class _NotificationWidgetState extends State<NotificationWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyLarge
                                               .override(
-                                                font: GoogleFonts.inter(
+                                                font: GoogleFonts.manrope(
                                                   fontWeight:
                                                       FlutterFlowTheme.of(
                                                               context)
@@ -229,7 +230,7 @@ class _NotificationWidgetState extends State<NotificationWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .labelSmall
                                                 .override(
-                                                  font: GoogleFonts.inter(
+                                                  font: GoogleFonts.manrope(
                                                     fontWeight:
                                                         FlutterFlowTheme.of(
                                                                 context)
@@ -269,7 +270,7 @@ class _NotificationWidgetState extends State<NotificationWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .bodyLarge
                                     .override(
-                                      font: GoogleFonts.inter(
+                                      font: GoogleFonts.manrope(
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .bodyLarge
                                             .fontWeight,
@@ -297,7 +298,7 @@ class _NotificationWidgetState extends State<NotificationWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        font: GoogleFonts.inter(
+                                        font: GoogleFonts.manrope(
                                           fontWeight: FontWeight.normal,
                                           fontStyle:
                                               FlutterFlowTheme.of(context)
@@ -322,7 +323,7 @@ class _NotificationWidgetState extends State<NotificationWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .labelSmall
                                       .override(
-                                        font: GoogleFonts.inter(
+                                        font: GoogleFonts.manrope(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .labelSmall
@@ -332,7 +333,7 @@ class _NotificationWidgetState extends State<NotificationWidget> {
                                                   .labelSmall
                                                   .fontStyle,
                                         ),
-                                        color: Color(0xFFA6A9AD),
+                                        color: AppColors.muted,
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .labelSmall
@@ -356,7 +357,7 @@ class _NotificationWidgetState extends State<NotificationWidget> {
               'Запустится в скором времени',
               textAlign: TextAlign.center,
               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                    font: GoogleFonts.inter(
+                    font: GoogleFonts.manrope(
                       fontWeight:
                           FlutterFlowTheme.of(context).bodyMedium.fontWeight,
                       fontStyle:

@@ -1,5 +1,6 @@
 import '/backend/supabase/supabase.dart';
 import '/config/app_config.dart';
+import '/config/app_colors.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
@@ -53,14 +54,14 @@ class _PodtverzhdenieWidgetState extends State<PodtverzhdenieWidget> {
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: Colors.black,
+        backgroundColor: AppColors.bg,
         body: SafeArea(
           top: true,
           child: Container(
             width: 393.0,
             height: 852.0,
             decoration: BoxDecoration(
-              color: Colors.black,
+              color: AppColors.bg,
             ),
             child: Column(
               mainAxisSize: MainAxisSize.max,
@@ -70,7 +71,7 @@ class _PodtverzhdenieWidgetState extends State<PodtverzhdenieWidget> {
                   width: 393.0,
                   height: 536.39,
                   decoration: BoxDecoration(
-                    color: Colors.black,
+                    color: AppColors.bg,
                   ),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
@@ -79,13 +80,13 @@ class _PodtverzhdenieWidgetState extends State<PodtverzhdenieWidget> {
                       Text(
                         'Вы точно хотите удалить данные ',
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              font: GoogleFonts.inter(
+                              font: GoogleFonts.manrope(
                                 fontWeight: FontWeight.w500,
                                 fontStyle: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .fontStyle,
                               ),
-                              color: FlutterFlowTheme.of(context).info,
+                              color: AppColors.ink,
                               fontSize: 15.0,
                               letterSpacing: 0.0,
                               fontWeight: FontWeight.w500,
@@ -130,7 +131,7 @@ class _PodtverzhdenieWidgetState extends State<PodtverzhdenieWidget> {
                                 textStyle: FlutterFlowTheme.of(context)
                                     .titleSmall
                                     .override(
-                                      font: GoogleFonts.interTight(
+                                      font: GoogleFonts.manrope(
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .titleSmall
                                             .fontWeight,
@@ -149,7 +150,7 @@ class _PodtverzhdenieWidgetState extends State<PodtverzhdenieWidget> {
                                           .fontStyle,
                                     ),
                                 elevation: 0.0,
-                                borderRadius: BorderRadius.circular(8.0),
+                                borderRadius: BorderRadius.circular(14.0),
                               ),
                             ),
                             FFButtonWidget(
@@ -168,7 +169,7 @@ class _PodtverzhdenieWidgetState extends State<PodtverzhdenieWidget> {
                                 textStyle: FlutterFlowTheme.of(context)
                                     .titleSmall
                                     .override(
-                                      font: GoogleFonts.interTight(
+                                      font: GoogleFonts.manrope(
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .titleSmall
                                             .fontWeight,
@@ -187,7 +188,7 @@ class _PodtverzhdenieWidgetState extends State<PodtverzhdenieWidget> {
                                           .fontStyle,
                                     ),
                                 elevation: 0.0,
-                                borderRadius: BorderRadius.circular(8.0),
+                                borderRadius: BorderRadius.circular(14.0),
                               ),
                             ),
                           ],
@@ -197,7 +198,7 @@ class _PodtverzhdenieWidgetState extends State<PodtverzhdenieWidget> {
                         padding: EdgeInsetsDirectional.fromSTEB(
                             50.0, 20.0, 50.0, 0.0),
                         child: ClipRRect(
-                          borderRadius: BorderRadius.circular(8.0),
+                          borderRadius: BorderRadius.circular(14.0),
                           child: Image.network(
                             '${AppConfig.flutterFlowAssetsBaseUrl}/yt6cfeammuxs/delete_gmail_how_to.BHgKZ4K8_Z2jIHRv_%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.png',
                             width: double.infinity,

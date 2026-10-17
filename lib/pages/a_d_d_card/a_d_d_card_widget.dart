@@ -1,5 +1,6 @@
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/config/app_config.dart';
+import '/config/app_colors.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
@@ -51,9 +52,9 @@ class _ADDCardWidgetState extends State<ADDCardWidget> {
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: Colors.black,
+        backgroundColor: AppColors.bg,
         appBar: AppBar(
-          backgroundColor: Colors.black,
+          backgroundColor: AppColors.bg,
           automaticallyImplyLeading: false,
           leading: FlutterFlowIconButton(
             borderColor: Colors.transparent,
@@ -63,7 +64,7 @@ class _ADDCardWidgetState extends State<ADDCardWidget> {
             fillColor: Color(0x000B0101),
             icon: Icon(
               Icons.arrow_back_rounded,
-              color: FlutterFlowTheme.of(context).info,
+              color: AppColors.ink,
               size: 30.0,
             ),
             onPressed: () async {
@@ -75,14 +76,14 @@ class _ADDCardWidgetState extends State<ADDCardWidget> {
             child: Text(
               'Добавить запись',
               style: FlutterFlowTheme.of(context).headlineMedium.override(
-                    font: GoogleFonts.interTight(
+                    font: GoogleFonts.manrope(
                       fontWeight: FlutterFlowTheme.of(context)
                           .headlineMedium
                           .fontWeight,
                       fontStyle:
                           FlutterFlowTheme.of(context).headlineMedium.fontStyle,
                     ),
-                    color: FlutterFlowTheme.of(context).info,
+                    color: AppColors.ink,
                     fontSize: 22.0,
                     letterSpacing: 0.0,
                     fontWeight:
@@ -124,7 +125,7 @@ class _ADDCardWidgetState extends State<ADDCardWidget> {
                       width: double.infinity,
                       height: 60.0,
                       decoration: BoxDecoration(
-                        color: Color(0xFF909090),
+                        color: AppColors.border,
                         boxShadow: [
                           BoxShadow(
                             blurRadius: 2.0,
@@ -135,7 +136,7 @@ class _ADDCardWidgetState extends State<ADDCardWidget> {
                             ),
                           )
                         ],
-                        borderRadius: BorderRadius.circular(8.0),
+                        borderRadius: BorderRadius.circular(14.0),
                         border: Border.all(
                           color: FlutterFlowTheme.of(context).secondaryText,
                         ),
@@ -146,7 +147,7 @@ class _ADDCardWidgetState extends State<ADDCardWidget> {
                           'по удостоверению личности',
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
-                                    font: GoogleFonts.inter(
+                                    font: GoogleFonts.manrope(
                                       fontWeight: FontWeight.w600,
                                       fontStyle: FlutterFlowTheme.of(context)
                                           .bodyMedium
@@ -182,7 +183,7 @@ class _ADDCardWidgetState extends State<ADDCardWidget> {
                       width: double.infinity,
                       height: 60.0,
                       decoration: BoxDecoration(
-                        color: Color(0xFF909090),
+                        color: AppColors.border,
                         boxShadow: [
                           BoxShadow(
                             blurRadius: 2.0,
@@ -193,7 +194,7 @@ class _ADDCardWidgetState extends State<ADDCardWidget> {
                             ),
                           )
                         ],
-                        borderRadius: BorderRadius.circular(8.0),
+                        borderRadius: BorderRadius.circular(14.0),
                         border: Border.all(
                           color: FlutterFlowTheme.of(context).secondaryText,
                         ),
@@ -204,7 +205,7 @@ class _ADDCardWidgetState extends State<ADDCardWidget> {
                           'по паспорту',
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
-                                    font: GoogleFonts.inter(
+                                    font: GoogleFonts.manrope(
                                       fontWeight: FontWeight.w600,
                                       fontStyle: FlutterFlowTheme.of(context)
                                           .bodyMedium
@@ -226,7 +227,7 @@ class _ADDCardWidgetState extends State<ADDCardWidget> {
               Padding(
                 padding: EdgeInsetsDirectional.fromSTEB(20.0, 20.0, 20.0, 0.0),
                 child: ClipRRect(
-                  borderRadius: BorderRadius.circular(8.0),
+                  borderRadius: BorderRadius.circular(14.0),
                   child: Image.network(
                     '${AppConfig.flutterFlowAssetsBaseUrl}/8h3p8d676eu5/1_%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.png',
                     width: double.infinity,

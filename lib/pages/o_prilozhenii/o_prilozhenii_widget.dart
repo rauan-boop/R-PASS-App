@@ -1,5 +1,6 @@
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/config/app_config.dart';
+import '/config/app_colors.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
@@ -51,9 +52,9 @@ class _OPrilozheniiWidgetState extends State<OPrilozheniiWidget> {
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: Colors.black,
+        backgroundColor: AppColors.bg,
         appBar: AppBar(
-          backgroundColor: Color(0xFF040404),
+          backgroundColor: AppColors.ink,
           automaticallyImplyLeading: false,
           leading: FlutterFlowIconButton(
             borderColor: Colors.transparent,
@@ -62,7 +63,7 @@ class _OPrilozheniiWidgetState extends State<OPrilozheniiWidget> {
             buttonSize: 60.0,
             icon: Icon(
               Icons.arrow_back_rounded,
-              color: Colors.white,
+              color: AppColors.ink,
               size: 30.0,
             ),
             onPressed: () async {
@@ -72,13 +73,13 @@ class _OPrilozheniiWidgetState extends State<OPrilozheniiWidget> {
           title: Text(
             'О приложении',
             style: FlutterFlowTheme.of(context).headlineMedium.override(
-                  font: GoogleFonts.interTight(
+                  font: GoogleFonts.manrope(
                     fontWeight:
                         FlutterFlowTheme.of(context).headlineMedium.fontWeight,
                     fontStyle:
                         FlutterFlowTheme.of(context).headlineMedium.fontStyle,
                   ),
-                  color: Colors.white,
+                  color: AppColors.ink,
                   fontSize: 22.0,
                   letterSpacing: 0.0,
                   fontWeight:
@@ -106,7 +107,7 @@ class _OPrilozheniiWidgetState extends State<OPrilozheniiWidget> {
                   mainAxisSize: MainAxisSize.max,
                   children: [
                     ClipRRect(
-                      borderRadius: BorderRadius.circular(8.0),
+                      borderRadius: BorderRadius.circular(14.0),
                       child: Image.network(
                         '${AppConfig.flutterFlowAssetsBaseUrl}/8pprxupa2ir0/R-PASS_logo.png',
                         width: 200.0,
@@ -115,7 +116,7 @@ class _OPrilozheniiWidgetState extends State<OPrilozheniiWidget> {
                       ),
                     ),
                     ClipRRect(
-                      borderRadius: BorderRadius.circular(8.0),
+                      borderRadius: BorderRadius.circular(14.0),
                       child: Image.network(
                         '${AppConfig.flutterFlowAssetsBaseUrl}/dao9njjrrcy8/%D0%BD%D0%B0%D0%B4%D0%BF%D0%B8%D1%81%D1%8C.png',
                         width: 200.0,
@@ -207,7 +208,7 @@ class _OPrilozheniiWidgetState extends State<OPrilozheniiWidget> {
                           ],
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
-                                    font: GoogleFonts.inter(
+                                    font: GoogleFonts.manrope(
                                       fontWeight: FontWeight.w600,
                                       fontStyle: FlutterFlowTheme.of(context)
                                           .bodyMedium

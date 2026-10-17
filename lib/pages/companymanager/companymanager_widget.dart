@@ -1,4 +1,5 @@
 import '/backend/api_requests/api_calls.dart';
+import '/config/app_colors.dart';
 import '/config/app_config.dart';
 import '/backend/supabase/supabase.dart';
 import '/components/delet_manager/delet_manager_widget.dart';
@@ -78,13 +79,13 @@ class _CompanymanagerWidgetState extends State<CompanymanagerWidget> {
         // Customize what your widget looks like when it's loading.
         if (!snapshot.hasData) {
           return Scaffold(
-            backgroundColor: Colors.black,
+            backgroundColor: AppColors.bg,
             body: Center(
               child: SizedBox(
                 width: 80.0,
                 height: 80.0,
                 child: SpinKitCircle(
-                  color: Color(0xFF5D5C62),
+                  color: AppColors.primary,
                   size: 80.0,
                 ),
               ),
@@ -100,9 +101,9 @@ class _CompanymanagerWidgetState extends State<CompanymanagerWidget> {
           },
           child: Scaffold(
             key: scaffoldKey,
-            backgroundColor: Colors.black,
+            backgroundColor: AppColors.bg,
             appBar: AppBar(
-              backgroundColor: Colors.black,
+              backgroundColor: AppColors.bg,
               automaticallyImplyLeading: false,
               leading: InkWell(
                 splashColor: Colors.transparent,
@@ -115,7 +116,7 @@ class _CompanymanagerWidgetState extends State<CompanymanagerWidget> {
                 },
                 child: Icon(
                   Icons.arrow_back,
-                  color: FlutterFlowTheme.of(context).info,
+                  color: AppColors.ink,
                   size: 24.0,
                 ),
               ),
@@ -126,13 +127,13 @@ class _CompanymanagerWidgetState extends State<CompanymanagerWidget> {
                   child: Text(
                     'Данные менеджера',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          font: GoogleFonts.inter(
+                          font: GoogleFonts.manrope(
                             fontWeight: FontWeight.w600,
                             fontStyle: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .fontStyle,
                           ),
-                          color: FlutterFlowTheme.of(context).info,
+                          color: AppColors.ink,
                           fontSize: 25.0,
                           letterSpacing: 0.0,
                           fontWeight: FontWeight.w600,
@@ -174,7 +175,7 @@ class _CompanymanagerWidgetState extends State<CompanymanagerWidget> {
                           width: 80.0,
                           height: 80.0,
                           child: SpinKitCircle(
-                            color: Color(0xFF5D5C62),
+                            color: AppColors.primary,
                             size: 80.0,
                           ),
                         ),
@@ -192,7 +193,7 @@ class _CompanymanagerWidgetState extends State<CompanymanagerWidget> {
                       width: double.infinity,
                       height: 900.0,
                       decoration: BoxDecoration(
-                        color: Colors.black,
+                        color: AppColors.bg,
                       ),
                       child: SingleChildScrollView(
                         child: Column(
@@ -239,7 +240,7 @@ class _CompanymanagerWidgetState extends State<CompanymanagerWidget> {
                                     textStyle: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .override(
-                                          font: GoogleFonts.interTight(
+                                          font: GoogleFonts.manrope(
                                             fontWeight: FontWeight.normal,
                                             fontStyle:
                                                 FlutterFlowTheme.of(context)
@@ -256,7 +257,7 @@ class _CompanymanagerWidgetState extends State<CompanymanagerWidget> {
                                                   .fontStyle,
                                         ),
                                     elevation: 0.0,
-                                    borderRadius: BorderRadius.circular(8.0),
+                                    borderRadius: BorderRadius.circular(14.0),
                                   ),
                                 ),
                               ),
@@ -268,7 +269,7 @@ class _CompanymanagerWidgetState extends State<CompanymanagerWidget> {
                                 width: double.infinity,
                                 height: 104.39,
                                 decoration: BoxDecoration(
-                                  color: Color(0xFF515050),
+                                  color: AppColors.surface,
                                   boxShadow: [
                                     BoxShadow(
                                       blurRadius: 2.0,
@@ -280,7 +281,7 @@ class _CompanymanagerWidgetState extends State<CompanymanagerWidget> {
                                       spreadRadius: 0.0,
                                     )
                                   ],
-                                  borderRadius: BorderRadius.circular(16.0),
+                                  borderRadius: BorderRadius.circular(20.0),
                                 ),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -317,7 +318,8 @@ class _CompanymanagerWidgetState extends State<CompanymanagerWidget> {
                                         width: 224.46,
                                         height: 100.0,
                                         decoration: BoxDecoration(
-                                          color: Color(0xFF515050),
+                                          color: AppColors.surface,
+                                          boxShadow: [AppColors.cardShadow],
                                         ),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.min,
@@ -343,7 +345,7 @@ class _CompanymanagerWidgetState extends State<CompanymanagerWidget> {
                                                         context)
                                                     .bodyMedium
                                                     .override(
-                                                      font: GoogleFonts.inter(
+                                                      font: GoogleFonts.manrope(
                                                         fontWeight:
                                                             FontWeight.w600,
                                                         fontStyle:
@@ -387,7 +389,7 @@ class _CompanymanagerWidgetState extends State<CompanymanagerWidget> {
                                                         context)
                                                     .bodyMedium
                                                     .override(
-                                                      font: GoogleFonts.inter(
+                                                      font: GoogleFonts.manrope(
                                                         fontWeight:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -426,7 +428,7 @@ class _CompanymanagerWidgetState extends State<CompanymanagerWidget> {
                                                         context)
                                                     .bodyMedium
                                                     .override(
-                                                      font: GoogleFonts.inter(
+                                                      font: GoogleFonts.manrope(
                                                         fontWeight:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -476,7 +478,7 @@ class _CompanymanagerWidgetState extends State<CompanymanagerWidget> {
                                                         context)
                                                     .bodyMedium
                                                     .override(
-                                                      font: GoogleFonts.inter(
+                                                      font: GoogleFonts.manrope(
                                                         fontWeight:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -545,7 +547,7 @@ class _CompanymanagerWidgetState extends State<CompanymanagerWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
-                                              font: GoogleFonts.inter(
+                                              font: GoogleFonts.manrope(
                                                 fontWeight: FontWeight.w600,
                                                 fontStyle:
                                                     FlutterFlowTheme.of(context)
@@ -588,7 +590,7 @@ class _CompanymanagerWidgetState extends State<CompanymanagerWidget> {
                                       },
                                       child: Icon(
                                         Icons.call,
-                                        color: Color(0xFF6E4CF8),
+                                        color: AppColors.primary,
                                         size: 30.0,
                                       ),
                                     ),
@@ -607,7 +609,7 @@ class _CompanymanagerWidgetState extends State<CompanymanagerWidget> {
                                       },
                                       child: Icon(
                                         Icons.chat_sharp,
-                                        color: Color(0xFF6E4CF8),
+                                        color: AppColors.primary,
                                         size: 30.0,
                                       ),
                                     ),
@@ -639,7 +641,7 @@ class _CompanymanagerWidgetState extends State<CompanymanagerWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.manrope(
                                             fontWeight: FontWeight.w500,
                                             fontStyle:
                                                 FlutterFlowTheme.of(context)
@@ -684,7 +686,7 @@ class _CompanymanagerWidgetState extends State<CompanymanagerWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.manrope(
                                             fontWeight: FontWeight.w500,
                                             fontStyle:
                                                 FlutterFlowTheme.of(context)
@@ -707,7 +709,7 @@ class _CompanymanagerWidgetState extends State<CompanymanagerWidget> {
                             ),
                             Divider(
                               thickness: 2.0,
-                              color: Color(0xFF5B5B5C),
+                              color: AppColors.surface,
                             ),
                           ],
                         ),

@@ -1,4 +1,5 @@
 import '/auth/supabase_auth/auth_util.dart';
+import '/config/app_colors.dart';
 import '/backend/api_requests/api_calls.dart';
 import '/backend/supabase/supabase.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
@@ -65,9 +66,9 @@ class _CreateAccount1WidgetState extends State<CreateAccount1Widget> {
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: Color(0xFF1E1B1B),
+        backgroundColor: AppColors.surface,
         appBar: AppBar(
-          backgroundColor: Colors.black,
+          backgroundColor: AppColors.bg,
           automaticallyImplyLeading: false,
           leading: FlutterFlowIconButton(
             borderColor: Colors.transparent,
@@ -76,7 +77,7 @@ class _CreateAccount1WidgetState extends State<CreateAccount1Widget> {
             buttonSize: 60.0,
             icon: Icon(
               Icons.arrow_back_rounded,
-              color: FlutterFlowTheme.of(context).info,
+              color: AppColors.ink,
               size: 30.0,
             ),
             onPressed: () async {
@@ -98,7 +99,7 @@ class _CreateAccount1WidgetState extends State<CreateAccount1Widget> {
                   width: MediaQuery.sizeOf(context).width * 1.0,
                   height: double.infinity,
                   decoration: BoxDecoration(
-                    color: Colors.black,
+                    color: AppColors.bg,
                   ),
                   alignment: AlignmentDirectional(0.0, -1.0),
                   child: SingleChildScrollView(
@@ -114,13 +115,13 @@ class _CreateAccount1WidgetState extends State<CreateAccount1Widget> {
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  font: GoogleFonts.inter(
+                                  font: GoogleFonts.manrope(
                                     fontWeight: FontWeight.w600,
                                     fontStyle: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .fontStyle,
                                   ),
-                                  color: FlutterFlowTheme.of(context).info,
+                                  color: AppColors.ink,
                                   fontSize: 28.0,
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.w600,
@@ -153,14 +154,14 @@ class _CreateAccount1WidgetState extends State<CreateAccount1Widget> {
                                       labelStyle: FlutterFlowTheme.of(context)
                                           .labelMedium
                                           .override(
-                                            font: GoogleFonts.plusJakartaSans(
+                                            font: GoogleFonts.manrope(
                                               fontWeight: FontWeight.normal,
                                               fontStyle:
                                                   FlutterFlowTheme.of(context)
                                                       .labelMedium
                                                       .fontStyle,
                                             ),
-                                            color: Color(0xFFA5A5A5),
+                                            color: AppColors.hint,
                                             fontSize: 14.0,
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.normal,
@@ -171,19 +172,19 @@ class _CreateAccount1WidgetState extends State<CreateAccount1Widget> {
                                           ),
                                       enabledBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
-                                          color: Color(0xFFA5A2A2),
+                                          color: AppColors.border,
                                           width: 1.0,
                                         ),
                                         borderRadius:
-                                            BorderRadius.circular(8.0),
+                                            BorderRadius.circular(14.0),
                                       ),
                                       focusedBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
-                                          color: Color(0xFF4B39EF),
+                                          color: AppColors.primary,
                                           width: 1.0,
                                         ),
                                         borderRadius:
-                                            BorderRadius.circular(8.0),
+                                            BorderRadius.circular(14.0),
                                       ),
                                       errorBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
@@ -191,7 +192,7 @@ class _CreateAccount1WidgetState extends State<CreateAccount1Widget> {
                                           width: 1.0,
                                         ),
                                         borderRadius:
-                                            BorderRadius.circular(8.0),
+                                            BorderRadius.circular(14.0),
                                       ),
                                       focusedErrorBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
@@ -199,15 +200,15 @@ class _CreateAccount1WidgetState extends State<CreateAccount1Widget> {
                                           width: 1.0,
                                         ),
                                         borderRadius:
-                                            BorderRadius.circular(8.0),
+                                            BorderRadius.circular(14.0),
                                       ),
                                       filled: true,
-                                      fillColor: Color(0xFF434343),
+                                      fillColor: AppColors.surface,
                                     ),
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          font: GoogleFonts.plusJakartaSans(
+                                          font: GoogleFonts.manrope(
                                             fontWeight: FontWeight.normal,
                                             fontStyle:
                                                 FlutterFlowTheme.of(context)
@@ -256,14 +257,14 @@ class _CreateAccount1WidgetState extends State<CreateAccount1Widget> {
                                       labelStyle: FlutterFlowTheme.of(context)
                                           .labelMedium
                                           .override(
-                                            font: GoogleFonts.plusJakartaSans(
+                                            font: GoogleFonts.manrope(
                                               fontWeight: FontWeight.normal,
                                               fontStyle:
                                                   FlutterFlowTheme.of(context)
                                                       .labelMedium
                                                       .fontStyle,
                                             ),
-                                            color: Color(0xFFA5A5A5),
+                                            color: AppColors.hint,
                                             fontSize: 14.0,
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.normal,
@@ -274,19 +275,19 @@ class _CreateAccount1WidgetState extends State<CreateAccount1Widget> {
                                           ),
                                       enabledBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
-                                          color: Color(0xFFA5A2A2),
+                                          color: AppColors.border,
                                           width: 1.0,
                                         ),
                                         borderRadius:
-                                            BorderRadius.circular(8.0),
+                                            BorderRadius.circular(14.0),
                                       ),
                                       focusedBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
-                                          color: Color(0xFF4B39EF),
+                                          color: AppColors.primary,
                                           width: 1.0,
                                         ),
                                         borderRadius:
-                                            BorderRadius.circular(8.0),
+                                            BorderRadius.circular(14.0),
                                       ),
                                       errorBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
@@ -294,7 +295,7 @@ class _CreateAccount1WidgetState extends State<CreateAccount1Widget> {
                                           width: 1.0,
                                         ),
                                         borderRadius:
-                                            BorderRadius.circular(8.0),
+                                            BorderRadius.circular(14.0),
                                       ),
                                       focusedErrorBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
@@ -302,15 +303,15 @@ class _CreateAccount1WidgetState extends State<CreateAccount1Widget> {
                                           width: 1.0,
                                         ),
                                         borderRadius:
-                                            BorderRadius.circular(8.0),
+                                            BorderRadius.circular(14.0),
                                       ),
                                       filled: true,
-                                      fillColor: Color(0xFF434343),
+                                      fillColor: AppColors.surface,
                                     ),
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          font: GoogleFonts.plusJakartaSans(
+                                          font: GoogleFonts.manrope(
                                             fontWeight: FontWeight.normal,
                                             fontStyle:
                                                 FlutterFlowTheme.of(context)
@@ -359,14 +360,14 @@ class _CreateAccount1WidgetState extends State<CreateAccount1Widget> {
                                       labelStyle: FlutterFlowTheme.of(context)
                                           .labelMedium
                                           .override(
-                                            font: GoogleFonts.plusJakartaSans(
+                                            font: GoogleFonts.manrope(
                                               fontWeight: FontWeight.normal,
                                               fontStyle:
                                                   FlutterFlowTheme.of(context)
                                                       .labelMedium
                                                       .fontStyle,
                                             ),
-                                            color: Color(0xFFA5A5A5),
+                                            color: AppColors.hint,
                                             fontSize: 14.0,
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.normal,
@@ -377,19 +378,19 @@ class _CreateAccount1WidgetState extends State<CreateAccount1Widget> {
                                           ),
                                       enabledBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
-                                          color: Color(0xFFA5A2A2),
+                                          color: AppColors.border,
                                           width: 1.0,
                                         ),
                                         borderRadius:
-                                            BorderRadius.circular(8.0),
+                                            BorderRadius.circular(14.0),
                                       ),
                                       focusedBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
-                                          color: Color(0xFF4B39EF),
+                                          color: AppColors.primary,
                                           width: 1.0,
                                         ),
                                         borderRadius:
-                                            BorderRadius.circular(8.0),
+                                            BorderRadius.circular(14.0),
                                       ),
                                       errorBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
@@ -397,7 +398,7 @@ class _CreateAccount1WidgetState extends State<CreateAccount1Widget> {
                                           width: 1.0,
                                         ),
                                         borderRadius:
-                                            BorderRadius.circular(8.0),
+                                            BorderRadius.circular(14.0),
                                       ),
                                       focusedErrorBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
@@ -405,15 +406,15 @@ class _CreateAccount1WidgetState extends State<CreateAccount1Widget> {
                                           width: 1.0,
                                         ),
                                         borderRadius:
-                                            BorderRadius.circular(8.0),
+                                            BorderRadius.circular(14.0),
                                       ),
                                       filled: true,
-                                      fillColor: Color(0xFF434343),
+                                      fillColor: AppColors.surface,
                                     ),
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          font: GoogleFonts.plusJakartaSans(
+                                          font: GoogleFonts.manrope(
                                             fontWeight: FontWeight.normal,
                                             fontStyle:
                                                 FlutterFlowTheme.of(context)
@@ -454,7 +455,7 @@ class _CreateAccount1WidgetState extends State<CreateAccount1Widget> {
                                             width: 80.0,
                                             height: 80.0,
                                             child: SpinKitCircle(
-                                              color: Color(0xFF5D5C62),
+                                              color: AppColors.primary,
                                               size: 80.0,
                                             ),
                                           ),
@@ -530,13 +531,13 @@ class _CreateAccount1WidgetState extends State<CreateAccount1Widget> {
                                           iconPadding:
                                               EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 0.0),
-                                          color: Color(0xFF4B39EF),
+                                          color: AppColors.primary,
                                           textStyle: FlutterFlowTheme.of(
                                                   context)
                                               .titleSmall
                                               .override(
                                                 font:
-                                                    GoogleFonts.plusJakartaSans(
+                                                    GoogleFonts.manrope(
                                                   fontWeight: FontWeight.w500,
                                                   fontStyle:
                                                       FlutterFlowTheme.of(
@@ -559,7 +560,7 @@ class _CreateAccount1WidgetState extends State<CreateAccount1Widget> {
                                             width: 1.0,
                                           ),
                                           borderRadius:
-                                              BorderRadius.circular(12.0),
+                                              BorderRadius.circular(14.0),
                                         ),
                                       );
                                     },

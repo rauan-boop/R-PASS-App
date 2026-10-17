@@ -1,4 +1,5 @@
 import '/backend/supabase/supabase.dart';
+import '/config/app_colors.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
@@ -54,7 +55,7 @@ class _BlackListArhiveWidgetState extends State<BlackListArhiveWidget> {
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: Colors.black,
+        backgroundColor: AppColors.bg,
         floatingActionButton: Padding(
           padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 60.0),
           child: FloatingActionButton(
@@ -65,13 +66,13 @@ class _BlackListArhiveWidgetState extends State<BlackListArhiveWidget> {
             elevation: 8.0,
             child: Icon(
               Icons.add_rounded,
-              color: FlutterFlowTheme.of(context).info,
+              color: AppColors.ink,
               size: 30.0,
             ),
           ),
         ),
         appBar: AppBar(
-          backgroundColor: Colors.black,
+          backgroundColor: AppColors.bg,
           automaticallyImplyLeading: true,
           leading: InkWell(
             splashColor: Colors.transparent,
@@ -83,19 +84,19 @@ class _BlackListArhiveWidgetState extends State<BlackListArhiveWidget> {
             },
             child: Icon(
               Icons.arrow_back,
-              color: FlutterFlowTheme.of(context).info,
+              color: AppColors.ink,
               size: 30.0,
             ),
           ),
           title: Text(
             'АРХИВ',
             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                  font: GoogleFonts.inter(
+                  font: GoogleFonts.manrope(
                     fontWeight: FontWeight.w600,
                     fontStyle:
                         FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                   ),
-                  color: FlutterFlowTheme.of(context).info,
+                  color: AppColors.ink,
                   fontSize: 24.0,
                   letterSpacing: 0.0,
                   fontWeight: FontWeight.w600,
@@ -137,7 +138,7 @@ class _BlackListArhiveWidgetState extends State<BlackListArhiveWidget> {
                       isDense: true,
                       labelStyle:
                           FlutterFlowTheme.of(context).labelMedium.override(
-                                font: GoogleFonts.inter(
+                                font: GoogleFonts.manrope(
                                   fontWeight: FlutterFlowTheme.of(context)
                                       .labelMedium
                                       .fontWeight,
@@ -156,7 +157,7 @@ class _BlackListArhiveWidgetState extends State<BlackListArhiveWidget> {
                       hintText: 'поиск по фамилии или ИИН (№ паспорта)',
                       hintStyle:
                           FlutterFlowTheme.of(context).labelMedium.override(
-                                font: GoogleFonts.inter(
+                                font: GoogleFonts.manrope(
                                   fontWeight: FlutterFlowTheme.of(context)
                                       .labelMedium
                                       .fontWeight,
@@ -164,7 +165,7 @@ class _BlackListArhiveWidgetState extends State<BlackListArhiveWidget> {
                                       .labelMedium
                                       .fontStyle,
                                 ),
-                                color: Color(0xFFBCBEC1),
+                                color: AppColors.muted,
                                 letterSpacing: 0.0,
                                 fontWeight: FlutterFlowTheme.of(context)
                                     .labelMedium
@@ -175,41 +176,41 @@ class _BlackListArhiveWidgetState extends State<BlackListArhiveWidget> {
                               ),
                       enabledBorder: OutlineInputBorder(
                         borderSide: BorderSide(
-                          color: Color(0xFFB3B4B6),
+                          color: AppColors.border,
                           width: 1.0,
                         ),
-                        borderRadius: BorderRadius.circular(8.0),
+                        borderRadius: BorderRadius.circular(14.0),
                       ),
                       focusedBorder: OutlineInputBorder(
                         borderSide: BorderSide(
                           color: Color(0x00000000),
                           width: 1.0,
                         ),
-                        borderRadius: BorderRadius.circular(8.0),
+                        borderRadius: BorderRadius.circular(14.0),
                       ),
                       errorBorder: OutlineInputBorder(
                         borderSide: BorderSide(
                           color: FlutterFlowTheme.of(context).error,
                           width: 1.0,
                         ),
-                        borderRadius: BorderRadius.circular(8.0),
+                        borderRadius: BorderRadius.circular(14.0),
                       ),
                       focusedErrorBorder: OutlineInputBorder(
                         borderSide: BorderSide(
                           color: FlutterFlowTheme.of(context).error,
                           width: 1.0,
                         ),
-                        borderRadius: BorderRadius.circular(8.0),
+                        borderRadius: BorderRadius.circular(14.0),
                       ),
                       filled: true,
-                      fillColor: Color(0xFF929191),
+                      fillColor: AppColors.border,
                       prefixIcon: Icon(
                         Icons.search,
-                        color: FlutterFlowTheme.of(context).info,
+                        color: AppColors.ink,
                       ),
                     ),
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          font: GoogleFonts.inter(
+                          font: GoogleFonts.manrope(
                             fontWeight: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .fontWeight,
@@ -217,7 +218,7 @@ class _BlackListArhiveWidgetState extends State<BlackListArhiveWidget> {
                                 .bodyMedium
                                 .fontStyle,
                           ),
-                          color: FlutterFlowTheme.of(context).info,
+                          color: AppColors.ink,
                           letterSpacing: 0.0,
                           fontWeight: FlutterFlowTheme.of(context)
                               .bodyMedium
@@ -237,7 +238,7 @@ class _BlackListArhiveWidgetState extends State<BlackListArhiveWidget> {
                   width: double.infinity,
                   height: double.infinity,
                   decoration: BoxDecoration(
-                    color: Colors.black,
+                    color: AppColors.bg,
                   ),
                   child: FutureBuilder<List<BlBlacklistRow>>(
                     future: BlBlacklistTable().queryRows(
@@ -265,7 +266,7 @@ class _BlackListArhiveWidgetState extends State<BlackListArhiveWidget> {
                             width: 80.0,
                             height: 80.0,
                             child: SpinKitCircle(
-                              color: Color(0xFF5D5C62),
+                              color: AppColors.primary,
                               size: 80.0,
                             ),
                           ),
@@ -299,10 +300,10 @@ class _BlackListArhiveWidgetState extends State<BlackListArhiveWidget> {
                               },
                               child: Card(
                                 clipBehavior: Clip.antiAliasWithSaveLayer,
-                                color: Color(0xFF7C7B7B),
+                                color: AppColors.border,
                                 elevation: 2.0,
                                 shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(8.0),
+                                  borderRadius: BorderRadius.circular(14.0),
                                 ),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
@@ -326,7 +327,7 @@ class _BlackListArhiveWidgetState extends State<BlackListArhiveWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .bodyMedium
                                                       .override(
-                                                        font: GoogleFonts.inter(
+                                                        font: GoogleFonts.manrope(
                                                           fontWeight:
                                                               FlutterFlowTheme.of(
                                                                       context)
@@ -364,7 +365,7 @@ class _BlackListArhiveWidgetState extends State<BlackListArhiveWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  font: GoogleFonts.inter(
+                                                  font: GoogleFonts.manrope(
                                                     fontWeight:
                                                         FlutterFlowTheme.of(
                                                                 context)
@@ -411,7 +412,7 @@ class _BlackListArhiveWidgetState extends State<BlackListArhiveWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .bodyMedium
                                                       .override(
-                                                        font: GoogleFonts.inter(
+                                                        font: GoogleFonts.manrope(
                                                           fontWeight:
                                                               FlutterFlowTheme.of(
                                                                       context)
@@ -449,7 +450,7 @@ class _BlackListArhiveWidgetState extends State<BlackListArhiveWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  font: GoogleFonts.inter(
+                                                  font: GoogleFonts.manrope(
                                                     fontWeight:
                                                         FlutterFlowTheme.of(
                                                                 context)
@@ -491,7 +492,7 @@ class _BlackListArhiveWidgetState extends State<BlackListArhiveWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  font: GoogleFonts.inter(
+                                                  font: GoogleFonts.manrope(
                                                     fontWeight:
                                                         FlutterFlowTheme.of(
                                                                 context)
@@ -532,7 +533,7 @@ class _BlackListArhiveWidgetState extends State<BlackListArhiveWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .bodyMedium
                                                       .override(
-                                                        font: GoogleFonts.inter(
+                                                        font: GoogleFonts.manrope(
                                                           fontWeight:
                                                               FlutterFlowTheme.of(
                                                                       context)
@@ -567,7 +568,7 @@ class _BlackListArhiveWidgetState extends State<BlackListArhiveWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  font: GoogleFonts.inter(
+                                                  font: GoogleFonts.manrope(
                                                     fontWeight:
                                                         FlutterFlowTheme.of(
                                                                 context)
@@ -613,7 +614,7 @@ class _BlackListArhiveWidgetState extends State<BlackListArhiveWidget> {
                 width: double.infinity,
                 height: 50.0,
                 decoration: BoxDecoration(
-                  color: Colors.black,
+                  color: AppColors.bg,
                 ),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
@@ -629,13 +630,13 @@ class _BlackListArhiveWidgetState extends State<BlackListArhiveWidget> {
                       },
                       child: Icon(
                         Icons.dashboard_outlined,
-                        color: FlutterFlowTheme.of(context).secondaryBackground,
+                        color: AppColors.ink,
                         size: 30.0,
                       ),
                     ),
                     Icon(
                       Icons.checklist_sharp,
-                      color: Color(0xFF4A35CC),
+                      color: AppColors.primaryDark,
                       size: 40.0,
                     ),
                     InkWell(
@@ -648,7 +649,7 @@ class _BlackListArhiveWidgetState extends State<BlackListArhiveWidget> {
                       },
                       child: Icon(
                         Icons.manage_accounts,
-                        color: FlutterFlowTheme.of(context).secondaryBackground,
+                        color: AppColors.ink,
                         size: 30.0,
                       ),
                     ),

@@ -1,4 +1,5 @@
 import '/backend/supabase/supabase.dart';
+import '/config/app_colors.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
@@ -61,7 +62,7 @@ class _BlackListWidgetState extends State<BlackListWidget> {
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: Colors.black,
+        backgroundColor: AppColors.bg,
         floatingActionButton: Padding(
           padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 60.0),
           child: FloatingActionButton(
@@ -74,7 +75,7 @@ class _BlackListWidgetState extends State<BlackListWidget> {
             elevation: 8.0,
             child: Icon(
               Icons.add_rounded,
-              color: FlutterFlowTheme.of(context).info,
+              color: AppColors.ink,
               size: 30.0,
             ),
           ),
@@ -109,7 +110,7 @@ class _BlackListWidgetState extends State<BlackListWidget> {
                       isDense: true,
                       labelStyle:
                           FlutterFlowTheme.of(context).labelMedium.override(
-                                font: GoogleFonts.inter(
+                                font: GoogleFonts.manrope(
                                   fontWeight: FlutterFlowTheme.of(context)
                                       .labelMedium
                                       .fontWeight,
@@ -128,7 +129,7 @@ class _BlackListWidgetState extends State<BlackListWidget> {
                       hintText: 'поиск по фамилии, ИИН, телефону',
                       hintStyle:
                           FlutterFlowTheme.of(context).labelMedium.override(
-                                font: GoogleFonts.inter(
+                                font: GoogleFonts.manrope(
                                   fontWeight: FlutterFlowTheme.of(context)
                                       .labelMedium
                                       .fontWeight,
@@ -136,7 +137,7 @@ class _BlackListWidgetState extends State<BlackListWidget> {
                                       .labelMedium
                                       .fontStyle,
                                 ),
-                                color: Color(0xFFBCBEC1),
+                                color: AppColors.muted,
                                 letterSpacing: 0.0,
                                 fontWeight: FlutterFlowTheme.of(context)
                                     .labelMedium
@@ -147,41 +148,41 @@ class _BlackListWidgetState extends State<BlackListWidget> {
                               ),
                       enabledBorder: OutlineInputBorder(
                         borderSide: BorderSide(
-                          color: Color(0xFFB3B4B6),
+                          color: AppColors.border,
                           width: 1.0,
                         ),
-                        borderRadius: BorderRadius.circular(8.0),
+                        borderRadius: BorderRadius.circular(14.0),
                       ),
                       focusedBorder: OutlineInputBorder(
                         borderSide: BorderSide(
                           color: Color(0x00000000),
                           width: 1.0,
                         ),
-                        borderRadius: BorderRadius.circular(8.0),
+                        borderRadius: BorderRadius.circular(14.0),
                       ),
                       errorBorder: OutlineInputBorder(
                         borderSide: BorderSide(
                           color: FlutterFlowTheme.of(context).error,
                           width: 1.0,
                         ),
-                        borderRadius: BorderRadius.circular(8.0),
+                        borderRadius: BorderRadius.circular(14.0),
                       ),
                       focusedErrorBorder: OutlineInputBorder(
                         borderSide: BorderSide(
                           color: FlutterFlowTheme.of(context).error,
                           width: 1.0,
                         ),
-                        borderRadius: BorderRadius.circular(8.0),
+                        borderRadius: BorderRadius.circular(14.0),
                       ),
                       filled: true,
-                      fillColor: Color(0xFF929191),
+                      fillColor: AppColors.border,
                       prefixIcon: Icon(
                         Icons.search,
-                        color: FlutterFlowTheme.of(context).info,
+                        color: AppColors.ink,
                       ),
                     ),
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          font: GoogleFonts.inter(
+                          font: GoogleFonts.manrope(
                             fontWeight: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .fontWeight,
@@ -189,7 +190,7 @@ class _BlackListWidgetState extends State<BlackListWidget> {
                                 .bodyMedium
                                 .fontStyle,
                           ),
-                          color: FlutterFlowTheme.of(context).info,
+                          color: AppColors.ink,
                           letterSpacing: 0.0,
                           fontWeight: FlutterFlowTheme.of(context)
                               .bodyMedium
@@ -209,7 +210,7 @@ class _BlackListWidgetState extends State<BlackListWidget> {
                   width: double.infinity,
                   height: double.infinity,
                   decoration: BoxDecoration(
-                    color: Colors.black,
+                    color: AppColors.bg,
                   ),
                   child: FutureBuilder<List<BlBlacklistRow>>(
                     future: BlBlacklistTable().queryRows(
@@ -237,7 +238,7 @@ class _BlackListWidgetState extends State<BlackListWidget> {
                             width: 80.0,
                             height: 80.0,
                             child: SpinKitCircle(
-                              color: Color(0xFF5D5C62),
+                              color: AppColors.primary,
                               size: 80.0,
                             ),
                           ),
@@ -271,10 +272,10 @@ class _BlackListWidgetState extends State<BlackListWidget> {
                               },
                               child: Card(
                                 clipBehavior: Clip.antiAliasWithSaveLayer,
-                                color: Color(0xFF7C7B7B),
+                                color: AppColors.border,
                                 elevation: 2.0,
                                 shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(8.0),
+                                  borderRadius: BorderRadius.circular(14.0),
                                 ),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
@@ -298,7 +299,7 @@ class _BlackListWidgetState extends State<BlackListWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .bodyMedium
                                                       .override(
-                                                        font: GoogleFonts.inter(
+                                                        font: GoogleFonts.manrope(
                                                           fontWeight:
                                                               FlutterFlowTheme.of(
                                                                       context)
@@ -336,7 +337,7 @@ class _BlackListWidgetState extends State<BlackListWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  font: GoogleFonts.inter(
+                                                  font: GoogleFonts.manrope(
                                                     fontWeight:
                                                         FlutterFlowTheme.of(
                                                                 context)
@@ -383,7 +384,7 @@ class _BlackListWidgetState extends State<BlackListWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .bodyMedium
                                                       .override(
-                                                        font: GoogleFonts.inter(
+                                                        font: GoogleFonts.manrope(
                                                           fontWeight:
                                                               FlutterFlowTheme.of(
                                                                       context)
@@ -421,7 +422,7 @@ class _BlackListWidgetState extends State<BlackListWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  font: GoogleFonts.inter(
+                                                  font: GoogleFonts.manrope(
                                                     fontWeight:
                                                         FlutterFlowTheme.of(
                                                                 context)
@@ -463,7 +464,7 @@ class _BlackListWidgetState extends State<BlackListWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  font: GoogleFonts.inter(
+                                                  font: GoogleFonts.manrope(
                                                     fontWeight:
                                                         FlutterFlowTheme.of(
                                                                 context)
@@ -504,7 +505,7 @@ class _BlackListWidgetState extends State<BlackListWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .bodyMedium
                                                       .override(
-                                                        font: GoogleFonts.inter(
+                                                        font: GoogleFonts.manrope(
                                                           fontWeight:
                                                               FlutterFlowTheme.of(
                                                                       context)
@@ -539,7 +540,7 @@ class _BlackListWidgetState extends State<BlackListWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  font: GoogleFonts.inter(
+                                                  font: GoogleFonts.manrope(
                                                     fontWeight:
                                                         FlutterFlowTheme.of(
                                                                 context)
@@ -585,7 +586,7 @@ class _BlackListWidgetState extends State<BlackListWidget> {
                 width: double.infinity,
                 height: 50.0,
                 decoration: BoxDecoration(
-                  color: Colors.black,
+                  color: AppColors.bg,
                 ),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
@@ -603,13 +604,13 @@ class _BlackListWidgetState extends State<BlackListWidget> {
                       },
                       child: Icon(
                         Icons.dashboard_outlined,
-                        color: FlutterFlowTheme.of(context).secondaryBackground,
+                        color: AppColors.ink,
                         size: 30.0,
                       ),
                     ),
                     Icon(
                       Icons.checklist_sharp,
-                      color: Color(0xFF4A35CC),
+                      color: AppColors.primaryDark,
                       size: 40.0,
                     ),
                     InkWell(
@@ -624,7 +625,7 @@ class _BlackListWidgetState extends State<BlackListWidget> {
                       },
                       child: Icon(
                         Icons.manage_accounts,
-                        color: FlutterFlowTheme.of(context).secondaryBackground,
+                        color: AppColors.ink,
                         size: 30.0,
                       ),
                     ),

@@ -1,4 +1,5 @@
 import '/auth/supabase_auth/auth_util.dart';
+import '/config/app_colors.dart';
 import '/backend/supabase/supabase.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -83,9 +84,9 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: Colors.black,
+        backgroundColor: AppColors.bg,
         appBar: AppBar(
-          backgroundColor: Colors.black,
+          backgroundColor: AppColors.bg,
           automaticallyImplyLeading: false,
           leading: InkWell(
             splashColor: Colors.transparent,
@@ -97,7 +98,7 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
             },
             child: Icon(
               Icons.arrow_back,
-              color: FlutterFlowTheme.of(context).info,
+              color: AppColors.ink,
               size: 30.0,
             ),
           ),
@@ -107,14 +108,14 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
               'По удостоверению\n личности',
               textAlign: TextAlign.center,
               style: FlutterFlowTheme.of(context).headlineMedium.override(
-                    font: GoogleFonts.interTight(
+                    font: GoogleFonts.manrope(
                       fontWeight: FlutterFlowTheme.of(context)
                           .headlineMedium
                           .fontWeight,
                       fontStyle:
                           FlutterFlowTheme.of(context).headlineMedium.fontStyle,
                     ),
-                    color: FlutterFlowTheme.of(context).info,
+                    color: AppColors.ink,
                     fontSize: 22.0,
                     letterSpacing: 0.0,
                     fontWeight:
@@ -145,7 +146,7 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
               width: double.infinity,
               height: 1014.5,
               decoration: BoxDecoration(
-                color: Colors.black,
+                color: AppColors.bg,
                 border: Border.all(
                   color: Color(0x001E1B1B),
                 ),
@@ -170,7 +171,7 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
-                                      font: GoogleFonts.inter(
+                                      font: GoogleFonts.manrope(
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .fontWeight,
@@ -200,7 +201,7 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        font: GoogleFonts.inter(
+                                        font: GoogleFonts.manrope(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .bodyMedium
@@ -210,7 +211,7 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
                                                   .bodyMedium
                                                   .fontStyle,
                                         ),
-                                        color: Color(0xFF929191),
+                                        color: AppColors.muted,
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .bodyMedium
@@ -237,7 +238,7 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
                                     labelStyle: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.manrope(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .labelMedium
@@ -260,7 +261,7 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
                                     hintStyle: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.manrope(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .labelMedium
@@ -282,17 +283,17 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
                                         ),
                                     enabledBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
-                                        color: Color(0xFFA5A2A2),
+                                        color: AppColors.border,
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     focusedBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
                                         color: Color(0x00000000),
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     errorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
@@ -300,7 +301,7 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
                                             FlutterFlowTheme.of(context).error,
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     focusedErrorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
@@ -308,15 +309,15 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
                                             FlutterFlowTheme.of(context).error,
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     filled: true,
-                                    fillColor: Color(0xFF2B2B2B),
+                                    fillColor: AppColors.surface,
                                   ),
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        font: GoogleFonts.inter(
+                                        font: GoogleFonts.manrope(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .bodyMedium
@@ -354,7 +355,7 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        font: GoogleFonts.inter(
+                                        font: GoogleFonts.manrope(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .bodyMedium
@@ -364,7 +365,7 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
                                                   .bodyMedium
                                                   .fontStyle,
                                         ),
-                                        color: Color(0xFF929191),
+                                        color: AppColors.muted,
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .bodyMedium
@@ -391,7 +392,7 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
                                     labelStyle: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.manrope(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .labelMedium
@@ -414,7 +415,7 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
                                     hintStyle: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.manrope(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .labelMedium
@@ -436,17 +437,17 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
                                         ),
                                     enabledBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
-                                        color: Color(0xFFA5A2A2),
+                                        color: AppColors.border,
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     focusedBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
                                         color: Color(0x00000000),
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     errorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
@@ -454,7 +455,7 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
                                             FlutterFlowTheme.of(context).error,
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     focusedErrorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
@@ -462,15 +463,15 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
                                             FlutterFlowTheme.of(context).error,
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     filled: true,
-                                    fillColor: Color(0xFF2B2B2B),
+                                    fillColor: AppColors.surface,
                                   ),
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        font: GoogleFonts.inter(
+                                        font: GoogleFonts.manrope(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .bodyMedium
@@ -507,7 +508,7 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        font: GoogleFonts.inter(
+                                        font: GoogleFonts.manrope(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .bodyMedium
@@ -517,7 +518,7 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
                                                   .bodyMedium
                                                   .fontStyle,
                                         ),
-                                        color: Color(0xFF929191),
+                                        color: AppColors.muted,
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .bodyMedium
@@ -544,7 +545,7 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
                                     labelStyle: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.manrope(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .labelMedium
@@ -567,7 +568,7 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
                                     hintStyle: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.manrope(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .labelMedium
@@ -589,17 +590,17 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
                                         ),
                                     enabledBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
-                                        color: Color(0xFFA5A2A2),
+                                        color: AppColors.border,
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     focusedBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
                                         color: Color(0x00000000),
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     errorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
@@ -607,7 +608,7 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
                                             FlutterFlowTheme.of(context).error,
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     focusedErrorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
@@ -615,15 +616,15 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
                                             FlutterFlowTheme.of(context).error,
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     filled: true,
-                                    fillColor: Color(0xFF2B2B2B),
+                                    fillColor: AppColors.surface,
                                   ),
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        font: GoogleFonts.inter(
+                                        font: GoogleFonts.manrope(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .bodyMedium
@@ -661,7 +662,7 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        font: GoogleFonts.inter(
+                                        font: GoogleFonts.manrope(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .bodyMedium
@@ -671,7 +672,7 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
                                                   .bodyMedium
                                                   .fontStyle,
                                         ),
-                                        color: Color(0xFF929191),
+                                        color: AppColors.muted,
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .bodyMedium
@@ -698,7 +699,7 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
                                     labelStyle: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.manrope(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .labelMedium
@@ -721,7 +722,7 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
                                     hintStyle: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.manrope(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .labelMedium
@@ -743,17 +744,17 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
                                         ),
                                     enabledBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
-                                        color: Color(0xFFA5A2A2),
+                                        color: AppColors.border,
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     focusedBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
                                         color: Color(0x00000000),
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     errorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
@@ -761,7 +762,7 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
                                             FlutterFlowTheme.of(context).error,
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     focusedErrorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
@@ -769,15 +770,15 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
                                             FlutterFlowTheme.of(context).error,
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     filled: true,
-                                    fillColor: Color(0xFF2B2B2B),
+                                    fillColor: AppColors.surface,
                                   ),
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        font: GoogleFonts.inter(
+                                        font: GoogleFonts.manrope(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .bodyMedium
@@ -814,7 +815,7 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        font: GoogleFonts.inter(
+                                        font: GoogleFonts.manrope(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .bodyMedium
@@ -824,7 +825,7 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
                                                   .bodyMedium
                                                   .fontStyle,
                                         ),
-                                        color: Color(0xFF929191),
+                                        color: AppColors.muted,
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .bodyMedium
@@ -851,7 +852,7 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
                                     labelStyle: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.manrope(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .labelMedium
@@ -875,7 +876,7 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
                                     hintStyle: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.manrope(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .labelMedium
@@ -897,17 +898,17 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
                                         ),
                                     enabledBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
-                                        color: Color(0xFFA5A2A2),
+                                        color: AppColors.border,
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     focusedBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
                                         color: Color(0x00000000),
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     errorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
@@ -915,7 +916,7 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
                                             FlutterFlowTheme.of(context).error,
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     focusedErrorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
@@ -923,15 +924,15 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
                                             FlutterFlowTheme.of(context).error,
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     filled: true,
-                                    fillColor: Color(0xFF2B2B2B),
+                                    fillColor: AppColors.surface,
                                   ),
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        font: GoogleFonts.inter(
+                                        font: GoogleFonts.manrope(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .bodyMedium
@@ -969,7 +970,7 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        font: GoogleFonts.inter(
+                                        font: GoogleFonts.manrope(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .bodyMedium
@@ -979,7 +980,7 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
                                                   .bodyMedium
                                                   .fontStyle,
                                         ),
-                                        color: Color(0xFF929191),
+                                        color: AppColors.muted,
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .bodyMedium
@@ -1006,7 +1007,7 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
                                     labelStyle: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.manrope(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .labelMedium
@@ -1029,7 +1030,7 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
                                     hintStyle: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.manrope(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .labelMedium
@@ -1051,17 +1052,17 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
                                         ),
                                     enabledBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
-                                        color: Color(0xFFA5A2A2),
+                                        color: AppColors.border,
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     focusedBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
                                         color: Color(0x00000000),
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     errorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
@@ -1069,7 +1070,7 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
                                             FlutterFlowTheme.of(context).error,
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     focusedErrorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
@@ -1077,15 +1078,15 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
                                             FlutterFlowTheme.of(context).error,
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     filled: true,
-                                    fillColor: Color(0xFF2B2B2B),
+                                    fillColor: AppColors.surface,
                                   ),
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        font: GoogleFonts.inter(
+                                        font: GoogleFonts.manrope(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .bodyMedium
@@ -1122,7 +1123,7 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        font: GoogleFonts.inter(
+                                        font: GoogleFonts.manrope(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .bodyMedium
@@ -1132,7 +1133,7 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
                                                   .bodyMedium
                                                   .fontStyle,
                                         ),
-                                        color: Color(0xFF929191),
+                                        color: AppColors.muted,
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .bodyMedium
@@ -1159,7 +1160,7 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
                                     labelStyle: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.manrope(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .labelMedium
@@ -1182,7 +1183,7 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
                                     hintStyle: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.manrope(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .labelMedium
@@ -1204,17 +1205,17 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
                                         ),
                                     enabledBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
-                                        color: Color(0xFFA5A2A2),
+                                        color: AppColors.border,
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     focusedBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
                                         color: Color(0x00000000),
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     errorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
@@ -1222,7 +1223,7 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
                                             FlutterFlowTheme.of(context).error,
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     focusedErrorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
@@ -1230,15 +1231,15 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
                                             FlutterFlowTheme.of(context).error,
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     filled: true,
-                                    fillColor: Color(0xFF2B2B2B),
+                                    fillColor: AppColors.surface,
                                   ),
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        font: GoogleFonts.inter(
+                                        font: GoogleFonts.manrope(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .bodyMedium
@@ -1283,7 +1284,7 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
-                                            font: GoogleFonts.inter(
+                                            font: GoogleFonts.manrope(
                                               fontWeight:
                                                   FlutterFlowTheme.of(context)
                                                       .bodyMedium
@@ -1403,7 +1404,7 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
                                         },
                                         child: Icon(
                                           Icons.add_a_photo_rounded,
-                                          color: Color(0xFF8A8C8F),
+                                          color: AppColors.muted,
                                           size: 30.0,
                                         ),
                                       ),
@@ -1432,7 +1433,7 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
                                           padding: EdgeInsets.all(8.0),
                                           child: ClipRRect(
                                             borderRadius:
-                                                BorderRadius.circular(8.0),
+                                                BorderRadius.circular(14.0),
                                             child: Image.network(
                                               photoItemItem,
                                               width: 200.0,
@@ -1511,7 +1512,7 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
                           color: Color(0xFF3737E9),
                           textStyle:
                               FlutterFlowTheme.of(context).titleSmall.override(
-                                    font: GoogleFonts.interTight(
+                                    font: GoogleFonts.manrope(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .titleSmall
                                           .fontWeight,
@@ -1519,7 +1520,7 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
                                           .titleSmall
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFFF8F4F4),
+                                    color: AppColors.muted,
                                     letterSpacing: 0.0,
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .titleSmall
@@ -1529,7 +1530,7 @@ class _PoUdostovereniuWidgetState extends State<PoUdostovereniuWidget> {
                                         .fontStyle,
                                   ),
                           elevation: 0.0,
-                          borderRadius: BorderRadius.circular(8.0),
+                          borderRadius: BorderRadius.circular(14.0),
                         ),
                       ),
                     ),

@@ -1,4 +1,5 @@
 import '/backend/api_requests/api_calls.dart';
+import '/config/app_colors.dart';
 import '/config/app_config.dart';
 import '/backend/supabase/supabase.dart';
 import '/components/bloking/bloking_widget.dart';
@@ -78,13 +79,13 @@ class _CompaniInfWidgetState extends State<CompaniInfWidget> {
         // Customize what your widget looks like when it's loading.
         if (!snapshot.hasData) {
           return Scaffold(
-            backgroundColor: Colors.black,
+            backgroundColor: AppColors.bg,
             body: Center(
               child: SizedBox(
                 width: 80.0,
                 height: 80.0,
                 child: SpinKitCircle(
-                  color: Color(0xFF5D5C62),
+                  color: AppColors.primary,
                   size: 80.0,
                 ),
               ),
@@ -100,9 +101,9 @@ class _CompaniInfWidgetState extends State<CompaniInfWidget> {
           },
           child: Scaffold(
             key: scaffoldKey,
-            backgroundColor: Colors.black,
+            backgroundColor: AppColors.bg,
             appBar: AppBar(
-              backgroundColor: Colors.black,
+              backgroundColor: AppColors.bg,
               automaticallyImplyLeading: false,
               leading: InkWell(
                 splashColor: Colors.transparent,
@@ -116,7 +117,7 @@ class _CompaniInfWidgetState extends State<CompaniInfWidget> {
                 },
                 child: Icon(
                   Icons.arrow_back,
-                  color: FlutterFlowTheme.of(context).info,
+                  color: AppColors.ink,
                   size: 24.0,
                 ),
               ),
@@ -127,13 +128,13 @@ class _CompaniInfWidgetState extends State<CompaniInfWidget> {
                   child: Text(
                     'Данные компании',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          font: GoogleFonts.inter(
+                          font: GoogleFonts.manrope(
                             fontWeight: FontWeight.w600,
                             fontStyle: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .fontStyle,
                           ),
-                          color: FlutterFlowTheme.of(context).info,
+                          color: AppColors.ink,
                           fontSize: 25.0,
                           letterSpacing: 0.0,
                           fontWeight: FontWeight.w600,
@@ -175,7 +176,7 @@ class _CompaniInfWidgetState extends State<CompaniInfWidget> {
                           width: 80.0,
                           height: 80.0,
                           child: SpinKitCircle(
-                            color: Color(0xFF5D5C62),
+                            color: AppColors.primary,
                             size: 80.0,
                           ),
                         ),
@@ -193,7 +194,7 @@ class _CompaniInfWidgetState extends State<CompaniInfWidget> {
                       width: double.infinity,
                       height: 900.0,
                       decoration: BoxDecoration(
-                        color: Colors.black,
+                        color: AppColors.bg,
                       ),
                       child: SingleChildScrollView(
                         child: Column(
@@ -206,7 +207,7 @@ class _CompaniInfWidgetState extends State<CompaniInfWidget> {
                                 width: double.infinity,
                                 height: 104.39,
                                 decoration: BoxDecoration(
-                                  color: Color(0xFF515050),
+                                  color: AppColors.surface,
                                   boxShadow: [
                                     BoxShadow(
                                       blurRadius: 2.0,
@@ -218,7 +219,7 @@ class _CompaniInfWidgetState extends State<CompaniInfWidget> {
                                       spreadRadius: 0.0,
                                     )
                                   ],
-                                  borderRadius: BorderRadius.circular(16.0),
+                                  borderRadius: BorderRadius.circular(20.0),
                                 ),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -255,7 +256,8 @@ class _CompaniInfWidgetState extends State<CompaniInfWidget> {
                                         width: 224.46,
                                         height: 100.0,
                                         decoration: BoxDecoration(
-                                          color: Color(0xFF515050),
+                                          color: AppColors.surface,
+                                          boxShadow: [AppColors.cardShadow],
                                         ),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.min,
@@ -275,7 +277,7 @@ class _CompaniInfWidgetState extends State<CompaniInfWidget> {
                                                         context)
                                                     .bodyMedium
                                                     .override(
-                                                      font: GoogleFonts.inter(
+                                                      font: GoogleFonts.manrope(
                                                         fontWeight:
                                                             FontWeight.w600,
                                                         fontStyle:
@@ -313,7 +315,7 @@ class _CompaniInfWidgetState extends State<CompaniInfWidget> {
                                                         context)
                                                     .bodyMedium
                                                     .override(
-                                                      font: GoogleFonts.inter(
+                                                      font: GoogleFonts.manrope(
                                                         fontWeight:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -352,7 +354,7 @@ class _CompaniInfWidgetState extends State<CompaniInfWidget> {
                                                         context)
                                                     .bodyMedium
                                                     .override(
-                                                      font: GoogleFonts.inter(
+                                                      font: GoogleFonts.manrope(
                                                         fontWeight:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -401,7 +403,7 @@ class _CompaniInfWidgetState extends State<CompaniInfWidget> {
                                                         context)
                                                     .bodyMedium
                                                     .override(
-                                                      font: GoogleFonts.inter(
+                                                      font: GoogleFonts.manrope(
                                                         fontWeight:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -465,7 +467,7 @@ class _CompaniInfWidgetState extends State<CompaniInfWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
-                                              font: GoogleFonts.inter(
+                                              font: GoogleFonts.manrope(
                                                 fontWeight: FontWeight.w600,
                                                 fontStyle:
                                                     FlutterFlowTheme.of(context)
@@ -502,7 +504,7 @@ class _CompaniInfWidgetState extends State<CompaniInfWidget> {
                                       },
                                       child: Icon(
                                         Icons.call,
-                                        color: Color(0xFF6E4CF8),
+                                        color: AppColors.primary,
                                         size: 30.0,
                                       ),
                                     ),
@@ -521,7 +523,7 @@ class _CompaniInfWidgetState extends State<CompaniInfWidget> {
                                       },
                                       child: Icon(
                                         Icons.chat_sharp,
-                                        color: Color(0xFF6E4CF8),
+                                        color: AppColors.primary,
                                         size: 30.0,
                                       ),
                                     ),
@@ -536,7 +538,7 @@ class _CompaniInfWidgetState extends State<CompaniInfWidget> {
                                 width: double.infinity,
                                 height: 100.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0xFF515050),
+                                  color: AppColors.surface,
                                   boxShadow: [
                                     BoxShadow(
                                       blurRadius: 2.0,
@@ -548,7 +550,7 @@ class _CompaniInfWidgetState extends State<CompaniInfWidget> {
                                       spreadRadius: 0.0,
                                     )
                                   ],
-                                  borderRadius: BorderRadius.circular(16.0),
+                                  borderRadius: BorderRadius.circular(20.0),
                                 ),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -585,7 +587,7 @@ class _CompaniInfWidgetState extends State<CompaniInfWidget> {
                                                         context)
                                                     .bodyMedium
                                                     .override(
-                                                      font: GoogleFonts.inter(
+                                                      font: GoogleFonts.manrope(
                                                         fontWeight:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -624,7 +626,7 @@ class _CompaniInfWidgetState extends State<CompaniInfWidget> {
                                                         context)
                                                     .bodyMedium
                                                     .override(
-                                                      font: GoogleFonts.inter(
+                                                      font: GoogleFonts.manrope(
                                                         fontWeight:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -675,7 +677,7 @@ class _CompaniInfWidgetState extends State<CompaniInfWidget> {
                                                         .bodyMedium
                                                         .override(
                                                           font:
-                                                              GoogleFonts.inter(
+                                                              GoogleFonts.manrope(
                                                             fontWeight:
                                                                 FontWeight.w600,
                                                             fontStyle:
@@ -710,7 +712,7 @@ class _CompaniInfWidgetState extends State<CompaniInfWidget> {
                                                         .bodyMedium
                                                         .override(
                                                           font:
-                                                              GoogleFonts.inter(
+                                                              GoogleFonts.manrope(
                                                             fontWeight:
                                                                 FlutterFlowTheme.of(
                                                                         context)
@@ -952,7 +954,7 @@ class _CompaniInfWidgetState extends State<CompaniInfWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        font: GoogleFonts.inter(
+                                        font: GoogleFonts.manrope(
                                           fontWeight: FontWeight.w500,
                                           fontStyle:
                                               FlutterFlowTheme.of(context)
@@ -981,7 +983,7 @@ class _CompaniInfWidgetState extends State<CompaniInfWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        font: GoogleFonts.inter(
+                                        font: GoogleFonts.manrope(
                                           fontWeight: FontWeight.w500,
                                           fontStyle:
                                               FlutterFlowTheme.of(context)
@@ -1002,7 +1004,7 @@ class _CompaniInfWidgetState extends State<CompaniInfWidget> {
                             ),
                             Divider(
                               thickness: 2.0,
-                              color: Color(0xFF5B5B5C),
+                              color: AppColors.surface,
                             ),
                             Padding(
                               padding: EdgeInsetsDirectional.fromSTEB(
@@ -1019,7 +1021,7 @@ class _CompaniInfWidgetState extends State<CompaniInfWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
-                                            font: GoogleFonts.inter(
+                                            font: GoogleFonts.manrope(
                                               fontWeight: FontWeight.w500,
                                               fontStyle:
                                                   FlutterFlowTheme.of(context)
@@ -1056,9 +1058,10 @@ class _CompaniInfWidgetState extends State<CompaniInfWidget> {
                                         width: 150.0,
                                         height: 60.0,
                                         decoration: BoxDecoration(
-                                          color: Color(0xFF515050),
+                                          color: AppColors.surface,
+                                          boxShadow: [AppColors.cardShadow],
                                           borderRadius:
-                                              BorderRadius.circular(16.0),
+                                              BorderRadius.circular(20.0),
                                         ),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
@@ -1074,7 +1077,7 @@ class _CompaniInfWidgetState extends State<CompaniInfWidget> {
                                                         context)
                                                     .bodyMedium
                                                     .override(
-                                                      font: GoogleFonts.inter(
+                                                      font: GoogleFonts.manrope(
                                                         fontWeight:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -1120,7 +1123,7 @@ class _CompaniInfWidgetState extends State<CompaniInfWidget> {
                                                         context)
                                                     .bodyMedium
                                                     .override(
-                                                      font: GoogleFonts.inter(
+                                                      font: GoogleFonts.manrope(
                                                         fontWeight:
                                                             FontWeight.w600,
                                                         fontStyle:
@@ -1157,9 +1160,10 @@ class _CompaniInfWidgetState extends State<CompaniInfWidget> {
                                         width: 150.0,
                                         height: 60.0,
                                         decoration: BoxDecoration(
-                                          color: Color(0xFF363333),
+                                          color: AppColors.surface,
+                                          boxShadow: [AppColors.cardShadow],
                                           borderRadius:
-                                              BorderRadius.circular(16.0),
+                                              BorderRadius.circular(20.0),
                                         ),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
@@ -1175,7 +1179,7 @@ class _CompaniInfWidgetState extends State<CompaniInfWidget> {
                                                         context)
                                                     .bodyMedium
                                                     .override(
-                                                      font: GoogleFonts.inter(
+                                                      font: GoogleFonts.manrope(
                                                         fontWeight:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -1218,7 +1222,7 @@ class _CompaniInfWidgetState extends State<CompaniInfWidget> {
                                                         context)
                                                     .bodyMedium
                                                     .override(
-                                                      font: GoogleFonts.inter(
+                                                      font: GoogleFonts.manrope(
                                                         fontWeight:
                                                             FontWeight.w600,
                                                         fontStyle:
@@ -1253,20 +1257,20 @@ class _CompaniInfWidgetState extends State<CompaniInfWidget> {
                             ),
                             Divider(
                               thickness: 2.0,
-                              color: Color(0xFF5B5B5C),
+                              color: AppColors.surface,
                             ),
                             Text(
                               'Менеджеры компании',
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    font: GoogleFonts.inter(
+                                    font: GoogleFonts.manrope(
                                       fontWeight: FontWeight.w500,
                                       fontStyle: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .fontStyle,
                                     ),
-                                    color: FlutterFlowTheme.of(context).info,
+                                    color: AppColors.ink,
                                     fontSize: 15.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w500,
@@ -1282,8 +1286,9 @@ class _CompaniInfWidgetState extends State<CompaniInfWidget> {
                                 width: double.infinity,
                                 height: 400.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0xFF242323),
-                                  borderRadius: BorderRadius.circular(16.0),
+                                  color: AppColors.surface,
+                                  boxShadow: [AppColors.cardShadow],
+                                  borderRadius: BorderRadius.circular(20.0),
                                 ),
                                 child: FutureBuilder<List<ProfilesRow>>(
                                   future: ProfilesTable().queryRows(
@@ -1300,7 +1305,7 @@ class _CompaniInfWidgetState extends State<CompaniInfWidget> {
                                           width: 80.0,
                                           height: 80.0,
                                           child: SpinKitCircle(
-                                            color: Color(0xFF5D5C62),
+                                            color: AppColors.primary,
                                             size: 80.0,
                                           ),
                                         ),
@@ -1347,7 +1352,7 @@ class _CompaniInfWidgetState extends State<CompaniInfWidget> {
                                               elevation: 3.0,
                                               shape: RoundedRectangleBorder(
                                                 borderRadius:
-                                                    BorderRadius.circular(8.0),
+                                                    BorderRadius.circular(14.0),
                                               ),
                                               child: Column(
                                                 mainAxisSize: MainAxisSize.max,

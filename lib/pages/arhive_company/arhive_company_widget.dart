@@ -1,4 +1,5 @@
 import '/backend/supabase/supabase.dart';
+import '/config/app_colors.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -53,9 +54,9 @@ class _ArhiveCompanyWidgetState extends State<ArhiveCompanyWidget> {
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: Colors.black,
+        backgroundColor: AppColors.bg,
         appBar: AppBar(
-          backgroundColor: Colors.black,
+          backgroundColor: AppColors.bg,
           automaticallyImplyLeading: false,
           leading: FlutterFlowIconButton(
             borderColor: Colors.transparent,
@@ -64,7 +65,7 @@ class _ArhiveCompanyWidgetState extends State<ArhiveCompanyWidget> {
             buttonSize: 60.0,
             icon: Icon(
               Icons.arrow_back_rounded,
-              color: Colors.white,
+              color: AppColors.ink,
               size: 30.0,
             ),
             onPressed: () async {
@@ -74,12 +75,12 @@ class _ArhiveCompanyWidgetState extends State<ArhiveCompanyWidget> {
           title: Text(
             'Компании в архиве',
             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                  font: GoogleFonts.inter(
+                  font: GoogleFonts.manrope(
                     fontWeight: FontWeight.w600,
                     fontStyle:
                         FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                   ),
-                  color: FlutterFlowTheme.of(context).secondaryBackground,
+                  color: AppColors.ink,
                   fontSize: 20.0,
                   letterSpacing: 0.0,
                   fontWeight: FontWeight.w600,
@@ -102,8 +103,9 @@ class _ArhiveCompanyWidgetState extends State<ArhiveCompanyWidget> {
                     width: double.infinity,
                     height: MediaQuery.sizeOf(context).height * 1.0,
                     decoration: BoxDecoration(
-                      color: Color(0xFF2D2C2C),
-                      borderRadius: BorderRadius.circular(16.0),
+                      color: AppColors.surface,
+                      boxShadow: [AppColors.cardShadow],
+                      borderRadius: BorderRadius.circular(20.0),
                     ),
                     child: Padding(
                       padding:
@@ -123,7 +125,7 @@ class _ArhiveCompanyWidgetState extends State<ArhiveCompanyWidget> {
                                 width: 80.0,
                                 height: 80.0,
                                 child: SpinKitCircle(
-                                  color: Color(0xFF5D5C62),
+                                  color: AppColors.primary,
                                   size: 80.0,
                                 ),
                               ),
@@ -167,10 +169,10 @@ class _ArhiveCompanyWidgetState extends State<ArhiveCompanyWidget> {
                                   },
                                   child: Card(
                                     clipBehavior: Clip.antiAliasWithSaveLayer,
-                                    color: Color(0xFF525252),
+                                    color: AppColors.surface,
                                     elevation: 5.0,
                                     shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
@@ -194,7 +196,7 @@ class _ArhiveCompanyWidgetState extends State<ArhiveCompanyWidget> {
                                                         context)
                                                     .bodyMedium
                                                     .override(
-                                                      font: GoogleFonts.inter(
+                                                      font: GoogleFonts.manrope(
                                                         fontWeight:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -245,7 +247,7 @@ class _ArhiveCompanyWidgetState extends State<ArhiveCompanyWidget> {
                                                         context)
                                                     .bodyMedium
                                                     .override(
-                                                      font: GoogleFonts.inter(
+                                                      font: GoogleFonts.manrope(
                                                         fontWeight:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -292,7 +294,7 @@ class _ArhiveCompanyWidgetState extends State<ArhiveCompanyWidget> {
                                                         context)
                                                     .bodyMedium
                                                     .override(
-                                                      font: GoogleFonts.inter(
+                                                      font: GoogleFonts.manrope(
                                                         fontWeight:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -327,7 +329,7 @@ class _ArhiveCompanyWidgetState extends State<ArhiveCompanyWidget> {
                                                         context)
                                                     .bodyMedium
                                                     .override(
-                                                      font: GoogleFonts.inter(
+                                                      font: GoogleFonts.manrope(
                                                         fontWeight:
                                                             FlutterFlowTheme.of(
                                                                     context)

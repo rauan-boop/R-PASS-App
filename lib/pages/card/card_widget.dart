@@ -1,4 +1,5 @@
 import '/backend/supabase/supabase.dart';
+import '/config/app_colors.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -69,13 +70,13 @@ class _CardWidgetState extends State<CardWidget> {
         // Customize what your widget looks like when it's loading.
         if (!snapshot.hasData) {
           return Scaffold(
-            backgroundColor: Colors.black,
+            backgroundColor: AppColors.bg,
             body: Center(
               child: SizedBox(
                 width: 80.0,
                 height: 80.0,
                 child: SpinKitCircle(
-                  color: Color(0xFF5D5C62),
+                  color: AppColors.primary,
                   size: 80.0,
                 ),
               ),
@@ -95,9 +96,9 @@ class _CardWidgetState extends State<CardWidget> {
           },
           child: Scaffold(
             key: scaffoldKey,
-            backgroundColor: Colors.black,
+            backgroundColor: AppColors.bg,
             appBar: AppBar(
-              backgroundColor: Colors.black,
+              backgroundColor: AppColors.bg,
               automaticallyImplyLeading: false,
               leading: FlutterFlowIconButton(
                 borderColor: Colors.transparent,
@@ -106,7 +107,7 @@ class _CardWidgetState extends State<CardWidget> {
                 buttonSize: 60.0,
                 icon: Icon(
                   Icons.arrow_back_rounded,
-                  color: FlutterFlowTheme.of(context).info,
+                  color: AppColors.ink,
                   size: 30.0,
                 ),
                 onPressed: () async {
@@ -120,7 +121,7 @@ class _CardWidgetState extends State<CardWidget> {
               title: Text(
                 'Информация по клиенту',
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
-                      font: GoogleFonts.interTight(
+                      font: GoogleFonts.manrope(
                         fontWeight: FlutterFlowTheme.of(context)
                             .headlineMedium
                             .fontWeight,
@@ -128,7 +129,7 @@ class _CardWidgetState extends State<CardWidget> {
                             .headlineMedium
                             .fontStyle,
                       ),
-                      color: FlutterFlowTheme.of(context).info,
+                      color: AppColors.ink,
                       fontSize: 22.0,
                       letterSpacing: 0.0,
                       fontWeight: FlutterFlowTheme.of(context)
@@ -150,7 +151,7 @@ class _CardWidgetState extends State<CardWidget> {
                   width: double.infinity,
                   height: 900.0,
                   decoration: BoxDecoration(
-                    color: Colors.black,
+                    color: AppColors.bg,
                   ),
                   child: SingleChildScrollView(
                     child: Column(
@@ -188,7 +189,7 @@ class _CardWidgetState extends State<CardWidget> {
                                   textStyle: FlutterFlowTheme.of(context)
                                       .titleSmall
                                       .override(
-                                        font: GoogleFonts.interTight(
+                                        font: GoogleFonts.manrope(
                                           fontWeight: FontWeight.w500,
                                           fontStyle:
                                               FlutterFlowTheme.of(context)
@@ -204,7 +205,7 @@ class _CardWidgetState extends State<CardWidget> {
                                             .fontStyle,
                                       ),
                                   elevation: 3.0,
-                                  borderRadius: BorderRadius.circular(8.0),
+                                  borderRadius: BorderRadius.circular(14.0),
                                 ),
                               ),
                             ),
@@ -218,8 +219,9 @@ class _CardWidgetState extends State<CardWidget> {
                                 ? 60.0
                                 : 120.0,
                             decoration: BoxDecoration(
-                              color: Color(0xFF545353),
-                              borderRadius: BorderRadius.circular(16.0),
+                              color: AppColors.surface,
+                              boxShadow: [AppColors.cardShadow],
+                              borderRadius: BorderRadius.circular(20.0),
                             ),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
@@ -245,7 +247,7 @@ class _CardWidgetState extends State<CardWidget> {
                                                       context)
                                                   .bodyMedium
                                                   .override(
-                                                    font: GoogleFonts.inter(
+                                                    font: GoogleFonts.manrope(
                                                       fontWeight:
                                                           FontWeight.w500,
                                                       fontStyle:
@@ -303,7 +305,7 @@ class _CardWidgetState extends State<CardWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                font: GoogleFonts.inter(
+                                                font: GoogleFonts.manrope(
                                                   fontWeight: FontWeight.w500,
                                                   fontStyle:
                                                       FlutterFlowTheme.of(
@@ -344,7 +346,7 @@ class _CardWidgetState extends State<CardWidget> {
                                                       context)
                                                   .bodyMedium
                                                   .override(
-                                                    font: GoogleFonts.inter(
+                                                    font: GoogleFonts.manrope(
                                                       fontWeight:
                                                           FontWeight.w500,
                                                       fontStyle:
@@ -387,7 +389,7 @@ class _CardWidgetState extends State<CardWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                font: GoogleFonts.inter(
+                                                font: GoogleFonts.manrope(
                                                   fontWeight: FontWeight.w500,
                                                   fontStyle:
                                                       FlutterFlowTheme.of(
@@ -423,7 +425,7 @@ class _CardWidgetState extends State<CardWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                font: GoogleFonts.inter(
+                                                font: GoogleFonts.manrope(
                                                   fontWeight: FontWeight.w500,
                                                   fontStyle:
                                                       FlutterFlowTheme.of(
@@ -451,7 +453,7 @@ class _CardWidgetState extends State<CardWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                font: GoogleFonts.inter(
+                                                font: GoogleFonts.manrope(
                                                   fontWeight: FontWeight.w500,
                                                   fontStyle:
                                                       FlutterFlowTheme.of(
@@ -486,7 +488,7 @@ class _CardWidgetState extends State<CardWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                font: GoogleFonts.inter(
+                                                font: GoogleFonts.manrope(
                                                   fontWeight: FontWeight.w500,
                                                   fontStyle:
                                                       FlutterFlowTheme.of(
@@ -516,7 +518,7 @@ class _CardWidgetState extends State<CardWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                font: GoogleFonts.inter(
+                                                font: GoogleFonts.manrope(
                                                   fontWeight: FontWeight.w500,
                                                   fontStyle:
                                                       FlutterFlowTheme.of(
@@ -552,7 +554,7 @@ class _CardWidgetState extends State<CardWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                font: GoogleFonts.inter(
+                                                font: GoogleFonts.manrope(
                                                   fontWeight: FontWeight.w500,
                                                   fontStyle:
                                                       FlutterFlowTheme.of(
@@ -580,7 +582,7 @@ class _CardWidgetState extends State<CardWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                font: GoogleFonts.inter(
+                                                font: GoogleFonts.manrope(
                                                   fontWeight: FontWeight.w500,
                                                   fontStyle:
                                                       FlutterFlowTheme.of(
@@ -618,13 +620,13 @@ class _CardWidgetState extends State<CardWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
-                                      font: GoogleFonts.inter(
+                                      font: GoogleFonts.manrope(
                                         fontWeight: FontWeight.w500,
                                         fontStyle: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .fontStyle,
                                       ),
-                                      color: FlutterFlowTheme.of(context).info,
+                                      color: AppColors.ink,
                                       fontSize: 16.0,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.w500,
@@ -644,7 +646,7 @@ class _CardWidgetState extends State<CardWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        font: GoogleFonts.inter(
+                                        font: GoogleFonts.manrope(
                                           fontWeight: FontWeight.w600,
                                           fontStyle:
                                               FlutterFlowTheme.of(context)
@@ -669,7 +671,7 @@ class _CardWidgetState extends State<CardWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        font: GoogleFonts.inter(
+                                        font: GoogleFonts.manrope(
                                           fontWeight: FontWeight.w500,
                                           fontStyle:
                                               FlutterFlowTheme.of(context)
@@ -696,10 +698,11 @@ class _CardWidgetState extends State<CardWidget> {
                             width: double.infinity,
                             height: 117.8,
                             decoration: BoxDecoration(
-                              color: Color(0xFF5A5C5C),
-                              borderRadius: BorderRadius.circular(8.0),
+                              color: AppColors.surface,
+                              boxShadow: [AppColors.cardShadow],
+                              borderRadius: BorderRadius.circular(14.0),
                               border: Border.all(
-                                color: Color(0xFFA2A2A3),
+                                color: AppColors.border,
                               ),
                             ),
                             child: Padding(
@@ -717,7 +720,7 @@ class _CardWidgetState extends State<CardWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
-                                            font: GoogleFonts.inter(
+                                            font: GoogleFonts.manrope(
                                               fontWeight:
                                                   FlutterFlowTheme.of(context)
                                                       .bodyMedium
@@ -744,7 +747,7 @@ class _CardWidgetState extends State<CardWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        font: GoogleFonts.inter(
+                                        font: GoogleFonts.manrope(
                                           fontWeight: FontWeight.w500,
                                           fontStyle:
                                               FlutterFlowTheme.of(context)
@@ -765,7 +768,7 @@ class _CardWidgetState extends State<CardWidget> {
                         ),
                         Divider(
                           thickness: 2.0,
-                          color: Color(0xFF5B5B5C),
+                          color: AppColors.surface,
                         ),
                         Padding(
                           padding: EdgeInsetsDirectional.fromSTEB(
@@ -779,7 +782,7 @@ class _CardWidgetState extends State<CardWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
-                                      font: GoogleFonts.inter(
+                                      font: GoogleFonts.manrope(
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .fontWeight,
@@ -787,7 +790,7 @@ class _CardWidgetState extends State<CardWidget> {
                                             .bodyMedium
                                             .fontStyle,
                                       ),
-                                      color: FlutterFlowTheme.of(context).info,
+                                      color: AppColors.ink,
                                       letterSpacing: 0.0,
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .bodyMedium
@@ -805,7 +808,7 @@ class _CardWidgetState extends State<CardWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
-                                      font: GoogleFonts.inter(
+                                      font: GoogleFonts.manrope(
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .fontWeight,
@@ -813,7 +816,7 @@ class _CardWidgetState extends State<CardWidget> {
                                             .bodyMedium
                                             .fontStyle,
                                       ),
-                                      color: FlutterFlowTheme.of(context).info,
+                                      color: AppColors.ink,
                                       letterSpacing: 0.0,
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .bodyMedium
@@ -839,7 +842,7 @@ class _CardWidgetState extends State<CardWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        font: GoogleFonts.inter(
+                                        font: GoogleFonts.manrope(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .bodyMedium
@@ -865,7 +868,7 @@ class _CardWidgetState extends State<CardWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        font: GoogleFonts.inter(
+                                        font: GoogleFonts.manrope(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .bodyMedium
@@ -901,7 +904,7 @@ class _CardWidgetState extends State<CardWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
-                                      font: GoogleFonts.inter(
+                                      font: GoogleFonts.manrope(
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .fontWeight,
@@ -909,7 +912,7 @@ class _CardWidgetState extends State<CardWidget> {
                                             .bodyMedium
                                             .fontStyle,
                                       ),
-                                      color: FlutterFlowTheme.of(context).info,
+                                      color: AppColors.ink,
                                       letterSpacing: 0.0,
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .bodyMedium
@@ -929,7 +932,7 @@ class _CardWidgetState extends State<CardWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
-                                      font: GoogleFonts.inter(
+                                      font: GoogleFonts.manrope(
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .fontWeight,
@@ -937,7 +940,7 @@ class _CardWidgetState extends State<CardWidget> {
                                             .bodyMedium
                                             .fontStyle,
                                       ),
-                                      color: FlutterFlowTheme.of(context).info,
+                                      color: AppColors.ink,
                                       letterSpacing: 0.0,
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .bodyMedium
@@ -952,7 +955,7 @@ class _CardWidgetState extends State<CardWidget> {
                         ),
                         Divider(
                           thickness: 2.0,
-                          color: Color(0xFF5B5B5C),
+                          color: AppColors.surface,
                         ),
                         Row(
                           mainAxisSize: MainAxisSize.max,
@@ -966,7 +969,7 @@ class _CardWidgetState extends State<CardWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
-                                      font: GoogleFonts.inter(
+                                      font: GoogleFonts.manrope(
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .fontWeight,
@@ -974,7 +977,7 @@ class _CardWidgetState extends State<CardWidget> {
                                             .bodyMedium
                                             .fontStyle,
                                       ),
-                                      color: FlutterFlowTheme.of(context).info,
+                                      color: AppColors.ink,
                                       letterSpacing: 0.0,
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .bodyMedium
@@ -987,7 +990,7 @@ class _CardWidgetState extends State<CardWidget> {
                             ),
                             Icon(
                               Icons.attach_file,
-                              color: FlutterFlowTheme.of(context).info,
+                              color: AppColors.ink,
                               size: 24.0,
                             ),
                           ],
@@ -1002,7 +1005,7 @@ class _CardWidgetState extends State<CardWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    font: GoogleFonts.inter(
+                                    font: GoogleFonts.manrope(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .fontWeight,
@@ -1010,7 +1013,7 @@ class _CardWidgetState extends State<CardWidget> {
                                           .bodyMedium
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFFAEACAC),
+                                    color: AppColors.muted,
                                     letterSpacing: 0.0,
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .bodyMedium
@@ -1047,7 +1050,7 @@ class _CardWidgetState extends State<CardWidget> {
                                       padding: EdgeInsets.all(5.0),
                                       child: ClipRRect(
                                         borderRadius:
-                                            BorderRadius.circular(8.0),
+                                            BorderRadius.circular(14.0),
                                         child: Image.network(
                                           photooutItem.toString(),
                                           width: 200.0,

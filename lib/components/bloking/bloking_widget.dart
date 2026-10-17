@@ -1,4 +1,5 @@
 import '/backend/supabase/supabase.dart';
+import '/config/app_colors.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
@@ -50,7 +51,8 @@ class _BlokingWidgetState extends State<BlokingWidget> {
       width: 360.0,
       height: 400.0,
       decoration: BoxDecoration(
-        color: Color(0xFF403F3F),
+        color: AppColors.surface,
+        boxShadow: [AppColors.cardShadow],
         borderRadius: BorderRadius.only(
           bottomLeft: Radius.circular(0.0),
           bottomRight: Radius.circular(0.0),
@@ -66,12 +68,12 @@ class _BlokingWidgetState extends State<BlokingWidget> {
             child: Text(
               'Хотите заблокировать  ${FFAppState().usercompani}  ?',
               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                    font: GoogleFonts.inter(
+                    font: GoogleFonts.manrope(
                       fontWeight: FontWeight.w500,
                       fontStyle:
                           FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                     ),
-                    color: FlutterFlowTheme.of(context).info,
+                    color: AppColors.ink,
                     fontSize: 15.0,
                     letterSpacing: 0.0,
                     fontWeight: FontWeight.w500,
@@ -110,7 +112,7 @@ class _BlokingWidgetState extends State<BlokingWidget> {
                         EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                     color: FlutterFlowTheme.of(context).primary,
                     textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                          font: GoogleFonts.interTight(
+                          font: GoogleFonts.manrope(
                             fontWeight: FlutterFlowTheme.of(context)
                                 .titleSmall
                                 .fontWeight,
@@ -127,7 +129,7 @@ class _BlokingWidgetState extends State<BlokingWidget> {
                               FlutterFlowTheme.of(context).titleSmall.fontStyle,
                         ),
                     elevation: 0.0,
-                    borderRadius: BorderRadius.circular(8.0),
+                    borderRadius: BorderRadius.circular(14.0),
                   ),
                 ),
                 FFButtonWidget(
@@ -144,7 +146,7 @@ class _BlokingWidgetState extends State<BlokingWidget> {
                         EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                     color: Color(0xFFF4070B),
                     textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                          font: GoogleFonts.interTight(
+                          font: GoogleFonts.manrope(
                             fontWeight: FlutterFlowTheme.of(context)
                                 .titleSmall
                                 .fontWeight,
@@ -161,7 +163,7 @@ class _BlokingWidgetState extends State<BlokingWidget> {
                               FlutterFlowTheme.of(context).titleSmall.fontStyle,
                         ),
                     elevation: 0.0,
-                    borderRadius: BorderRadius.circular(8.0),
+                    borderRadius: BorderRadius.circular(14.0),
                   ),
                 ),
               ],

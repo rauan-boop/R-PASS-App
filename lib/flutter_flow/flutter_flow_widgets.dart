@@ -135,7 +135,7 @@ class _FFButtonWidgetState extends State<FFButtonWidget> {
             widget.options.hoverBorderSide != null) {
           return RoundedRectangleBorder(
             borderRadius:
-                widget.options.borderRadius ?? BorderRadius.circular(8),
+                widget.options.borderRadius ?? BorderRadius.circular(14),
             side: widget.options.hoverBorderSide!,
           );
         }
@@ -144,12 +144,12 @@ class _FFButtonWidgetState extends State<FFButtonWidget> {
           return RoundedRectangleBorder(
             borderRadius: widget.options.focusBorderRadius ??
                 widget.options.borderRadius ??
-                BorderRadius.circular(8),
+                BorderRadius.circular(14),
             side: widget.options.focusBorderSide!,
           );
         }
         return RoundedRectangleBorder(
-          borderRadius: widget.options.borderRadius ?? BorderRadius.circular(8),
+          borderRadius: widget.options.borderRadius ?? BorderRadius.circular(14),
           side: widget.options.borderSide ?? BorderSide.none,
         );
       }),
@@ -190,7 +190,7 @@ class _FFButtonWidgetState extends State<FFButtonWidget> {
             widget.options.hoverElevation != null) {
           return widget.options.hoverElevation!;
         }
-        return widget.options.elevation ?? 2.0;
+        return widget.options.elevation ?? 0.0;
       }),
       iconColor: MaterialStateProperty.resolveWith<Color?>((states) {
         if (states.contains(MaterialState.disabled) &&
@@ -222,7 +222,7 @@ class _FFButtonWidgetState extends State<FFButtonWidget> {
               widget.options.borderSide ?? BorderSide.none,
             ),
             borderRadius:
-                widget.options.borderRadius ?? BorderRadius.circular(8),
+                widget.options.borderRadius ?? BorderRadius.circular(14),
           ),
           child: IconButton(
             splashRadius: 1.0,

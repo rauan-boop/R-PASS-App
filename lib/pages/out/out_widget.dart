@@ -1,4 +1,5 @@
 import '/flutter_flow/flutter_flow_theme.dart';
+import '/config/app_colors.dart';
 import '/config/app_config.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
@@ -49,7 +50,7 @@ class _OutWidgetState extends State<OutWidget> {
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: Color(0xFF040404),
+        backgroundColor: AppColors.bg,
         body: SafeArea(
           top: true,
           child: Container(
@@ -63,7 +64,7 @@ class _OutWidgetState extends State<OutWidget> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 ClipRRect(
-                  borderRadius: BorderRadius.circular(8.0),
+                  borderRadius: BorderRadius.circular(14.0),
                   child: Image.network(
                     '${AppConfig.flutterFlowAssetsBaseUrl}/8pprxupa2ir0/R-PASS_logo.png',
                     width: 200.0,
@@ -74,7 +75,7 @@ class _OutWidgetState extends State<OutWidget> {
                 Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                   child: ClipRRect(
-                    borderRadius: BorderRadius.circular(8.0),
+                    borderRadius: BorderRadius.circular(14.0),
                     child: Image.network(
                       '${AppConfig.flutterFlowAssetsBaseUrl}/dao9njjrrcy8/%D0%BD%D0%B0%D0%B4%D0%BF%D0%B8%D1%81%D1%8C.png',
                       width: 200.0,
@@ -89,7 +90,7 @@ class _OutWidgetState extends State<OutWidget> {
                     'Для регистрации в системе \nR-PASS вам необходимо \nсвязаться с администрацией',
                     textAlign: TextAlign.center,
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          font: GoogleFonts.inter(
+                          font: GoogleFonts.manrope(
                             fontWeight: FontWeight.w500,
                             fontStyle: FlutterFlowTheme.of(context)
                                 .bodyMedium
@@ -122,7 +123,7 @@ class _OutWidgetState extends State<OutWidget> {
                       color: Color(0xFFF9650D),
                       textStyle:
                           FlutterFlowTheme.of(context).titleSmall.override(
-                                font: GoogleFonts.interTight(
+                                font: GoogleFonts.manrope(
                                   fontWeight: FlutterFlowTheme.of(context)
                                       .titleSmall
                                       .fontWeight,
@@ -140,7 +141,7 @@ class _OutWidgetState extends State<OutWidget> {
                                     .fontStyle,
                               ),
                       elevation: 0.0,
-                      borderRadius: BorderRadius.circular(8.0),
+                      borderRadius: BorderRadius.circular(14.0),
                     ),
                   ),
                 ),

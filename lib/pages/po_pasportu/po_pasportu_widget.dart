@@ -1,4 +1,5 @@
 import '/auth/supabase_auth/auth_util.dart';
+import '/config/app_colors.dart';
 import '/backend/supabase/supabase.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -90,9 +91,9 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: Colors.black,
+        backgroundColor: AppColors.bg,
         appBar: AppBar(
-          backgroundColor: Colors.black,
+          backgroundColor: AppColors.bg,
           automaticallyImplyLeading: false,
           leading: InkWell(
             splashColor: Colors.transparent,
@@ -104,7 +105,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
             },
             child: Icon(
               Icons.arrow_back,
-              color: FlutterFlowTheme.of(context).info,
+              color: AppColors.ink,
               size: 30.0,
             ),
           ),
@@ -113,14 +114,14 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
             child: Text(
               'По паспорту',
               style: FlutterFlowTheme.of(context).headlineMedium.override(
-                    font: GoogleFonts.interTight(
+                    font: GoogleFonts.manrope(
                       fontWeight: FlutterFlowTheme.of(context)
                           .headlineMedium
                           .fontWeight,
                       fontStyle:
                           FlutterFlowTheme.of(context).headlineMedium.fontStyle,
                     ),
-                    color: FlutterFlowTheme.of(context).info,
+                    color: AppColors.ink,
                     fontSize: 22.0,
                     letterSpacing: 0.0,
                     fontWeight:
@@ -148,7 +149,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
               width: double.infinity,
               height: 1500.0,
               decoration: BoxDecoration(
-                color: Colors.black,
+                color: AppColors.bg,
               ),
               child: SingleChildScrollView(
                 child: Column(
@@ -170,7 +171,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
-                                      font: GoogleFonts.inter(
+                                      font: GoogleFonts.manrope(
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .fontWeight,
@@ -200,7 +201,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        font: GoogleFonts.inter(
+                                        font: GoogleFonts.manrope(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .bodyMedium
@@ -210,7 +211,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                                   .bodyMedium
                                                   .fontStyle,
                                         ),
-                                        color: Color(0xFF929191),
+                                        color: AppColors.muted,
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .bodyMedium
@@ -237,7 +238,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                     labelStyle: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.manrope(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .labelMedium
@@ -260,7 +261,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                     hintStyle: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.manrope(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .labelMedium
@@ -282,17 +283,17 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                         ),
                                     enabledBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
-                                        color: Color(0xFFA5A2A2),
+                                        color: AppColors.border,
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     focusedBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
                                         color: Color(0x00000000),
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     errorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
@@ -300,7 +301,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                             FlutterFlowTheme.of(context).error,
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     focusedErrorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
@@ -308,15 +309,15 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                             FlutterFlowTheme.of(context).error,
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     filled: true,
-                                    fillColor: Color(0xFF2B2B2B),
+                                    fillColor: AppColors.surface,
                                   ),
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        font: GoogleFonts.inter(
+                                        font: GoogleFonts.manrope(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .bodyMedium
@@ -354,7 +355,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        font: GoogleFonts.inter(
+                                        font: GoogleFonts.manrope(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .bodyMedium
@@ -364,7 +365,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                                   .bodyMedium
                                                   .fontStyle,
                                         ),
-                                        color: Color(0xFF929191),
+                                        color: AppColors.muted,
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .bodyMedium
@@ -391,7 +392,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                     labelStyle: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.manrope(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .labelMedium
@@ -414,7 +415,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                     hintStyle: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.manrope(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .labelMedium
@@ -436,17 +437,17 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                         ),
                                     enabledBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
-                                        color: Color(0xFFA5A2A2),
+                                        color: AppColors.border,
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     focusedBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
                                         color: Color(0x00000000),
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     errorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
@@ -454,7 +455,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                             FlutterFlowTheme.of(context).error,
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     focusedErrorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
@@ -462,15 +463,15 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                             FlutterFlowTheme.of(context).error,
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     filled: true,
-                                    fillColor: Color(0xFF2B2B2B),
+                                    fillColor: AppColors.surface,
                                   ),
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        font: GoogleFonts.inter(
+                                        font: GoogleFonts.manrope(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .bodyMedium
@@ -507,7 +508,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        font: GoogleFonts.inter(
+                                        font: GoogleFonts.manrope(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .bodyMedium
@@ -517,7 +518,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                                   .bodyMedium
                                                   .fontStyle,
                                         ),
-                                        color: Color(0xFF929191),
+                                        color: AppColors.muted,
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .bodyMedium
@@ -544,7 +545,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                     labelStyle: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.manrope(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .labelMedium
@@ -567,7 +568,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                     hintStyle: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.manrope(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .labelMedium
@@ -589,17 +590,17 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                         ),
                                     enabledBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
-                                        color: Color(0xFFA5A2A2),
+                                        color: AppColors.border,
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     focusedBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
                                         color: Color(0x00000000),
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     errorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
@@ -607,7 +608,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                             FlutterFlowTheme.of(context).error,
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     focusedErrorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
@@ -615,15 +616,15 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                             FlutterFlowTheme.of(context).error,
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     filled: true,
-                                    fillColor: Color(0xFF2B2B2B),
+                                    fillColor: AppColors.surface,
                                   ),
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        font: GoogleFonts.inter(
+                                        font: GoogleFonts.manrope(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .bodyMedium
@@ -661,7 +662,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        font: GoogleFonts.inter(
+                                        font: GoogleFonts.manrope(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .bodyMedium
@@ -671,7 +672,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                                   .bodyMedium
                                                   .fontStyle,
                                         ),
-                                        color: Color(0xFF929191),
+                                        color: AppColors.muted,
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .bodyMedium
@@ -698,7 +699,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                     labelStyle: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.manrope(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .labelMedium
@@ -721,7 +722,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                     hintStyle: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.manrope(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .labelMedium
@@ -743,17 +744,17 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                         ),
                                     enabledBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
-                                        color: Color(0xFFA5A2A2),
+                                        color: AppColors.border,
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     focusedBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
                                         color: Color(0x00000000),
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     errorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
@@ -761,7 +762,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                             FlutterFlowTheme.of(context).error,
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     focusedErrorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
@@ -769,15 +770,15 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                             FlutterFlowTheme.of(context).error,
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     filled: true,
-                                    fillColor: Color(0xFF2B2B2B),
+                                    fillColor: AppColors.surface,
                                   ),
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        font: GoogleFonts.inter(
+                                        font: GoogleFonts.manrope(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .bodyMedium
@@ -814,7 +815,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        font: GoogleFonts.inter(
+                                        font: GoogleFonts.manrope(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .bodyMedium
@@ -824,7 +825,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                                   .bodyMedium
                                                   .fontStyle,
                                         ),
-                                        color: Color(0xFF929191),
+                                        color: AppColors.muted,
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .bodyMedium
@@ -851,7 +852,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                     labelStyle: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.manrope(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .labelMedium
@@ -874,7 +875,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                     hintStyle: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.manrope(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .labelMedium
@@ -896,17 +897,17 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                         ),
                                     enabledBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
-                                        color: Color(0xFFA5A2A2),
+                                        color: AppColors.border,
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     focusedBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
                                         color: Color(0x00000000),
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     errorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
@@ -914,7 +915,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                             FlutterFlowTheme.of(context).error,
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     focusedErrorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
@@ -922,15 +923,15 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                             FlutterFlowTheme.of(context).error,
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     filled: true,
-                                    fillColor: Color(0xFF2B2B2B),
+                                    fillColor: AppColors.surface,
                                   ),
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        font: GoogleFonts.inter(
+                                        font: GoogleFonts.manrope(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .bodyMedium
@@ -968,7 +969,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        font: GoogleFonts.inter(
+                                        font: GoogleFonts.manrope(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .bodyMedium
@@ -978,7 +979,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                                   .bodyMedium
                                                   .fontStyle,
                                         ),
-                                        color: Color(0xFF929191),
+                                        color: AppColors.muted,
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .bodyMedium
@@ -1008,7 +1009,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.manrope(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .bodyMedium
@@ -1053,7 +1054,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                                     .of(context)
                                                 .headlineLarge
                                                 .override(
-                                                  font: GoogleFonts.interTight(
+                                                  font: GoogleFonts.manrope(
                                                     fontWeight: FontWeight.w600,
                                                     fontStyle:
                                                         FlutterFlowTheme.of(
@@ -1122,7 +1123,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                       textStyle: FlutterFlowTheme.of(context)
                                           .titleSmall
                                           .override(
-                                            font: GoogleFonts.interTight(
+                                            font: GoogleFonts.manrope(
                                               fontWeight:
                                                   FlutterFlowTheme.of(context)
                                                       .titleSmall
@@ -1144,7 +1145,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                                     .fontStyle,
                                           ),
                                       elevation: 0.0,
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                   ),
                                 ],
@@ -1160,7 +1161,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        font: GoogleFonts.inter(
+                                        font: GoogleFonts.manrope(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .bodyMedium
@@ -1170,7 +1171,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                                   .bodyMedium
                                                   .fontStyle,
                                         ),
-                                        color: Color(0xFF929191),
+                                        color: AppColors.muted,
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .bodyMedium
@@ -1197,7 +1198,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                     labelStyle: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.manrope(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .labelMedium
@@ -1221,7 +1222,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                     hintStyle: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.manrope(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .labelMedium
@@ -1243,17 +1244,17 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                         ),
                                     enabledBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
-                                        color: Color(0xFFA5A2A2),
+                                        color: AppColors.border,
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     focusedBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
                                         color: Color(0x00000000),
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     errorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
@@ -1261,7 +1262,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                             FlutterFlowTheme.of(context).error,
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     focusedErrorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
@@ -1269,15 +1270,15 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                             FlutterFlowTheme.of(context).error,
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     filled: true,
-                                    fillColor: Color(0xFF2B2B2B),
+                                    fillColor: AppColors.surface,
                                   ),
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        font: GoogleFonts.inter(
+                                        font: GoogleFonts.manrope(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .bodyMedium
@@ -1315,7 +1316,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        font: GoogleFonts.inter(
+                                        font: GoogleFonts.manrope(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .bodyMedium
@@ -1325,7 +1326,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                                   .bodyMedium
                                                   .fontStyle,
                                         ),
-                                        color: Color(0xFF929191),
+                                        color: AppColors.muted,
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .bodyMedium
@@ -1352,7 +1353,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                     labelStyle: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.manrope(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .labelMedium
@@ -1375,7 +1376,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                     hintStyle: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.manrope(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .labelMedium
@@ -1397,17 +1398,17 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                         ),
                                     enabledBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
-                                        color: Color(0xFFA5A2A2),
+                                        color: AppColors.border,
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     focusedBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
                                         color: Color(0x00000000),
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     errorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
@@ -1415,7 +1416,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                             FlutterFlowTheme.of(context).error,
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     focusedErrorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
@@ -1423,15 +1424,15 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                             FlutterFlowTheme.of(context).error,
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     filled: true,
-                                    fillColor: Color(0xFF2B2B2B),
+                                    fillColor: AppColors.surface,
                                   ),
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        font: GoogleFonts.inter(
+                                        font: GoogleFonts.manrope(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .bodyMedium
@@ -1469,7 +1470,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        font: GoogleFonts.inter(
+                                        font: GoogleFonts.manrope(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .bodyMedium
@@ -1479,7 +1480,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                                   .bodyMedium
                                                   .fontStyle,
                                         ),
-                                        color: Color(0xFF929191),
+                                        color: AppColors.muted,
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .bodyMedium
@@ -1506,7 +1507,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                     labelStyle: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.manrope(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .labelMedium
@@ -1529,7 +1530,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                     hintStyle: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.manrope(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .labelMedium
@@ -1551,17 +1552,17 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                         ),
                                     enabledBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
-                                        color: Color(0xFFA5A2A2),
+                                        color: AppColors.border,
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     focusedBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
                                         color: Color(0x00000000),
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     errorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
@@ -1569,7 +1570,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                             FlutterFlowTheme.of(context).error,
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     focusedErrorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
@@ -1577,15 +1578,15 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                             FlutterFlowTheme.of(context).error,
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     filled: true,
-                                    fillColor: Color(0xFF2B2B2B),
+                                    fillColor: AppColors.surface,
                                   ),
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        font: GoogleFonts.inter(
+                                        font: GoogleFonts.manrope(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .bodyMedium
@@ -1622,7 +1623,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        font: GoogleFonts.inter(
+                                        font: GoogleFonts.manrope(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .bodyMedium
@@ -1632,7 +1633,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                                   .bodyMedium
                                                   .fontStyle,
                                         ),
-                                        color: Color(0xFF929191),
+                                        color: AppColors.muted,
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .bodyMedium
@@ -1659,7 +1660,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                     labelStyle: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.manrope(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .labelMedium
@@ -1682,7 +1683,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                     hintStyle: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.manrope(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .labelMedium
@@ -1704,17 +1705,17 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                         ),
                                     enabledBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
-                                        color: Color(0xFFA5A2A2),
+                                        color: AppColors.border,
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     focusedBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
                                         color: Color(0x00000000),
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     errorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
@@ -1722,7 +1723,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                             FlutterFlowTheme.of(context).error,
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     focusedErrorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
@@ -1730,15 +1731,15 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                             FlutterFlowTheme.of(context).error,
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     filled: true,
-                                    fillColor: Color(0xFF2B2B2B),
+                                    fillColor: AppColors.surface,
                                   ),
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        font: GoogleFonts.inter(
+                                        font: GoogleFonts.manrope(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .bodyMedium
@@ -1769,7 +1770,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                             ),
                             Divider(
                               thickness: 2.0,
-                              color: Color(0xFF474849),
+                              color: AppColors.surface,
                             ),
                             Align(
                               alignment: AlignmentDirectional(1.0, 0.0),
@@ -1788,7 +1789,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
-                                              font: GoogleFonts.inter(
+                                              font: GoogleFonts.manrope(
                                                 fontWeight:
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
@@ -1909,7 +1910,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                           },
                                           child: Icon(
                                             Icons.add_a_photo,
-                                            color: Color(0xFF929191),
+                                            color: AppColors.muted,
                                             size: 35.0,
                                           ),
                                         ),
@@ -1939,7 +1940,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                                           padding: EdgeInsets.all(8.0),
                                           child: ClipRRect(
                                             borderRadius:
-                                                BorderRadius.circular(8.0),
+                                                BorderRadius.circular(14.0),
                                             child: Image.network(
                                               photoItemItem,
                                               width: 200.0,
@@ -2024,7 +2025,7 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                           height: 40.0,
                           decoration: BoxDecoration(
                             color: Color(0xFF1D1DF0),
-                            borderRadius: BorderRadius.circular(8.0),
+                            borderRadius: BorderRadius.circular(14.0),
                           ),
                           child: Align(
                             alignment: AlignmentDirectional(0.0, 0.0),
@@ -2033,13 +2034,13 @@ class _PoPasportuWidgetState extends State<PoPasportuWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    font: GoogleFonts.inter(
+                                    font: GoogleFonts.manrope(
                                       fontWeight: FontWeight.w600,
                                       fontStyle: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFFF1F4F6),
+                                    color: AppColors.muted,
                                     fontSize: 16.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w600,

@@ -1,4 +1,5 @@
 import '/auth/supabase_auth/auth_util.dart';
+import '/config/app_colors.dart';
 import '/backend/api_requests/api_calls.dart';
 import '/backend/supabase/supabase.dart';
 import '/config/app_config.dart';
@@ -152,15 +153,15 @@ class _GlavnayaWidgetState extends State<GlavnayaWidget> {
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: Colors.black,
+        backgroundColor: AppColors.bg,
         body: NestedScrollView(
           floatHeaderSlivers: false,
           headerSliverBuilder: (context, _) => [
             SliverAppBar(
               pinned: false,
               floating: false,
-              backgroundColor: Colors.black,
-              iconTheme: IconThemeData(color: Color(0xFFB69C9C)),
+              backgroundColor: AppColors.bg,
+              iconTheme: IconThemeData(color: AppColors.muted),
               automaticallyImplyLeading: false,
               leading: InkWell(
                 splashColor: Colors.transparent,
@@ -176,14 +177,14 @@ class _GlavnayaWidgetState extends State<GlavnayaWidget> {
                 },
                 child: Icon(
                   Icons.arrow_back,
-                  color: FlutterFlowTheme.of(context).primaryText,
+                  color: AppColors.ink,
                   size: 24.0,
                 ),
               ),
               title: Text(
                 'DASHBORD',
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
-                      font: GoogleFonts.interTight(
+                      font: GoogleFonts.manrope(
                         fontWeight: FlutterFlowTheme.of(context)
                             .headlineMedium
                             .fontWeight,
@@ -191,7 +192,7 @@ class _GlavnayaWidgetState extends State<GlavnayaWidget> {
                             .headlineMedium
                             .fontStyle,
                       ),
-                      color: Colors.white,
+                      color: AppColors.ink,
                       fontSize: 22.0,
                       letterSpacing: 0.0,
                       fontWeight: FlutterFlowTheme.of(context)
@@ -214,7 +215,7 @@ class _GlavnayaWidgetState extends State<GlavnayaWidget> {
                     },
                     child: Icon(
                       Icons.notification_important,
-                      color: FlutterFlowTheme.of(context).secondaryBackground,
+                      color: AppColors.ink,
                       size: 30.0,
                     ),
                   ),
@@ -236,7 +237,7 @@ class _GlavnayaWidgetState extends State<GlavnayaWidget> {
                         width: double.infinity,
                         height: double.infinity,
                         decoration: BoxDecoration(
-                          color: Colors.black,
+                          color: AppColors.bg,
                         ),
                         child: Align(
                           alignment: AlignmentDirectional(0.0, 0.0),
@@ -261,7 +262,7 @@ class _GlavnayaWidgetState extends State<GlavnayaWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.manrope(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .bodyMedium
@@ -332,7 +333,7 @@ class _GlavnayaWidgetState extends State<GlavnayaWidget> {
                                                         .bodyMedium
                                                         .override(
                                                           font:
-                                                              GoogleFonts.inter(
+                                                              GoogleFonts.manrope(
                                                             fontWeight:
                                                                 FontWeight.w600,
                                                             fontStyle:
@@ -368,7 +369,7 @@ class _GlavnayaWidgetState extends State<GlavnayaWidget> {
                                                         .bodyMedium
                                                         .override(
                                                           font:
-                                                              GoogleFonts.inter(
+                                                              GoogleFonts.manrope(
                                                             fontWeight:
                                                                 FlutterFlowTheme.of(
                                                                         context)
@@ -435,7 +436,7 @@ class _GlavnayaWidgetState extends State<GlavnayaWidget> {
                                                         .bodyMedium
                                                         .override(
                                                           font:
-                                                              GoogleFonts.inter(
+                                                              GoogleFonts.manrope(
                                                             fontWeight:
                                                                 FontWeight.w600,
                                                             fontStyle:
@@ -469,7 +470,7 @@ class _GlavnayaWidgetState extends State<GlavnayaWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        font: GoogleFonts.inter(
+                                                        font: GoogleFonts.manrope(
                                                           fontWeight:
                                                               FlutterFlowTheme.of(
                                                                       context)
@@ -654,7 +655,7 @@ class _GlavnayaWidgetState extends State<GlavnayaWidget> {
                                             width: 341.6,
                                             height: 88.89,
                                             decoration: BoxDecoration(
-                                              color: Color(0xFFAEB0B0),
+                                              color: AppColors.border,
                                               borderRadius:
                                                   BorderRadius.circular(100.0),
                                               border: Border.all(
@@ -685,7 +686,7 @@ class _GlavnayaWidgetState extends State<GlavnayaWidget> {
                                                         .bodyMedium
                                                         .override(
                                                           font:
-                                                              GoogleFonts.inter(
+                                                              GoogleFonts.manrope(
                                                             fontWeight:
                                                                 FontWeight.w600,
                                                             fontStyle:
@@ -721,7 +722,7 @@ class _GlavnayaWidgetState extends State<GlavnayaWidget> {
                                                         .bodyMedium
                                                         .override(
                                                           font:
-                                                              GoogleFonts.inter(
+                                                              GoogleFonts.manrope(
                                                             fontWeight:
                                                                 FontWeight.w500,
                                                             fontStyle:
@@ -757,9 +758,10 @@ class _GlavnayaWidgetState extends State<GlavnayaWidget> {
                                       width: double.infinity,
                                       height: 78.99,
                                       decoration: BoxDecoration(
-                                        color: Color(0xFF4B4A4A),
+                                        color: AppColors.surface,
+                                        boxShadow: [AppColors.cardShadow],
                                         borderRadius:
-                                            BorderRadius.circular(16.0),
+                                            BorderRadius.circular(20.0),
                                       ),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
@@ -774,7 +776,7 @@ class _GlavnayaWidgetState extends State<GlavnayaWidget> {
                                                       context)
                                                   .bodyMedium
                                                   .override(
-                                                    font: GoogleFonts.inter(
+                                                    font: GoogleFonts.manrope(
                                                       fontWeight:
                                                           FontWeight.w500,
                                                       fontStyle:
@@ -812,7 +814,7 @@ class _GlavnayaWidgetState extends State<GlavnayaWidget> {
                                                       context)
                                                   .bodyMedium
                                                   .override(
-                                                    font: GoogleFonts.inter(
+                                                    font: GoogleFonts.manrope(
                                                       fontWeight:
                                                           FontWeight.w600,
                                                       fontStyle:
@@ -845,7 +847,7 @@ class _GlavnayaWidgetState extends State<GlavnayaWidget> {
                                                       context)
                                                   .bodyMedium
                                                   .override(
-                                                    font: GoogleFonts.inter(
+                                                    font: GoogleFonts.manrope(
                                                       fontWeight:
                                                           FontWeight.w500,
                                                       fontStyle:
@@ -887,7 +889,7 @@ class _GlavnayaWidgetState extends State<GlavnayaWidget> {
                                       decoration: BoxDecoration(
                                         color: Color(0xFFD5F604),
                                         borderRadius:
-                                            BorderRadius.circular(16.0),
+                                            BorderRadius.circular(20.0),
                                       ),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
@@ -907,7 +909,7 @@ class _GlavnayaWidgetState extends State<GlavnayaWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        font: GoogleFonts.inter(
+                                                        font: GoogleFonts.manrope(
                                                           fontWeight:
                                                               FontWeight.w600,
                                                           fontStyle:
@@ -953,7 +955,7 @@ class _GlavnayaWidgetState extends State<GlavnayaWidget> {
                                                         .bodyMedium
                                                         .override(
                                                           font:
-                                                              GoogleFonts.inter(
+                                                              GoogleFonts.manrope(
                                                             fontWeight:
                                                                 FontWeight.w500,
                                                             fontStyle:
@@ -987,7 +989,7 @@ class _GlavnayaWidgetState extends State<GlavnayaWidget> {
                                                         .bodyMedium
                                                         .override(
                                                           font:
-                                                              GoogleFonts.inter(
+                                                              GoogleFonts.manrope(
                                                             fontWeight:
                                                                 FontWeight.w600,
                                                             fontStyle:
@@ -1014,7 +1016,7 @@ class _GlavnayaWidgetState extends State<GlavnayaWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        font: GoogleFonts.inter(
+                                                        font: GoogleFonts.manrope(
                                                           fontWeight:
                                                               FontWeight.w500,
                                                           fontStyle:
@@ -1043,7 +1045,7 @@ class _GlavnayaWidgetState extends State<GlavnayaWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  font: GoogleFonts.inter(
+                                                  font: GoogleFonts.manrope(
                                                     fontWeight: FontWeight.w500,
                                                     fontStyle:
                                                         FlutterFlowTheme.of(
@@ -1066,7 +1068,7 @@ class _GlavnayaWidgetState extends State<GlavnayaWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  font: GoogleFonts.inter(
+                                                  font: GoogleFonts.manrope(
                                                     fontWeight: FontWeight.w500,
                                                     fontStyle:
                                                         FlutterFlowTheme.of(
@@ -1100,7 +1102,7 @@ class _GlavnayaWidgetState extends State<GlavnayaWidget> {
                                       decoration: BoxDecoration(
                                         color: Color(0xFFD5F604),
                                         borderRadius:
-                                            BorderRadius.circular(16.0),
+                                            BorderRadius.circular(20.0),
                                       ),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
@@ -1120,7 +1122,7 @@ class _GlavnayaWidgetState extends State<GlavnayaWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        font: GoogleFonts.inter(
+                                                        font: GoogleFonts.manrope(
                                                           fontWeight:
                                                               FontWeight.w600,
                                                           fontStyle:
@@ -1166,7 +1168,7 @@ class _GlavnayaWidgetState extends State<GlavnayaWidget> {
                                                         .bodyMedium
                                                         .override(
                                                           font:
-                                                              GoogleFonts.inter(
+                                                              GoogleFonts.manrope(
                                                             fontWeight:
                                                                 FontWeight.w500,
                                                             fontStyle:
@@ -1196,7 +1198,7 @@ class _GlavnayaWidgetState extends State<GlavnayaWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  font: GoogleFonts.inter(
+                                                  font: GoogleFonts.manrope(
                                                     fontWeight: FontWeight.w500,
                                                     fontStyle:
                                                         FlutterFlowTheme.of(
@@ -1229,7 +1231,7 @@ class _GlavnayaWidgetState extends State<GlavnayaWidget> {
                                                       context)
                                                   .bodyMedium
                                                   .override(
-                                                    font: GoogleFonts.inter(
+                                                    font: GoogleFonts.manrope(
                                                       fontWeight:
                                                           FontWeight.w600,
                                                       fontStyle:
@@ -1274,7 +1276,7 @@ class _GlavnayaWidgetState extends State<GlavnayaWidget> {
                                           ),
                                         )
                                       ],
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(14.0),
                                     ),
                                     child: Align(
                                       alignment: AlignmentDirectional(0.0, 0.0),
@@ -1284,7 +1286,7 @@ class _GlavnayaWidgetState extends State<GlavnayaWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
-                                              font: GoogleFonts.inter(
+                                              font: GoogleFonts.manrope(
                                                 fontWeight: FontWeight.w500,
                                                 fontStyle:
                                                     FlutterFlowTheme.of(context)
@@ -1305,14 +1307,14 @@ class _GlavnayaWidgetState extends State<GlavnayaWidget> {
                                 ),
                                 Divider(
                                   thickness: 2.0,
-                                  color: Color(0xFF474849),
+                                  color: AppColors.surface,
                                 ),
                                 Text(
                                   'Уведмления',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        font: GoogleFonts.inter(
+                                        font: GoogleFonts.manrope(
                                           fontWeight: FontWeight.w500,
                                           fontStyle:
                                               FlutterFlowTheme.of(context)
@@ -1336,7 +1338,7 @@ class _GlavnayaWidgetState extends State<GlavnayaWidget> {
                                     width: double.infinity,
                                     height: 286.7,
                                     decoration: BoxDecoration(
-                                      color: Color(0xFF2D2C2C),
+                                      color: AppColors.surface,
                                       boxShadow: [
                                         BoxShadow(
                                           blurRadius: 4.0,
@@ -1361,11 +1363,11 @@ class _GlavnayaWidgetState extends State<GlavnayaWidget> {
                                           child: Card(
                                             clipBehavior:
                                                 Clip.antiAliasWithSaveLayer,
-                                            color: Color(0xFF7C7B7B),
+                                            color: AppColors.border,
                                             elevation: 5.0,
                                             shape: RoundedRectangleBorder(
                                               borderRadius:
-                                                  BorderRadius.circular(8.0),
+                                                  BorderRadius.circular(14.0),
                                             ),
                                             child: Column(
                                               mainAxisSize: MainAxisSize.max,
@@ -1561,7 +1563,7 @@ class _GlavnayaWidgetState extends State<GlavnayaWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                font: GoogleFonts.inter(
+                                                font: GoogleFonts.manrope(
                                                   fontWeight:
                                                       FlutterFlowTheme.of(
                                                               context)
@@ -1591,7 +1593,7 @@ class _GlavnayaWidgetState extends State<GlavnayaWidget> {
                                 ),
                                 Divider(
                                   thickness: 2.0,
-                                  color: Color(0xFF474849),
+                                  color: AppColors.surface,
                                 ),
                                 if (FFAppState().polzRoll == 'super_admin')
                                   Text(
@@ -1599,7 +1601,7 @@ class _GlavnayaWidgetState extends State<GlavnayaWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.manrope(
                                             fontWeight: FontWeight.w500,
                                             fontStyle:
                                                 FlutterFlowTheme.of(context)
@@ -1625,9 +1627,10 @@ class _GlavnayaWidgetState extends State<GlavnayaWidget> {
                                       width: double.infinity,
                                       height: 400.0,
                                       decoration: BoxDecoration(
-                                        color: Color(0xFF2D2C2C),
+                                        color: AppColors.surface,
+                                        boxShadow: [AppColors.cardShadow],
                                         borderRadius:
-                                            BorderRadius.circular(16.0),
+                                            BorderRadius.circular(20.0),
                                       ),
                                       child: Padding(
                                         padding: EdgeInsetsDirectional.fromSTEB(
@@ -1654,7 +1657,7 @@ class _GlavnayaWidgetState extends State<GlavnayaWidget> {
                                                   width: 80.0,
                                                   height: 80.0,
                                                   child: SpinKitCircle(
-                                                    color: Color(0xFF5D5C62),
+                                                    color: AppColors.primary,
                                                     size: 80.0,
                                                   ),
                                                 ),
@@ -1923,7 +1926,7 @@ class _GlavnayaWidgetState extends State<GlavnayaWidget> {
                           width: double.infinity,
                           height: 50.0,
                           decoration: BoxDecoration(
-                            color: Colors.black,
+                            color: AppColors.bg,
                           ),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -1931,7 +1934,7 @@ class _GlavnayaWidgetState extends State<GlavnayaWidget> {
                             children: [
                               Icon(
                                 Icons.dashboard_outlined,
-                                color: Color(0xFF4A35CC),
+                                color: AppColors.primaryDark,
                                 size: 40.0,
                               ),
                               InkWell(
@@ -1973,7 +1976,7 @@ class _GlavnayaWidgetState extends State<GlavnayaWidget> {
                             height: 50.0,
                             decoration: BoxDecoration(
                               color: Color(0x6DFFFFFF),
-                              borderRadius: BorderRadius.circular(8.0),
+                              borderRadius: BorderRadius.circular(14.0),
                             ),
                           ),
                       ],

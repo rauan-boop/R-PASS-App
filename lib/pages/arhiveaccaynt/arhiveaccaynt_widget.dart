@@ -1,4 +1,5 @@
 import '/flutter_flow/flutter_flow_theme.dart';
+import '/config/app_colors.dart';
 import '/config/app_config.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
@@ -50,7 +51,7 @@ class _ArhiveaccayntWidgetState extends State<ArhiveaccayntWidget> {
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: Colors.black,
+        backgroundColor: AppColors.bg,
         body: SafeArea(
           top: true,
           child: Container(
@@ -76,7 +77,7 @@ class _ArhiveaccayntWidgetState extends State<ArhiveaccayntWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  font: GoogleFonts.inter(
+                                  font: GoogleFonts.manrope(
                                     fontWeight: FontWeight.w500,
                                     fontStyle: FlutterFlowTheme.of(context)
                                         .bodyMedium
@@ -104,7 +105,7 @@ class _ArhiveaccayntWidgetState extends State<ArhiveaccayntWidget> {
                           )
                         ],
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              font: GoogleFonts.inter(
+                              font: GoogleFonts.manrope(
                                 fontWeight: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .fontWeight,
@@ -139,7 +140,7 @@ class _ArhiveaccayntWidgetState extends State<ArhiveaccayntWidget> {
                       color: Color(0xFF2610EE),
                       textStyle:
                           FlutterFlowTheme.of(context).titleSmall.override(
-                                font: GoogleFonts.interTight(
+                                font: GoogleFonts.manrope(
                                   fontWeight: FlutterFlowTheme.of(context)
                                       .titleSmall
                                       .fontWeight,
@@ -158,7 +159,7 @@ class _ArhiveaccayntWidgetState extends State<ArhiveaccayntWidget> {
                                     .fontStyle,
                               ),
                       elevation: 0.0,
-                      borderRadius: BorderRadius.circular(8.0),
+                      borderRadius: BorderRadius.circular(14.0),
                     ),
                   ),
                   Padding(
@@ -167,7 +168,7 @@ class _ArhiveaccayntWidgetState extends State<ArhiveaccayntWidget> {
                     child: Text(
                       'с администрацией',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            font: GoogleFonts.inter(
+                            font: GoogleFonts.manrope(
                               fontWeight: FontWeight.w600,
                               fontStyle: FlutterFlowTheme.of(context)
                                   .bodyMedium

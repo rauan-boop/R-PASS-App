@@ -1,4 +1,5 @@
 import '/auth/supabase_auth/auth_util.dart';
+import '/config/app_colors.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
@@ -54,7 +55,8 @@ class _UpdatePasswordWidgetState extends State<UpdatePasswordWidget> {
       width: 350.0,
       height: 500.0,
       decoration: BoxDecoration(
-        color: Color(0xFF4B4646),
+        color: AppColors.surface,
+        boxShadow: [AppColors.cardShadow],
         borderRadius: BorderRadius.only(
           bottomLeft: Radius.circular(0.0),
           bottomRight: Radius.circular(0.0),
@@ -77,7 +79,7 @@ class _UpdatePasswordWidgetState extends State<UpdatePasswordWidget> {
                 decoration: InputDecoration(
                   isDense: true,
                   labelStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                        font: GoogleFonts.inter(
+                        font: GoogleFonts.manrope(
                           fontWeight: FlutterFlowTheme.of(context)
                               .labelMedium
                               .fontWeight,
@@ -93,7 +95,7 @@ class _UpdatePasswordWidgetState extends State<UpdatePasswordWidget> {
                       ),
                   hintText: 'Новый пароль',
                   hintStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                        font: GoogleFonts.inter(
+                        font: GoogleFonts.manrope(
                           fontWeight: FlutterFlowTheme.of(context)
                               .labelMedium
                               .fontWeight,
@@ -101,7 +103,7 @@ class _UpdatePasswordWidgetState extends State<UpdatePasswordWidget> {
                               .labelMedium
                               .fontStyle,
                         ),
-                        color: Color(0xFF919394),
+                        color: AppColors.muted,
                         letterSpacing: 0.0,
                         fontWeight:
                             FlutterFlowTheme.of(context).labelMedium.fontWeight,
@@ -110,34 +112,34 @@ class _UpdatePasswordWidgetState extends State<UpdatePasswordWidget> {
                       ),
                   enabledBorder: OutlineInputBorder(
                     borderSide: BorderSide(
-                      color: Color(0xFFA5A2A2),
+                      color: AppColors.border,
                       width: 1.0,
                     ),
-                    borderRadius: BorderRadius.circular(8.0),
+                    borderRadius: BorderRadius.circular(14.0),
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderSide: BorderSide(
                       color: Color(0x00000000),
                       width: 1.0,
                     ),
-                    borderRadius: BorderRadius.circular(8.0),
+                    borderRadius: BorderRadius.circular(14.0),
                   ),
                   errorBorder: OutlineInputBorder(
                     borderSide: BorderSide(
                       color: FlutterFlowTheme.of(context).error,
                       width: 1.0,
                     ),
-                    borderRadius: BorderRadius.circular(8.0),
+                    borderRadius: BorderRadius.circular(14.0),
                   ),
                   focusedErrorBorder: OutlineInputBorder(
                     borderSide: BorderSide(
                       color: FlutterFlowTheme.of(context).error,
                       width: 1.0,
                     ),
-                    borderRadius: BorderRadius.circular(8.0),
+                    borderRadius: BorderRadius.circular(14.0),
                   ),
                   filled: true,
-                  fillColor: Color(0xFF363636),
+                  fillColor: AppColors.border,
                   suffixIcon: InkWell(
                     onTap: () => safeSetState(
                       () => _model.passwordVisibility1 =
@@ -154,13 +156,13 @@ class _UpdatePasswordWidgetState extends State<UpdatePasswordWidget> {
                   ),
                 ),
                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                      font: GoogleFonts.inter(
+                      font: GoogleFonts.manrope(
                         fontWeight:
                             FlutterFlowTheme.of(context).bodyMedium.fontWeight,
                         fontStyle:
                             FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                       ),
-                      color: FlutterFlowTheme.of(context).info,
+                      color: AppColors.ink,
                       letterSpacing: 0.0,
                       fontWeight:
                           FlutterFlowTheme.of(context).bodyMedium.fontWeight,
@@ -186,7 +188,7 @@ class _UpdatePasswordWidgetState extends State<UpdatePasswordWidget> {
                 decoration: InputDecoration(
                   isDense: true,
                   labelStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                        font: GoogleFonts.inter(
+                        font: GoogleFonts.manrope(
                           fontWeight: FlutterFlowTheme.of(context)
                               .labelMedium
                               .fontWeight,
@@ -202,7 +204,7 @@ class _UpdatePasswordWidgetState extends State<UpdatePasswordWidget> {
                       ),
                   hintText: 'Повторите новый пароль',
                   hintStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                        font: GoogleFonts.inter(
+                        font: GoogleFonts.manrope(
                           fontWeight: FlutterFlowTheme.of(context)
                               .labelMedium
                               .fontWeight,
@@ -210,7 +212,7 @@ class _UpdatePasswordWidgetState extends State<UpdatePasswordWidget> {
                               .labelMedium
                               .fontStyle,
                         ),
-                        color: Color(0xFF919394),
+                        color: AppColors.muted,
                         letterSpacing: 0.0,
                         fontWeight:
                             FlutterFlowTheme.of(context).labelMedium.fontWeight,
@@ -219,34 +221,34 @@ class _UpdatePasswordWidgetState extends State<UpdatePasswordWidget> {
                       ),
                   enabledBorder: OutlineInputBorder(
                     borderSide: BorderSide(
-                      color: Color(0xFFA5A2A2),
+                      color: AppColors.border,
                       width: 1.0,
                     ),
-                    borderRadius: BorderRadius.circular(8.0),
+                    borderRadius: BorderRadius.circular(14.0),
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderSide: BorderSide(
                       color: Color(0x00000000),
                       width: 1.0,
                     ),
-                    borderRadius: BorderRadius.circular(8.0),
+                    borderRadius: BorderRadius.circular(14.0),
                   ),
                   errorBorder: OutlineInputBorder(
                     borderSide: BorderSide(
                       color: FlutterFlowTheme.of(context).error,
                       width: 1.0,
                     ),
-                    borderRadius: BorderRadius.circular(8.0),
+                    borderRadius: BorderRadius.circular(14.0),
                   ),
                   focusedErrorBorder: OutlineInputBorder(
                     borderSide: BorderSide(
                       color: FlutterFlowTheme.of(context).error,
                       width: 1.0,
                     ),
-                    borderRadius: BorderRadius.circular(8.0),
+                    borderRadius: BorderRadius.circular(14.0),
                   ),
                   filled: true,
-                  fillColor: Color(0xFF363636),
+                  fillColor: AppColors.border,
                   suffixIcon: InkWell(
                     onTap: () => safeSetState(
                       () => _model.passwordVisibility2 =
@@ -263,13 +265,13 @@ class _UpdatePasswordWidgetState extends State<UpdatePasswordWidget> {
                   ),
                 ),
                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                      font: GoogleFonts.inter(
+                      font: GoogleFonts.manrope(
                         fontWeight:
                             FlutterFlowTheme.of(context).bodyMedium.fontWeight,
                         fontStyle:
                             FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                       ),
-                      color: FlutterFlowTheme.of(context).info,
+                      color: AppColors.ink,
                       letterSpacing: 0.0,
                       fontWeight:
                           FlutterFlowTheme.of(context).bodyMedium.fontWeight,
@@ -321,7 +323,7 @@ class _UpdatePasswordWidgetState extends State<UpdatePasswordWidget> {
                 iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                 color: FlutterFlowTheme.of(context).primary,
                 textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                      font: GoogleFonts.interTight(
+                      font: GoogleFonts.manrope(
                         fontWeight:
                             FlutterFlowTheme.of(context).titleSmall.fontWeight,
                         fontStyle:
@@ -335,7 +337,7 @@ class _UpdatePasswordWidgetState extends State<UpdatePasswordWidget> {
                           FlutterFlowTheme.of(context).titleSmall.fontStyle,
                     ),
                 elevation: 0.0,
-                borderRadius: BorderRadius.circular(8.0),
+                borderRadius: BorderRadius.circular(14.0),
               ),
             ),
           ),
