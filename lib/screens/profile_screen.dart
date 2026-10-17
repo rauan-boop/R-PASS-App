@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 import '../config/app_colors.dart';
 import '../data/demo_store.dart';
+import '../utils/app_reload.dart';
 import '../widgets/common.dart';
 import 'login_screen.dart';
 
@@ -88,6 +89,10 @@ class ProfileScreen extends StatelessWidget {
             title: 'Экспорт Excel',
             onTap: () => _soon(context, 'Экспорт Excel')),
         const SectionTitle('Прочее'),
+        _MenuTile(
+            icon: Icons.refresh_rounded,
+            title: 'Обновить приложение',
+            onTap: reloadApp),
         _MenuTile(
             icon: Icons.history_rounded,
             title: 'Журнал действий',
