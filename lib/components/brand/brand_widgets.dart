@@ -47,8 +47,7 @@ class RPassWordmark extends StatelessWidget {
           color: AppColors.ink,
         ),
         children: const [
-          TextSpan(text: 'R-'),
-          TextSpan(text: 'PASS', style: TextStyle(color: AppColors.primary)),
+          TextSpan(text: 'R-PASS'),
         ],
       ),
     );
