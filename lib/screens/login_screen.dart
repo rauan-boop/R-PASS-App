@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import '../components/brand/brand_widgets.dart';
 import '../config/app_colors.dart';
@@ -89,13 +88,6 @@ class _LoginScreenState extends State<LoginScreen> {
                         FilledButton(
                           onPressed: _valid ? _submit : null,
                           child: const Text('Получить код'),
-                        ),
-                        const SizedBox(height: 16),
-                        Text(
-                          'Нажимая «Получить код», вы соглашаетесь с Политикой конфиденциальности и Офертой',
-                          textAlign: TextAlign.center,
-                          style: GoogleFonts.manrope(
-                              fontSize: 12, color: AppColors.hint),
                         ),
                       ],
                     ),
