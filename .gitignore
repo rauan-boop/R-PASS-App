@@ -1,0 +1,14 @@
+.env
+.env.*
+!.env.example
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+build/
+.idea/
+.vscode/
+android/.gradle/
+android/app/build/
+ios/Pods/
+

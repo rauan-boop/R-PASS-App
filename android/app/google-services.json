@@ -1,0 +1,118 @@
+{
+  "project_info": {
+    "project_number": "494634411807",
+    "project_id": "ronat-kz",
+    "storage_bucket": "ronat-kz.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:494634411807:android:0dd2018e39bcb76686b22a",
+        "android_client_info": {
+          "package_name": "com.blacklist.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "494634411807-qhs4kos7uv67crnuv3o7o5ppbaf1604e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8UB3y3dlZFa9GMZipcUtvb8R4BzKQfXs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "494634411807-qhs4kos7uv67crnuv3o7o5ppbaf1604e.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "494634411807-t9b4ar0huelpm3o4t5tmm98mdvcsv68p.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ronat.ronatkz"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:494634411807:android:6f0c727ad4e911c086b22a",
+        "android_client_info": {
+          "package_name": "com.mycompany.blacklist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "494634411807-qhs4kos7uv67crnuv3o7o5ppbaf1604e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8UB3y3dlZFa9GMZipcUtvb8R4BzKQfXs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "494634411807-qhs4kos7uv67crnuv3o7o5ppbaf1604e.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "494634411807-t9b4ar0huelpm3o4t5tmm98mdvcsv68p.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ronat.ronatkz"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:494634411807:android:76ddbbf56c954a3186b22a",
+        "android_client_info": {
+          "package_name": "com.ronat.ronatkz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "494634411807-qhs4kos7uv67crnuv3o7o5ppbaf1604e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8UB3y3dlZFa9GMZipcUtvb8R4BzKQfXs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "494634411807-qhs4kos7uv67crnuv3o7o5ppbaf1604e.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "494634411807-t9b4ar0huelpm3o4t5tmm98mdvcsv68p.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ronat.ronatkz"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

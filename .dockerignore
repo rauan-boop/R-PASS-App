@@ -1,0 +1,14 @@
+.git
+.env
+.env.*
+!.env.example
+.dart_tool
+build
+.idea
+.vscode
+android
+ios
+firebase
+test
+web-app
+
