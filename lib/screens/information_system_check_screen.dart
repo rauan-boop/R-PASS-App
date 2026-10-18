@@ -143,6 +143,20 @@ class _InformationSystemCheckScreenState
                   ],
                 ),
               ),
+              const SizedBox(height: 16),
+              SizedBox(
+                width: double.infinity,
+                child: FilledButton(
+                  onPressed: () => ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(
+                      content: Text(
+                        'Проверка по информационным системам появится позже',
+                      ),
+                    ),
+                  ),
+                  child: const Text('Проверить'),
+                ),
+              ),
               if (_showDemoRecognition) ...[
                 const SizedBox(height: 20),
                 const SectionTitle('Результат распознавания'),
