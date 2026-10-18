@@ -78,39 +78,6 @@ class DashboardScreen extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 12),
-            AppCard(
-              onTap: () => ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(
-                      content: Text('Сканирование прав появится позже'))),
-              child: Row(
-                children: [
-                  Container(
-                    width: 40,
-                    height: 40,
-                    decoration: BoxDecoration(
-                      color: AppColors.primarySoft,
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                    child: const Icon(Icons.photo_camera_outlined,
-                        color: AppColors.primary),
-                  ),
-                  const SizedBox(width: 12),
-                  Text(
-                    'Сканировать права',
-                    style: GoogleFonts.manrope(
-                      fontSize: 15,
-                      fontWeight: FontWeight.w700,
-                      color: AppColors.ink,
-                    ),
-                  ),
-                  const Spacer(),
-                  const Icon(Icons.chevron_right_rounded,
-                      color: AppColors.hint),
-                ],
-              ),
-            ),
-            const SizedBox(height: 20),
-            const SectionTitle('Сводка системы'),
             LayoutBuilder(
               builder: (context, constraints) {
                 final cardWidth = (constraints.maxWidth - 12) / 2;

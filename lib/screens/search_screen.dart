@@ -142,6 +142,17 @@ class _SearchScreenState extends State<SearchScreen> {
           decoration: InputDecoration(
             hintText: _hint,
             prefixIcon: const Icon(Icons.search_rounded),
+            suffixIcon: _mode == _Mode.iin
+                ? IconButton(
+                    tooltip: 'Сканировать ИИН',
+                    onPressed: () => ScaffoldMessenger.of(context).showSnackBar(
+                      const SnackBar(
+                        content: Text('Сканирование ИИН появится позже'),
+                      ),
+                    ),
+                    icon: const Icon(Icons.photo_camera_outlined),
+                  )
+                : null,
           ),
         ),
         const SizedBox(height: 18),
