@@ -5,6 +5,7 @@ import '../config/app_colors.dart';
 import '../data/demo_store.dart';
 import '../widgets/common.dart';
 import 'client_card_screen.dart';
+import 'information_system_check_screen.dart';
 
 void openClient(BuildContext context, String clientId) {
   Navigator.of(context).push(
@@ -13,9 +14,7 @@ void openClient(BuildContext context, String clientId) {
 }
 
 class DashboardScreen extends StatelessWidget {
-  const DashboardScreen({super.key, required this.onOpenSearch});
-
-  final VoidCallback onOpenSearch;
+  const DashboardScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -61,44 +60,6 @@ class DashboardScreen extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 20),
-            AppCard(
-              padding: const EdgeInsets.fromLTRB(18, 8, 8, 8),
-              child: Row(
-                children: [
-                  Expanded(
-                    child: InkWell(
-                      onTap: onOpenSearch,
-                      borderRadius: BorderRadius.circular(12),
-                      child: Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 10),
-                        child: Row(
-                          children: [
-                            const Icon(Icons.search_rounded,
-                                color: AppColors.primary),
-                            const SizedBox(width: 12),
-                            Text(
-                              'Введите ИИН, ФИО или телефон',
-                              style: GoogleFonts.manrope(
-                                  fontSize: 15, color: AppColors.hint),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
-                  IconButton.filledTonal(
-                    tooltip: 'Сканировать ИИН',
-                    onPressed: () => ScaffoldMessenger.of(context).showSnackBar(
-                      const SnackBar(
-                        content: Text('Сканирование ИИН появится позже'),
-                      ),
-                    ),
-                    icon: const Icon(Icons.photo_camera_outlined),
-                  ),
-                ],
-              ),
-            ),
-            const SizedBox(height: 12),
             LayoutBuilder(
               builder: (context, constraints) {
                 final cardWidth = (constraints.maxWidth - 12) / 2;
@@ -150,13 +111,13 @@ class DashboardScreen extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: FilledButton.icon(
-                onPressed: () => ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(
-                    content: Text('Интеграция с АИС ОИП появится позже'),
+                onPressed: () => Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (_) => const InformationSystemCheckScreen(),
                   ),
                 ),
                 icon: const Icon(Icons.fact_check_outlined),
-                label: const Text('Проверить по АИС ОИП'),
+                label: const Text('Проверка по информ. системам'),
               ),
             ),
             const SizedBox(height: 12),

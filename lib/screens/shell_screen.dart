@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../config/app_colors.dart';
-import 'add_risk_screen.dart';
 import 'dashboard_screen.dart';
 import 'incidents_screen.dart';
 import 'profile_screen.dart';
@@ -22,7 +21,7 @@ class _ShellScreenState extends State<ShellScreen> {
   @override
   Widget build(BuildContext context) {
     final pages = [
-      DashboardScreen(onOpenSearch: () => _goTo(1)),
+      const DashboardScreen(),
       const SearchScreen(),
       const IncidentsScreen(),
       const ProfileScreen(),
@@ -36,19 +35,6 @@ class _ShellScreenState extends State<ShellScreen> {
           ),
         ),
       ),
-      floatingActionButton: (_index == 0 || _index == 2)
-          ? FloatingActionButton(
-              backgroundColor: AppColors.primary,
-              foregroundColor: Colors.white,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(18),
-              ),
-              onPressed: () => Navigator.of(context).push(
-                MaterialPageRoute(builder: (_) => const AddRiskScreen()),
-              ),
-              child: const Icon(Icons.add_rounded),
-            )
-          : null,
       bottomNavigationBar: NavigationBar(
         selectedIndex: _index,
         onDestinationSelected: _goTo,
