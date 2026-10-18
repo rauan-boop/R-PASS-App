@@ -37,7 +37,7 @@ class _ShellScreenState extends State<ShellScreen> {
         ),
       ),
       floatingActionButton: (_index == 0 || _index == 2)
-          ? FloatingActionButton.extended(
+          ? FloatingActionButton(
               backgroundColor: AppColors.primary,
               foregroundColor: Colors.white,
               shape: RoundedRectangleBorder(
@@ -46,8 +46,7 @@ class _ShellScreenState extends State<ShellScreen> {
               onPressed: () => Navigator.of(context).push(
                 MaterialPageRoute(builder: (_) => const AddRiskScreen()),
               ),
-              icon: const Icon(Icons.add_rounded),
-              label: const Text('Добавить'),
+              child: const Icon(Icons.add_rounded),
             )
           : null,
       bottomNavigationBar: NavigationBar(
