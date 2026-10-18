@@ -95,6 +95,32 @@ real deployment.
    reverse proxy and forward the selected port. Nginx in the container
    already serves Flutter routes with an SPA fallback.
 
+## Standalone `bl_*` schema
+
+The migration
+[20261018_rpass_bl_schema.sql](supabase/migrations/20261018_rpass_bl_schema.sql)
+creates the separate `bl_companies`, `bl_users`, `bl_clients`, and
+`bl_incidents` tables with constraints, indexes, foreign keys, and RLS policies.
+It does not rename or replace the legacy R-CORE tables, and the Flutter demo
+is not yet connected to these new tables.
+
+For a fresh Self-Hosted Supabase project, review and run this migration in the
+Supabase SQL Editor. Do not run `supabase db push` against an empty project
+without first addressing the earlier `20261017_rpass_tenant_rls.sql`, which
+expects the legacy R-CORE tables to exist. Provision the initial company and
+admin user through a trusted SQL/admin process, link the user row's
+`auth_user_id` to `auth.users.id`, and create any additional company users
+through a trusted admin flow.
+
+RLS limits company administration to `super_admin`s and user administration
+to company admins and `super_admin`s (`app_metadata.role = 'super_admin'`).
+Users can read client details when an incident belongs to their company;
+details for approved incidents are also shared with users in active/trial
+companies. Pending and rejected incidents are visible only to their reporting
+company. Client identity writes must go through a trusted backend (for example,
+an Edge Function using the server-side service role), not the browser. Treat
+client data as sensitive and keep unauthenticated (`anon`) access disabled.
+
 ## Updating and rollback
 
 To deploy a newer revision:
