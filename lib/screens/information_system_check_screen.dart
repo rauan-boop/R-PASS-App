@@ -29,11 +29,9 @@ class _InformationSystemCheckScreenState
     return Scaffold(
       appBar: AppBar(
         toolbarHeight: 72,
-        leading: IconButton(
-          tooltip: 'Назад',
-          onPressed: () => Navigator.of(context).pop(),
-          icon: const Icon(Icons.arrow_back_rounded),
-        ),
+        automaticallyImplyLeading: false,
+        leading: const SizedBox(width: 56),
+        leadingWidth: 56,
         title: Text(
           'Проверка по информационным системам',
           textAlign: TextAlign.center,
@@ -45,6 +43,13 @@ class _InformationSystemCheckScreenState
           ),
         ),
         centerTitle: true,
+        actions: [
+          IconButton(
+            tooltip: 'Назад',
+            onPressed: () => Navigator.of(context).pop(),
+            icon: const Icon(Icons.arrow_back_rounded),
+          ),
+        ],
         backgroundColor: Colors.transparent,
         foregroundColor: AppColors.ink,
         elevation: 0,
@@ -73,7 +78,7 @@ class _InformationSystemCheckScreenState
                       decoration: const InputDecoration(
                         labelText: 'ИИН',
                         hintText: 'Введите 12 цифр ИИН',
-                        prefixIcon: Icon(Icons.badge_outlined),
+                        prefixIcon: Icon(Icons.edit_outlined),
                       ),
                     ),
                   ),
@@ -84,6 +89,9 @@ class _InformationSystemCheckScreenState
                         setState(() => _showDemoRecognition = true),
                     icon: const Icon(Icons.photo_camera_outlined),
                     style: IconButton.styleFrom(
+                      backgroundColor: AppColors.surface,
+                      foregroundColor: AppColors.primary,
+                      side: const BorderSide(color: AppColors.border),
                       minimumSize: const Size(56, 56),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(14),
