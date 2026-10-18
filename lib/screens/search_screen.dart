@@ -131,41 +131,18 @@ class _SearchScreenState extends State<SearchScreen> {
           ),
         ),
         const SizedBox(height: 14),
-        Row(
-          children: [
-            Expanded(
-              child: TextField(
-                controller: _controller,
-                onChanged: _onChanged,
-                keyboardType: _mode == _Mode.name
-                    ? TextInputType.text
-                    : TextInputType.number,
-                inputFormatters: _mode == _Mode.name
-                    ? null
-                    : [
-                        FilteringTextInputFormatter.allow(
-                          RegExp(r'[0-9+ ()-]'),
-                        ),
-                      ],
-                decoration: InputDecoration(
-                  hintText: _hint,
-                  prefixIcon: const Icon(Icons.search_rounded),
-                ),
-              ),
-            ),
-            if (_mode == _Mode.iin) ...[
-              const SizedBox(width: 8),
-              IconButton.filledTonal(
-                tooltip: 'Сканировать ИИН',
-                onPressed: () => ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(
-                    content: Text('Сканирование ИИН появится позже'),
-                  ),
-                ),
-                icon: const Icon(Icons.photo_camera_outlined),
-              ),
-            ],
-          ],
+        TextField(
+          controller: _controller,
+          onChanged: _onChanged,
+          keyboardType:
+              _mode == _Mode.name ? TextInputType.text : TextInputType.number,
+          inputFormatters: _mode == _Mode.name
+              ? null
+              : [FilteringTextInputFormatter.allow(RegExp(r'[0-9+ ()-]'))],
+          decoration: InputDecoration(
+            hintText: _hint,
+            prefixIcon: const Icon(Icons.search_rounded),
+          ),
         ),
         const SizedBox(height: 18),
         if (_query.isEmpty) ...[

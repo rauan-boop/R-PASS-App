@@ -62,17 +62,38 @@ class DashboardScreen extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             AppCard(
-              onTap: onOpenSearch,
-              padding:
-                  const EdgeInsets.symmetric(horizontal: 18, vertical: 18),
+              padding: const EdgeInsets.fromLTRB(18, 8, 8, 8),
               child: Row(
                 children: [
-                  const Icon(Icons.search_rounded, color: AppColors.primary),
-                  const SizedBox(width: 12),
-                  Text(
-                    'Введите ИИН, ФИО или телефон',
-                    style: GoogleFonts.manrope(
-                        fontSize: 15, color: AppColors.hint),
+                  Expanded(
+                    child: InkWell(
+                      onTap: onOpenSearch,
+                      borderRadius: BorderRadius.circular(12),
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 10),
+                        child: Row(
+                          children: [
+                            const Icon(Icons.search_rounded,
+                                color: AppColors.primary),
+                            const SizedBox(width: 12),
+                            Text(
+                              'Введите ИИН, ФИО или телефон',
+                              style: GoogleFonts.manrope(
+                                  fontSize: 15, color: AppColors.hint),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                  IconButton.filledTonal(
+                    tooltip: 'Сканировать ИИН',
+                    onPressed: () => ScaffoldMessenger.of(context).showSnackBar(
+                      const SnackBar(
+                        content: Text('Сканирование ИИН появится позже'),
+                      ),
+                    ),
+                    icon: const Icon(Icons.photo_camera_outlined),
                   ),
                 ],
               ),
