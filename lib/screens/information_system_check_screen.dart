@@ -15,7 +15,14 @@ class InformationSystemCheckScreen extends StatefulWidget {
 
 class _InformationSystemCheckScreenState
     extends State<InformationSystemCheckScreen> {
+  static const _informationSystems = [
+    'База данных R-PASS',
+    'Комитет государственных доходов МФ РК',
+    'АИС ОИП МЮ РК',
+  ];
+
   final _iinController = TextEditingController();
+  final Set<String> _selectedSystems = {};
   bool _showDemoRecognition = false;
 
   @override
@@ -99,6 +106,42 @@ class _InformationSystemCheckScreenState
                     ),
                   ),
                 ],
+              ),
+              const SizedBox(height: 20),
+              const SectionTitle('Выберите системы для проверки'),
+              AppCard(
+                padding: const EdgeInsets.symmetric(vertical: 4),
+                child: Column(
+                  children: [
+                    for (var i = 0; i < _informationSystems.length; i++)
+                      CheckboxListTile(
+                        value:
+                            _selectedSystems.contains(_informationSystems[i]),
+                        onChanged: (checked) {
+                          setState(() {
+                            if (checked == true) {
+                              _selectedSystems.add(_informationSystems[i]);
+                            } else {
+                              _selectedSystems.remove(_informationSystems[i]);
+                            }
+                          });
+                        },
+                        title: Text(
+                          _informationSystems[i],
+                          style: GoogleFonts.manrope(
+                            fontSize: 14,
+                            fontWeight: FontWeight.w600,
+                            color: AppColors.ink,
+                          ),
+                        ),
+                        activeColor: AppColors.primary,
+                        controlAffinity: ListTileControlAffinity.leading,
+                        contentPadding:
+                            const EdgeInsets.symmetric(horizontal: 12),
+                        dense: true,
+                      ),
+                  ],
+                ),
               ),
               if (_showDemoRecognition) ...[
                 const SizedBox(height: 20),
