@@ -107,6 +107,40 @@ class _InformationSystemCheckScreenState
                   ),
                 ],
               ),
+              if (_showDemoRecognition) ...[
+                const SizedBox(height: 20),
+                const SectionTitle('Результат распознавания'),
+                AppCard(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const Pill(
+                        text: 'Демонстрационный результат',
+                        color: AppColors.primary,
+                      ),
+                      const SizedBox(height: 14),
+                      _RecognizedField(
+                        label: 'ФИО',
+                        value: 'Смирнов Иван Петрович',
+                      ),
+                      const SizedBox(height: 12),
+                      _RecognizedField(
+                        label: 'ИИН',
+                        value: '900312300123',
+                      ),
+                      const SizedBox(height: 12),
+                      Text(
+                        'Распознавание камерой и получение данных от ИИ-агента '
+                        'будут добавлены позже.',
+                        style: GoogleFonts.manrope(
+                          fontSize: 12,
+                          color: AppColors.muted,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
               const SizedBox(height: 20),
               const SectionTitle('Выберите системы для проверки'),
               AppCard(
@@ -157,40 +191,6 @@ class _InformationSystemCheckScreenState
                   child: const Text('Проверить'),
                 ),
               ),
-              if (_showDemoRecognition) ...[
-                const SizedBox(height: 20),
-                const SectionTitle('Результат распознавания'),
-                AppCard(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      const Pill(
-                        text: 'Демонстрационный результат',
-                        color: AppColors.primary,
-                      ),
-                      const SizedBox(height: 14),
-                      _RecognizedField(
-                        label: 'ФИО',
-                        value: 'Смирнов Иван Петрович',
-                      ),
-                      const SizedBox(height: 12),
-                      _RecognizedField(
-                        label: 'ИИН',
-                        value: '900312300123',
-                      ),
-                      const SizedBox(height: 12),
-                      Text(
-                        'Распознавание камерой и получение данных от ИИ-агента '
-                        'будут добавлены позже.',
-                        style: GoogleFonts.manrope(
-                          fontSize: 12,
-                          color: AppColors.muted,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ],
             ],
           ),
         ),
