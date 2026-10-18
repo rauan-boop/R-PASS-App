@@ -107,7 +107,7 @@ class DemoStore extends ChangeNotifier {
   static const me = Me(
     fullName: 'Иванов Иван Иванович',
     role: 'Admin',
-    company: 'АвтоПрокат Алматы',
+    company: 'Система мониторинга рисков и проверки клиентов',
     phone: '+7 777 *** 45 67',
   );
 
@@ -125,7 +125,7 @@ class DemoStore extends ChangeNotifier {
       clientId: 'c1',
       category: Category.theft,
       severity: Severity.high,
-      company: 'АвтоПрокат Алматы',
+      company: 'Система мониторинга рисков и проверки клиентов',
       date: DateTime(2026, 9, 28),
       description:
           'Не вернул автомобиль в срок, телефон отключён. Машина найдена через 3 дня в другом городе.',
@@ -162,7 +162,7 @@ class DemoStore extends ChangeNotifier {
       clientId: 'c5',
       category: Category.dirty,
       severity: Severity.low,
-      company: 'АвтоПрокат Алматы',
+      company: 'Система мониторинга рисков и проверки клиентов',
       date: DateTime(2026, 8, 21),
       description: 'Сильное загрязнение салона, потребовалась химчистка.',
       photos: 2,

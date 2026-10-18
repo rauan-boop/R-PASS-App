@@ -148,26 +148,17 @@ class DashboardScreen extends StatelessWidget {
                     SizedBox(
                       width: cardWidth,
                       child: _DashboardStat(
-                        icon: Icons.hourglass_bottom_rounded,
-                        label: 'Дней до конца подписки',
-                        value: 14,
-                        color: AppColors.warning,
+                        icon: Icons.query_stats_rounded,
+                        label: 'Обращений за последние сутки',
+                        value: 86,
+                        color: AppColors.primaryDark,
                       ),
                     ),
                   ],
                 );
               },
             ),
-            const SizedBox(height: 20),
-            const SectionTitle('Последние добавления'),
-            for (final i in latest) ...[
-              IncidentTile(
-                incident: i,
-                onTap: () => openClient(context, i.clientId),
-              ),
-              const SizedBox(height: 10),
-            ],
-            const SizedBox(height: 8),
+            const SizedBox(height: 14),
             SizedBox(
               width: double.infinity,
               child: FilledButton.icon(
@@ -180,6 +171,33 @@ class DashboardScreen extends StatelessWidget {
                 label: const Text('Проверить по АИС ОИП'),
               ),
             ),
+            const SizedBox(height: 12),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 4),
+              child: Row(
+                children: [
+                  Icon(Icons.notifications_none_rounded,
+                      size: 16, color: AppColors.muted),
+                  const SizedBox(width: 6),
+                  Text(
+                    'До окончания подписки осталось 14 дней',
+                    style: GoogleFonts.manrope(
+                      fontSize: 12,
+                      color: AppColors.muted,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(height: 20),
+            const SectionTitle('Последние добавления'),
+            for (final i in latest) ...[
+              IncidentTile(
+                incident: i,
+                onTap: () => openClient(context, i.clientId),
+              ),
+              const SizedBox(height: 10),
+            ],
           ],
         );
       },
