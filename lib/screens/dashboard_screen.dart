@@ -110,6 +110,55 @@ class DashboardScreen extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 20),
+            const SectionTitle('Сводка системы'),
+            LayoutBuilder(
+              builder: (context, constraints) {
+                final cardWidth = (constraints.maxWidth - 12) / 2;
+                return Wrap(
+                  spacing: 12,
+                  runSpacing: 12,
+                  children: [
+                    SizedBox(
+                      width: cardWidth,
+                      child: _DashboardStat(
+                        icon: Icons.business_rounded,
+                        label: 'Компаний в системе',
+                        value: 128,
+                        color: AppColors.primary,
+                      ),
+                    ),
+                    SizedBox(
+                      width: cardWidth,
+                      child: _DashboardStat(
+                        icon: Icons.groups_rounded,
+                        label: 'Пользователей',
+                        value: 364,
+                        color: AppColors.primaryDark,
+                      ),
+                    ),
+                    SizedBox(
+                      width: cardWidth,
+                      child: _DashboardStat(
+                        icon: Icons.gpp_bad_rounded,
+                        label: 'Записей в чёрном списке',
+                        value: 1248,
+                        color: AppColors.error,
+                      ),
+                    ),
+                    SizedBox(
+                      width: cardWidth,
+                      child: _DashboardStat(
+                        icon: Icons.hourglass_bottom_rounded,
+                        label: 'Дней до конца подписки',
+                        value: 14,
+                        color: AppColors.warning,
+                      ),
+                    ),
+                  ],
+                );
+              },
+            ),
+            const SizedBox(height: 20),
             const SectionTitle('Последние добавления'),
             for (final i in latest) ...[
               IncidentTile(
@@ -118,9 +167,66 @@ class DashboardScreen extends StatelessWidget {
               ),
               const SizedBox(height: 10),
             ],
+            const SizedBox(height: 8),
+            SizedBox(
+              width: double.infinity,
+              child: FilledButton.icon(
+                onPressed: () => ScaffoldMessenger.of(context).showSnackBar(
+                  const SnackBar(
+                    content: Text('Интеграция с АИС ОИП появится позже'),
+                  ),
+                ),
+                icon: const Icon(Icons.fact_check_outlined),
+                label: const Text('Проверить по АИС ОИП'),
+              ),
+            ),
           ],
         );
       },
+    );
+  }
+}
+
+class _DashboardStat extends StatelessWidget {
+  const _DashboardStat({
+    required this.icon,
+    required this.label,
+    required this.value,
+    required this.color,
+  });
+
+  final IconData icon;
+  final String label;
+  final int value;
+  final Color color;
+
+  @override
+  Widget build(BuildContext context) {
+    return AppCard(
+      padding: const EdgeInsets.all(14),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Icon(icon, color: color, size: 22),
+          const SizedBox(height: 10),
+          Text(
+            '$value',
+            style: GoogleFonts.manrope(
+              fontSize: 24,
+              fontWeight: FontWeight.w800,
+              color: AppColors.ink,
+            ),
+          ),
+          const SizedBox(height: 2),
+          Text(
+            label,
+            style: GoogleFonts.manrope(
+              fontSize: 12,
+              color: AppColors.muted,
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
