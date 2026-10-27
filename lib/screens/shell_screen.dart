@@ -4,7 +4,7 @@ import '../config/app_colors.dart';
 import 'dashboard_screen.dart';
 import 'incidents_screen.dart';
 import 'profile_screen.dart';
-import 'search_screen.dart';
+
 
 class ShellScreen extends StatefulWidget {
   const ShellScreen({super.key});
@@ -16,13 +16,25 @@ class ShellScreen extends StatefulWidget {
 class _ShellScreenState extends State<ShellScreen> {
   int _index = 0;
 
+  @override
+  void initState() {
+    super.initState();
+    if (_index == 1) {
+      _index = 0; // If search was selected, go to Dashboard
+    } else if (_index > 1) {
+      _index--; // Adjust index for subsequent tabs
+    }
+  }
+
+
+
   void _goTo(int i) => setState(() => _index = i);
 
   @override
   Widget build(BuildContext context) {
     final pages = [
       const DashboardScreen(),
-      const SearchScreen(),
+
       const IncidentsScreen(),
       const ProfileScreen(),
     ];
@@ -46,11 +58,7 @@ class _ShellScreenState extends State<ShellScreen> {
             selectedIcon: Icon(Icons.home_rounded, color: AppColors.primary),
             label: 'Главная',
           ),
-          NavigationDestination(
-            icon: Icon(Icons.search_rounded),
-            selectedIcon: Icon(Icons.search_rounded, color: AppColors.primary),
-            label: 'Поиск',
-          ),
+
           NavigationDestination(
             icon: Icon(Icons.warning_amber_rounded),
             selectedIcon:
