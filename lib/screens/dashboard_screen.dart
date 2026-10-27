@@ -97,7 +97,7 @@ class DashboardScreen extends StatelessWidget {
                     SizedBox(
                       width: cardWidth,
                       child: _DashboardStat(
-                        icon: Icons.query_stats_rounded,
+                        icon: Icons.message_rounded,
                         label: 'Обращений за последние сутки',
                         value: 86,
                         color: AppColors.primaryDark,
